@@ -1,24 +1,75 @@
+'use client'
+
+import { useEffect, useRef } from 'react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
+
+const PATH_D = `M 167 12
+  C 167 210, 1020 210, 1020 430
+  C 1020 660, -20  660, -20  880
+  C -20  1100, 870 1200, 870 1500
+  C 870  1720, 520 1870, 520 1984
+  L 520 2120`
+
 export default function Hero() {
+  const clipRectRef = useRef<SVGRectElement>(null)
+
+  useEffect(() => {
+    const clip    = clipRectRef.current
+    const heroPath = document.getElementById('hero-path') as SVGPathElement | null
+    if (!clip || !heroPath) return
+
+    const total = heroPath.getTotalLength()
+
+    const st = ScrollTrigger.create({
+      trigger: '.hero',
+      start: 'top top',
+      end: 'bottom bottom',
+      onUpdate(self) {
+        const len   = self.progress * total
+        const point = heroPath.getPointAtLength(len)
+        clip.setAttribute('height', String(point.y + 20))
+      },
+    })
+
+    return () => { st.kill() }
+  }, [])
+
   return (
     <section className="hero">
-      {/* Decorative dashed path */}
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        className="hero__vector"
-        src="https://www.figma.com/api/mcp/asset/ae663227-b2aa-4a35-9828-03bddf6c9b41"
-        alt=""
-        aria-hidden="true"
-      />
 
-      {/* Bus illustrations */}
-      <div className="hero__bus hero__bus--1" aria-hidden="true">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="https://www.figma.com/api/mcp/asset/3fa8f87c-f455-44ac-8d6b-aa38c8820498" alt="" />
-      </div>
-      <div className="hero__bus hero__bus--2" aria-hidden="true">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="https://www.figma.com/api/mcp/asset/975b34db-7998-4242-95df-c8a39667e2e7" alt="" />
-      </div>
+      {/* Camino decorativo */}
+      <svg
+        className="hero__vector"
+        viewBox="0 0 1008 2120"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+        fill="none"
+      >
+        <defs>
+          <clipPath id="traveled-clip" clipPathUnits="userSpaceOnUse">
+            <rect ref={clipRectRef} x="-10" y="0" width="1028" height="0" />
+          </clipPath>
+        </defs>
+        <path
+          id="hero-path"
+          d={PATH_D}
+          stroke="#E6D8E5"
+          strokeWidth="4"
+          strokeDasharray="8 20"
+          strokeLinecap="round"
+        />
+        <path
+          d={PATH_D}
+          stroke="#640D5F"
+          strokeWidth="4"
+          strokeDasharray="8 20"
+          strokeLinecap="round"
+          clipPath="url(#traveled-clip)"
+        />
+      </svg>
 
       <div className="hero__container">
 
@@ -32,7 +83,7 @@ export default function Hero() {
               width={20}
               height={20}
             />
-            <span className="label-sm c-violet">Portfolio · Product Designer &amp; Nomad</span>
+            <span className="label-md c-violet">Celeste Palacios · Product Designer &amp; Nomad</span>
           </div>
           <h1 className="hero__h1">
             Durante 10 años hice{' '}
@@ -40,12 +91,15 @@ export default function Hero() {
             mirando por la{' '}
             <span className="font-accent c-green">misma ventana...</span>
           </h1>
-          <p className="hero__subtitle label-lg">
+          {/* <p className="hero__subtitle label-lg">
             Bajá despacio. Si te moves el camino aparece. ↓
-          </p>
+          </p> */}
+          {/* Van 1 — al inicio del path, 24px debajo del texto (gap del bloque) */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/Van.svg" alt="" aria-hidden="true" className="hero__van-img hero__van-img--1" />
         </div>
 
-        {/* Bloque 2 — Observar / descubrir / crear (derecha) */}
+        {/* Bloque 2 — Observar / descubrir / crear */}
         <div className="hero__block hero__block--2">
           <div className="hero__inline-label">
             <span className="hero__dash hero__dash--fucsia" />
@@ -57,7 +111,7 @@ export default function Hero() {
           </p>
         </div>
 
-        {/* Bloque 3 — Otra mirada (izquierda) */}
+        {/* Bloque 3 — Otra mirada */}
         <div className="hero__block hero__block--3">
           <div className="hero__inline-label">
             <span className="hero__dash hero__dash--green" />
@@ -76,7 +130,7 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Bloque 4 — Quién soy (centrado) */}
+        {/* Bloque 4 — Quién soy */}
         <div className="hero__block hero__block--4">
           <div className="hero__inline-label">
             <span className="hero__dash hero__dash--violet" />
@@ -90,6 +144,12 @@ export default function Hero() {
             Encontrando ideas nuevas, detectando oportunidades y diseñando
             con estrategias alineadas con objetivos del negocio.
           </p>
+        </div>
+
+        {/* Van 2 — arriba de los chips, mirando a la derecha */}
+        <div className="hero__van-row hero__van-row--2">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/Van.svg" alt="" className="hero__van-img" />
         </div>
 
         {/* Tags */}

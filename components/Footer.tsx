@@ -1,21 +1,19 @@
-const FOOTER_PIN  = 'https://www.figma.com/api/mcp/asset/c169e075-6e06-4a8c-b29f-6555b0fa2da4'
-const ICON_TWITTER   = 'https://www.figma.com/api/mcp/asset/6fc5024d-7db2-4d18-92f4-548bbd33ed34'
-const ICON_TIKTOK    = 'https://www.figma.com/api/mcp/asset/23aa8706-1d2b-4bbb-9a91-aee845de4146'
-const ICON_PINTEREST = 'https://www.figma.com/api/mcp/asset/dd83d931-b6d4-40ba-96c2-916da0d28b43'
-const ICON_INSTAGRAM = 'https://www.figma.com/api/mcp/asset/121ce765-9192-4a1f-99d6-f2ffa5686732'
+import { MapPin } from 'lucide-react'
+import { FaXTwitter, FaTiktok } from 'react-icons/fa6'
+import { FaPinterest, FaInstagram } from 'react-icons/fa'
 
 const navLinks = [
-  { label: 'Proyectos',  href: '#proyectos' },
-  { label: 'Curriculum', href: '#curriculum' },
+  { label: 'Proyectos',   href: '#proyectos' },
+  { label: 'Curriculum',  href: '#curriculum' },
   { label: 'Blog viajes', href: '#' },
-  { label: 'Sobre mí',  href: '#sobre-mi' },
+  { label: 'Sobre mí',   href: '#sobre-mi' },
 ]
 
 const socialLinks = [
-  { label: 'Twitter',   href: '#', icon: ICON_TWITTER },
-  { label: 'TikTok',    href: '#', icon: ICON_TIKTOK },
-  { label: 'Pinterest', href: '#', icon: ICON_PINTEREST },
-  { label: 'Instagram', href: '#', icon: ICON_INSTAGRAM },
+  { label: 'Twitter',   href: '#', icon: <FaXTwitter size={16} /> },
+  { label: 'TikTok',    href: '#', icon: <FaTiktok size={16} /> },
+  { label: 'Pinterest', href: '#', icon: <FaPinterest size={16} /> },
+  { label: 'Instagram', href: '#', icon: <FaInstagram size={16} /> },
 ]
 
 export default function Footer() {
@@ -25,8 +23,7 @@ export default function Footer() {
 
         <div className="footer__cta">
           <div className="footer__eyebrow">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={FOOTER_PIN} alt="" width={20} height={20} />
+            <MapPin size={20} color="var(--violet)" />
             <span className="label-md c-violet">Punto final · de momento</span>
           </div>
           <div className="footer__heading">
@@ -56,8 +53,7 @@ export default function Footer() {
           <div className="footer__social-icons">
             {socialLinks.map((s) => (
               <a key={s.label} href={s.href} className="footer__social-btn" aria-label={s.label}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={s.icon} alt={s.label} width={16} height={16} />
+                {s.icon}
               </a>
             ))}
           </div>

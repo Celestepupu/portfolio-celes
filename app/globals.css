@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  background: var(--light-bg);
+  background: var(--background);
   font-family: var(--font-body);
   color: var(--neutral-5);
 }
@@ -20,11 +20,12 @@ ul, ol { list-style: none; }
   --green:          #01672E;
   --yellow:         #F9C80E;
   --fucsia:         #D6006F;
+  --fucsia-100:     #F8D6E8;
   --brown:          #704C3E;
-  --background:     #FFFEFA;
+  --background:     #FFF7EB;
   --white:          #FFFFFF;
   --main-blue:      #001858;
-  --light-bg:       #FAF1E3;
+  --light-bg:       #FFFEFA;
 
 
   /* === TIPOGRAFÍA — FONT FAMILIES === */
@@ -79,14 +80,15 @@ ul, ol { list-style: none; }
   /* === TIPOGRAFÍA — LABEL (Lexend SemiBold) === */
 
   --label-lg-size: 16px;
-  --label-lg-lh:   24px;
+  --label-lg-lh:   110%;
+  --label-lg-ls:   3.6px;
 
   --label-md-size: 14px;
-  --label-md-lh:   16px;
+  --label-md-lh:   110%;
   --label-md-ls:   3.6px;
 
   --label-sm-size: 12px;
-  --label-sm-lh:   16px;
+  --label-sm-lh:   110%;
   --label-sm-ls:   3.5px;
 
 
@@ -273,6 +275,7 @@ ul, ol { list-style: none; }
   font-family: var(--font-label);
   font-size: var(--label-lg-size);
   line-height: var(--label-lg-lh);
+  letter-spacing: var(--label-lg-ls);
   font-weight: 600;
 }
 
@@ -426,7 +429,7 @@ ul, ol { list-style: none; }
    HERO
    ============================== */
 
-.hero { position: relative; background: var(--light-bg); overflow: hidden; }
+.hero { position: relative; background: var(--background); overflow: hidden; }
 
 .hero__vector {
   position: absolute;
@@ -747,7 +750,7 @@ ul, ol { list-style: none; }
    CURRICULUM
    ============================== */
 
-.curriculum { background: #f7f7f7; border-top: 1px solid #b8b8b8; padding: 113px 200px 112px; }
+.curriculum { background: var(--light-bg); border-top: 1px solid #b8b8b8; padding: 113px 200px 112px; }
 
 .curriculum__container { max-width: 1040px; margin: 0 auto; padding: 0 48px; display: flex; flex-direction: column; gap: 40px; }
 
@@ -844,14 +847,14 @@ ul, ol { list-style: none; }
   justify-content: center;
   width: 40px;
   height: 40px;
-  border: 2px solid var(--neutral-5);
-  border-radius: 9999px;
   flex-shrink: 0;
   text-decoration: none;
-  transition: border-color 0.15s ease;
+  color: var(--neutral-5);
+  transition: color 0.15s ease;
 }
 
-.footer__social-btn:hover { border-color: var(--fucsia); }
+.footer__social-btn:hover { color: var(--fucsia); }
+.footer__social-btn:hover .social-icon__circle { fill: var(--fucsia-100); }
 
 .footer__bottom { border-top: 1px solid var(--neutral-5); padding: 0 200px; }
 

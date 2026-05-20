@@ -16,9 +16,12 @@ export default function About() {
         </div>
 
         <div className="about__right">
-          <p className="body-md">
-            Product Designer, con 4 años de experiencia en UX/UI y un enfoque de Product Management para la definición de roadmaps y prioridades. Con 10 años en la industria de viajes y turismo, integro ese recorrido para diseñar productos digitales alineados al negocio y centrados en el usuario. Cómo viajera cambia mi entorno, pero no mi rutina: sé mantener compromiso y responsabilidad ante el cambio constante. En movimiento, pero siempre sin dejar de observar, desarrollando constantemente la habilidad de ver lo que pasa desapercibido a simple vista. Soy creativa y creadora, aportando una visión global, curiosa y en constante evolución.
-          </p>
+          <div className="about__body body-md">
+            <p>Product Designer, con 4 años de experiencia en UX/UI y un enfoque de Product Management para la definición de roadmaps y prioridades.</p>
+            <p>Con 10 años en la industria de viajes y turismo, integro ese recorrido para diseñar productos digitales alineados al negocio y centrados en el usuario.</p>
+            <p>Cómo viajera cambia mi entorno, pero no mi rutina: sé mantener <strong className="c-violet">compromiso</strong> y <strong className="c-violet">responsabilidad</strong> ante el cambio constante. En movimiento, pero siempre sin dejar de observar, desarrollando constantemente la habilidad de ver lo que pasa desapercibido a simple vista.</p>
+            <p>Soy <strong className="c-violet">creativa</strong> y <strong className="c-violet">creadora</strong>, aportando una visión global, curiosa y en constante evolución.</p>
+          </div>
           <div className="about__extra">
             <p className="label-lg">Si te movés el camino aparece.</p>
             <p className="font-accent about__metodologia c-green">

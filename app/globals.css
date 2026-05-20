@@ -746,6 +746,7 @@ ul, ol { list-style: none; }
 
 .about__right { flex: 1; display: flex; flex-direction: column; gap: 32px; color: var(--neutral-5); padding-top: 57px; }
 .about__right .label-lg { margin: 0; color: var(--neutral-5); }
+.about__body { display: flex; flex-direction: column; gap: 16px; }
 
 .about__extra { display: flex; flex-direction: column; gap: 4px; }
 .about__metodologia { font-size: var(--accent-sm-size); line-height: var(--accent-sm-lh); margin: 0; }

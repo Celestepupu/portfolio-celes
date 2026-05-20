@@ -7,6 +7,8 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   loading?: boolean;
   as?: 'button' | 'a';
   href?: string;
+  target?: string;
+  rel?: string;
 }
 
 export default function Button({
@@ -28,8 +30,9 @@ export default function Button({
     .join(' ');
 
   if (Tag === 'a') {
+    const { target, rel } = props as { target?: string; rel?: string };
     return (
-      <a href={href} className={classes}>
+      <a href={href} target={target} rel={rel} className={classes}>
         {children}
       </a>
     );

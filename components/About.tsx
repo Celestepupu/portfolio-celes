@@ -16,13 +16,11 @@ export default function About() {
         </div>
 
         <div className="about__right">
-          <p className="label-lg">
-            Creo que el mejor producto nace cuando logramos detenernos a observar.
-            Diseño experiencias que conectan la intuición humana con métricas de negocio:
-            prototipo, valido, mido — y vuelvo a empezar.
+          <p className="body-md">
+            Product Designer, con 4 años de experiencia en UX/UI y un enfoque de Product Management para la definición de roadmaps y prioridades. Con 10 años en la industria de viajes y turismo, integro ese recorrido para diseñar productos digitales alineados al negocio y centrados en el usuario. Cómo viajera cambia mi entorno, pero no mi rutina: sé mantener compromiso y responsabilidad ante el cambio constante. En movimiento, pero siempre sin dejar de observar, desarrollando constantemente la habilidad de ver lo que pasa desapercibido a simple vista. Soy creativa y creadora, aportando una visión global, curiosa y en constante evolución.
           </p>
           <div className="about__extra">
-            <p className="label-lg">Hoy trabajo en remoto desde donde el mapa me lleve.</p>
+            <p className="label-lg">Si te movés el camino aparece.</p>
             <p className="font-accent about__metodologia c-green">
               El viaje también es metoología.
             </p>

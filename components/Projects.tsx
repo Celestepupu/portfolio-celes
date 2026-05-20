@@ -31,10 +31,10 @@ export default function Projects() {
 
         <div className="projects__header">
           <div>
-            <p className="label-md c-fucsia">· Selected work ·</p>
+            <p className="label-md c-fucsia">· Proyectos seleccionados ·</p>
             <h2 className="projects__title">Proyectos.</h2>
           </div>
-          <p className="projects__desc label-lg">
+          <p className="projects__desc body-md-size">
             Una selección de viajes de producto: investigación,<br />
             estrategia y diseño con foco en el impacto al negocio.
           </p>

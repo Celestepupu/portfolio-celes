@@ -1,10 +1,11 @@
 const CURRICULUM_ICON = 'https://www.figma.com/api/mcp/asset/08e2595d-6892-44d0-8261-052fbf1775cd'
 
 const timelineItems = [
-  { period: '2024 — Now', role: 'Senior Product Designer', company: 'Remote · Nomad' },
-  { period: '2023',       role: 'Product Manager',         company: 'Travel Tech Startup' },
-  { period: '2021 — 2023', role: 'UX/UI Designer',         company: 'SaaS Platform' },
-  { period: '2020',       role: 'Junior UX',               company: 'Agency · Buenos Aires' },
+  { period: '2024 - Al presente', role: 'Product Designer & Product Manager',          company: 'Pedilo Store · E-commerce Platforms · B2B Strategy & CRO' },
+  { period: '2023 - Al presente', role: 'UX/UI & Product Designer',                    company: 'Flydevs · Software Agency · AI, LegalTech, SaaS de Seguridad...' },
+  { period: 'Jul 2023 - Dic 2023', role: 'UX/UI & Product Designer',                   company: 'Journey · Travel Tech · B2B · MVP ·' },
+  { period: 'Desde 2022',         role: 'Freelance UX/UI & Product Designer',          company: 'End-to-End · MVP · FinTech/Betting, Marketplaces, SaaS...' },
+  { period: '2010 - 2021',        role: 'Trayectoria en Industria de Viajes y Turismo', company: 'Gestión comercial y resolución de conflictos · B2B y B2C ·' },
 ]
 
 export default function Curriculum() {

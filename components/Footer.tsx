@@ -25,8 +25,8 @@ const IconEmail = () => (
 )
 
 const socialLinks = [
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/celestepalacios', icon: <IconLinkedin /> },
-  { label: 'Email',    href: 'mailto:celeste.palacios@flydevs.com',         icon: <IconEmail /> },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/celestepalacios/', icon: <IconLinkedin /> },
+  { label: 'Email',    href: 'mailto:celestepupu@gmail.com',                icon: <IconEmail /> },
 ]
 
 export default function Footer() {
@@ -37,23 +37,23 @@ export default function Footer() {
         <div className="footer__cta">
           <div className="footer__eyebrow">
             <MapPin size={20} color="var(--violet)" />
-            <span className="label-md c-violet">Punto final · de momento</span>
+            <span className="label-md c-violet">Lista para el próximo viaje de producto</span>
           </div>
           <div className="footer__heading">
-            <p className="footer__heading-1">¿Trabajamos juntos?</p>
-            <p className="footer__heading-2">Mandame un mensaje.</p>
+            <p className="footer__heading-1">¿Colaboramos?</p>
+            <p className="footer__heading-2">Mándame un mensaje.</p>
           </div>
-          <a href="mailto:celeste.palacios@flydevs.com" className="btn btn--md">
-            Contactame
+          <a href="mailto:celestepupu@gmail.com" target="_blank" rel="noopener noreferrer" className="btn btn--md">
+            Charlemos
           </a>
         </div>
 
         <div className="footer__menu-col">
-          <span className="label-md">MENU</span>
+          <span className="label-md">Menú</span>
           <ul className="footer__nav-list">
             {navLinks.map((link) => (
               <li key={link.label}>
-                <a href={link.href} className="footer__nav-link label-lg">
+                <a href={link.href} className="footer__nav-link body-md">
                   {link.label}
                 </a>
               </li>
@@ -62,10 +62,10 @@ export default function Footer() {
         </div>
 
         <div className="footer__social-col">
-          <span className="label-md">REDES</span>
+          <span className="label-md">Redes</span>
           <div className="footer__social-icons">
             {socialLinks.map((s) => (
-              <a key={s.label} href={s.href} className="footer__social-btn" aria-label={s.label}>
+              <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" className="footer__social-btn" aria-label={s.label}>
                 {s.icon}
               </a>
             ))}
@@ -76,7 +76,7 @@ export default function Footer() {
 
       <div className="footer__bottom">
         <div className="footer__bottom-inner">
-          <span className="label-md">© 2026 · Designed &amp; nomad-coded with ❤︎</span>
+          <span className="label-sm">© 2026 · Designed &amp; nomad-coded with ❤︎</span>
           <span className="font-accent footer__quote c-fucsia">
             Lo esencial es invisible a los ojos.
           </span>

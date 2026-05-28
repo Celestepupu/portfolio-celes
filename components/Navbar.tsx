@@ -27,6 +27,8 @@ export default function Navbar() {
           <div className="nav__logo" />
 
           <div className="nav__links">
+            <NavItem href="/">Home</NavItem>
+            <div className="nav__sep" />
             <NavItem href="#proyectos">Proyectos</NavItem>
             <div className="nav__sep" />
             <NavItem href="#sobre-mi">Sobre mí</NavItem>

@@ -4,7 +4,7 @@ export default function About() {
       <div className="about__container">
 
         <div className="about__left">
-          <p className="label-md c-green">· Sobre mí ·</p>
+          <p className="label-xl c-green">· Sobre mí ·</p>
           <div className="about__heading">
             <span className="about__heading-line display-xl">Diseño con</span>
             <br />

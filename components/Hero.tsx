@@ -78,12 +78,12 @@ export default function Hero() {
           <div className="hero__eyebrow">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="https://www.figma.com/api/mcp/asset/47a5e9e2-b51c-4996-8171-1a64e2c5195a"
+              src="/Icons/Icon/location.svg"
               alt=""
               width={20}
               height={20}
             />
-            <span className="label-md c-violet">Celeste Palacios · Product Designer &amp; Nomad</span>
+            <span className="label-lg c-violet">Celeste Palacios · Product Designer &amp; Nomad</span>
           </div>
           <h1 className="hero__h1">
             Durante 10 años hice{' '}

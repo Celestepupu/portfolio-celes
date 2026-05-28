@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: 'Caso de estudio: Pedilo Store — Redefiniendo la estrategia de producto.',
 }
 
-const ICON_STAR  = 'https://www.figma.com/api/mcp/asset/8a950bcc-3418-4caa-b7ff-76e529cab646'
+const ICON_STAR  = '/Icons/Icon/location.svg'
 const ICON_CHECK = 'https://www.figma.com/api/mcp/asset/a8649687-f947-4bd8-9ed8-afc7d66586ec'
 const IMG_BURGER      = 'https://www.figma.com/api/mcp/asset/1da68d1f-2163-4f29-bef4-f88b87b45f3c'
 
@@ -553,6 +553,120 @@ export default function PediloPage() {
               </div>
             </div>
           </div>
+        </section>
+
+        {/* ===================== ¿CÓMO SIGUE? ===================== */}
+        <section className="cs-fallo">
+          <div className="cs-fallo__inner">
+            <div className="cs-fallo__header">
+              <SectionTitle>· Próximos pasos ·</SectionTitle>
+              <h2 className="cs-fallo__title">¿Cómo sigue?</h2>
+            </div>
+          </div>
+          <div className="cs-fallo__items-wrap">
+            <div className="cs-fallo__items">
+              <div className="cs-fallo__item">
+                <p className="cs-fallo__item-title">Nuevo roadmap</p>
+                <p className="cs-fallo__item-body">Creé un nuevo roadmap con el objetivo de convertir a premium los clientes free, priorizando las funciones de mayor valor percibido.</p>
+              </div>
+              <div className="cs-fallo__item">
+                <p className="cs-fallo__item-title">Onboarding guiado</p>
+                <p className="cs-fallo__item-body">Diseñé un onboarding guiado para que las tiendas terminen de configurarse y activen todo su potencial desde el primer día.</p>
+              </div>
+              <div className="cs-fallo__item">
+                <p className="cs-fallo__item-title">Estrategia de captación premium</p>
+                <p className="cs-fallo__item-body">Definí una estrategia de captación en redes sociales, comunicación directa y free trial estratégico para convertir usuarios free en premium.</p>
+              </div>
+              <div className="cs-fallo__item">
+                <p className="cs-fallo__item-title">Mejoras en el registro de métricas</p>
+                <p className="cs-fallo__item-body">Propuse implementar sistemas de medición más precisos para datos de actividad, retención y comportamiento de usuario.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ===================== DESAFÍOS ===================== */}
+        <section className="cs-desafios">
+          <div className="cs-desafios__inner">
+
+            <div className="cs-desafios__header">
+              <SectionTitle>· Reflexiones personales ·</SectionTitle>
+              <h2 className="cs-desafios__title">Desafíos y aprendizajes: Orden en el desorden</h2>
+            </div>
+
+            <div className="cs-desafios__grid">
+
+              <div className="cs-desafios__row">
+                <div className="cs-desafios__card">
+                  <p className="cs-desafios__card-title">Product Manager sin recetas</p>
+                  <p className="body-md">Mi primera experiencia formal como Product Manager sin guía concreta. Mi primer roadmap ordenó el proyecto pero no al equipo. El segundo fue claro y el equipo lo implementó con autonomía.</p>
+                  <div className="cs-desafios__badge">
+                    <p className="cs-desafios__badge-label">Área de mejora</p>
+                    <p className="cs-desafios__badge-body">Profundizar en la implementación de roadmaps según las necesidades de cada equipo.</p>
+                  </div>
+                </div>
+                <div className="cs-desafios__card">
+                  <p className="cs-desafios__card-title">Sincronización de un equipo discontinuo</p>
+                  <p className="body-md">Sin dedicación full-time del equipo, el flujo se cortaba. Implementé un tablero Kanban en Trello con columna de prioridades estratégicas para mantener el rumbo.</p>
+                  <div className="cs-desafios__badge">
+                    <p className="cs-desafios__badge-label">Área de mejora</p>
+                    <p className="cs-desafios__badge-body">Implementar herramientas de gestión ágiles para facilitar el orden y la autonomía de las tareas.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="cs-desafios__row">
+                <div className="cs-desafios__card">
+                  <p className="cs-desafios__card-title">Documentación desordenada</p>
+                  <p className="body-md">Como fue mi primera experiencia, el proceso de documentación fue desordenado y difícilmente transmisible, quedando en notas personales e informales.</p>
+                  <div className="cs-desafios__badge">
+                    <p className="cs-desafios__badge-label">Área de mejora</p>
+                    <p className="cs-desafios__badge-body">Refinar mi capacidad de documentar de forma clara y accionable para que cualquier persona pueda recurrir a ello.</p>
+                  </div>
+                </div>
+                <div className="cs-desafios__card">
+                  <p className="cs-desafios__card-title">Data Cleaning en GA4</p>
+                  <p className="body-md">{`Al compartir la URL con los clientes, los datos estaban "sucios". Tuve que aprender a filtrar métricas avanzadas para separar el ruido del tráfico real.`}</p>
+                  <div className="cs-desafios__badge">
+                    <p className="cs-desafios__badge-label">Área de mejora</p>
+                    <p className="cs-desafios__badge-body">Profundizar en Google Analytics para sistemas complejos y manejar registros más claros de datos.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="cs-desafios__row">
+                <div className="cs-desafios__card">
+                  <p className="cs-desafios__card-title">Legitimar la estrategia (El Chef sin título)</p>
+                  <p className="body-md">Lograr que la estrategia de producto se plasmara en la comunicación de marketing implicó varias reuniones y aprender a retransmitir ideas de forma simple.</p>
+                  <div className="cs-desafios__badge">
+                    <p className="cs-desafios__badge-label">Área de mejora</p>
+                    <p className="cs-desafios__badge-body">Perfeccionar la comunicación asertiva para adaptar el mensaje técnico a diferentes perfiles profesionales.</p>
+                  </div>
+                </div>
+                <div className="cs-desafios__card">
+                  <p className="cs-desafios__card-title">Estrategia de Pricing y Business Analytics</p>
+                  <p className="body-md">La estrategia de monetización se definió por investigación con usuarios sin un pricing concreto. Realicé los análisis de business analytics a posteriori.</p>
+                  <div className="cs-desafios__badge">
+                    <p className="cs-desafios__badge-label">Área de mejora</p>
+                    <p className="cs-desafios__badge-body">Integrar investigaciones de business analytics desde la etapa de descubrimiento para definir precios correctamente.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        {/* ===================== CIERRE ===================== */}
+        <section className="cs-cierre">
+          <div className="cs-cierre__quote-wrap">
+            <p className="cs-cierre__quote">Gracias por leer...Hasta la próxima receta.</p>
+          </div>
+          <nav className="cs-cierre__nav">
+            <a href="/" className="label-sm">←Home</a>
+            <a href="/contact" className="label-sm">Contactame</a>
+            <span className="label-sm">Próximo caso →</span>
+          </nav>
         </section>
 
       </main>

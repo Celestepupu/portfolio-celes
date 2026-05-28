@@ -1,4 +1,4 @@
-const CURRICULUM_ICON = 'https://www.figma.com/api/mcp/asset/08e2595d-6892-44d0-8261-052fbf1775cd'
+const CURRICULUM_ICON = '/Icons/Icon/Icon/star.svg'
 
 const timelineItems = [
   { period: '2024 - Al presente', role: 'Product Designer & Product Manager',          company: 'Pedilo Store · E-commerce Platforms · B2B Strategy & CRO' },

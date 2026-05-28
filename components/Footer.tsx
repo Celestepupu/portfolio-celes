@@ -1,4 +1,3 @@
-import { MapPin } from 'lucide-react'
 
 const navLinks = [
   { label: 'Proyectos',   href: '#proyectos' },
@@ -36,7 +35,8 @@ export default function Footer() {
 
         <div className="footer__cta">
           <div className="footer__eyebrow">
-            <MapPin size={20} color="var(--violet)" />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/Icons/Icon/location.svg" alt="" width={20} height={20} />
             <span className="label-md c-violet">Lista para el próximo viaje de producto</span>
           </div>
           <div className="footer__heading">
@@ -72,6 +72,10 @@ export default function Footer() {
           </div>
         </div>
 
+      </div>
+
+      <div className="footer__vibe">
+        <span className="label-lg">· Esta web fue diseñada y desarrollada por mí usando Vibe Coding ·</span>
       </div>
 
       <div className="footer__bottom">

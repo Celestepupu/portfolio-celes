@@ -1,6 +1,7 @@
 import NavItem from './NavItem'
 import LangSwitcher from './LangSwitcher'
 import Button from './Button'
+import NavMobileMenu from './NavMobileMenu'
 
 const IconLinkedin = () => (
   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -64,6 +65,9 @@ export default function Navbar() {
             </a>
             <Button as="a" href="mailto:celestepupu@gmail.com" target="_blank" rel="noopener noreferrer" size="sm">Charlemos</Button>
           </div>
+
+          {/* Client island: solo el botón hamburger necesita estado */}
+          <NavMobileMenu />
         </div>
       </div>
     </nav>

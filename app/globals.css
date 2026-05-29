@@ -1882,6 +1882,250 @@ ul, ol { list-style: none; }
 
 
 /* ============================================================
+   CASE STUDY — RESPONSIVE  ≤ 1439px (desktop-sm)
+   ============================================================ */
+
+@media (max-width: 1439px) {
+  .cs-hero          { padding: 120px 80px; }
+  .cs-results       { padding: 56px 80px 100px; }
+  .cs-context       { padding: 80px 80px; }
+  .cs-problem       { padding: 80px 80px; }
+  .cs-role          { padding: 80px 80px; }
+  .cs-process       { padding: 80px 80px; }
+  .cs-images        { padding: 0 80px; }
+  .cs-laptop        { padding: 0 80px 27px; }
+  .cs-logre         { padding: 80px 80px; }
+  .cs-fallo         { padding: 80px 80px; }
+  .cs-desafios__inner { padding: 80px 80px; }
+  .cs-cierre        { padding: 80px 0; }
+}
+
+
+/* ============================================================
+   CASE STUDY — RESPONSIVE  ≤ 1023px (tablet)
+   ============================================================ */
+
+@media (max-width: 1023px) {
+  /* Hero */
+  .cs-hero           { padding: 80px 40px; }
+  .cs-hero__titles   { max-width: 100%; }
+  .cs-hero__burger   { width: 700px; height: 920px; right: -8px; top: -120px; }
+
+  /* Results */
+  .cs-results        { padding: 56px 40px 80px; gap: 40px; }
+  .cs-stat-card      { min-width: 160px; }
+  .cs-impact-card    { min-width: 280px; }
+
+  /* Context */
+  .cs-context        { padding: 80px 40px; }
+  .cs-context__inner { gap: 80px; }
+
+  /* Problem */
+  .cs-problem        { padding: 80px 40px; }
+  .cs-problem__left  { max-width: 100%; padding-bottom: 0; }
+  .cs-problem__right { padding-top: 0; padding-bottom: 0; padding-right: 0; }
+  .cs-problem__right-inner { width: 100%; }
+  .cs-problem__card-wrap   { padding: 0 40px; }
+
+  /* Role */
+  .cs-role                 { padding: 80px 40px; }
+  .cs-role__content-inner  { width: 100%; padding-right: 0; }
+
+  /* Process */
+  .cs-process              { padding: 80px 40px; gap: 16px; }
+  .cs-stage                { padding-bottom: 80px; }
+  .cs-stage__content-inner { width: 100%; padding-right: 0; }
+  .cs-stage2__content      { padding: 24px 0 0; }
+  .cs-research__cols       { gap: 16px; }
+  .cs-stage3__content-inner { width: 100%; padding-right: 0; }
+
+  /* Images / Laptop */
+  .cs-images         { padding: 0 40px; }
+  .cs-images__inner  { gap: 24px; }
+  .cs-laptop         { padding: 0 40px 27px; }
+  .cs-laptop__inner  { gap: 24px; }
+  .cs-laptop__img    { max-width: 460px; }
+
+  /* Logré */
+  .cs-logre          { padding: 80px 40px; }
+  .cs-logre__cols    { gap: 16px; }
+
+  /* Fallo */
+  .cs-fallo          { padding: 80px 40px; }
+  .cs-fallo__items   { width: 100%; padding-right: 0; }
+
+  /* Desafíos */
+  .cs-desafios__inner { padding: 80px 40px; }
+  .cs-desafios__row   { column-gap: 16px; }
+
+  /* Cierre */
+  .cs-cierre__quote-wrap { padding: 40px 40px; }
+  .cs-cierre__nav        { padding: 24px 40px; }
+}
+
+
+/* ============================================================
+   CASE STUDY — RESPONSIVE  ≤ 767px (mobile)
+   ============================================================ */
+
+@media (max-width: 767px) {
+
+  /* ---- Hero ---- */
+  .cs-hero-wrap      { overflow: visible; }
+  .cs-hero           { padding: 60px 24px 40px; }
+  .cs-hero__titles   { max-width: 100%; z-index: 1; position: relative; }
+  .cs-hero__title    { font-size: var(--display-lg-size); line-height: var(--display-lg-lh); }
+  .cs-hero__accent   { font-size: var(--accent-md-size); line-height: var(--accent-md-lh); }
+  .cs-hero__burger {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    right: auto;
+    top: auto;
+    display: block;
+    margin: 0;
+    border-radius: 0;
+    z-index: 0;
+  }
+
+  /* ---- Results ---- */
+  .cs-results { padding: 56px 24px 80px; gap: 40px; }
+
+  .cs-results__group { gap: 16px; }
+
+  /* Stat cards: apiladas, sin pill exagerado */
+  .cs-stat-cards  { flex-direction: column; gap: 12px; }
+  .cs-stat-card   {
+    min-width: unset;
+    width: 100%;
+    flex: none;
+    border-radius: 16px;
+    padding: 20px 24px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cs-stat-card > div { text-align: left; }
+  .cs-stat-card__number { font-size: var(--display-lg-size); line-height: var(--display-lg-lh); }
+  .cs-stat-card__desc   { font-size: var(--body-md-size); }
+
+  /* Impact cards: 1 columna */
+  .cs-impact-cards { flex-direction: column; gap: 16px; }
+  .cs-impact-card  { min-width: unset; width: 100%; flex: none; padding: 20px; }
+  .cs-impact-card h3 { font-size: var(--h3-size); line-height: var(--h3-lh); text-align: left; }
+
+  /* ---- Context ---- */
+  .cs-context        { padding: 60px 24px; }
+  .cs-context__inner { flex-direction: column; gap: 24px; }
+  .cs-context__text  { max-width: 100%; padding-top: 0; padding-right: 0; }
+  .cs-context__title { font-size: var(--display-lg-size); line-height: var(--display-lg-lh); margin-top: 8px; }
+
+  /* ---- Problem ---- */
+  .cs-problem       { padding: 60px 24px; }
+  .cs-problem__inner { gap: 0; }
+  .cs-problem__header { font-size: var(--accent-md-size); line-height: var(--accent-md-lh); margin-bottom: 32px; }
+  .cs-problem__left  { padding-top: 0; padding-bottom: 0; max-width: 100%; }
+  .cs-problem__col-heading { font-size: var(--h2-size); line-height: var(--h2-lh); margin-bottom: 16px; }
+  .cs-problem__right       { padding: 40px 0 0; justify-content: flex-start; }
+  .cs-problem__right-inner { width: 100%; gap: 16px; }
+  .cs-problem__card-wrap   { padding: 0; }
+
+  /* ---- Role ---- */
+  .cs-role                { padding: 60px 24px; }
+  .cs-role__inner         { gap: 16px; }
+  .cs-role__title         { font-size: var(--display-lg-size); line-height: var(--display-lg-lh); }
+  .cs-role__content       { justify-content: flex-start; }
+  .cs-role__content-inner { width: 100%; padding: 16px 0 0; gap: 12px; }
+  .cs-role__subtitle      { font-size: var(--h3-size); line-height: var(--h3-lh); }
+
+  /* ---- Process ---- */
+  .cs-process             { padding: 60px 24px; gap: 0; }
+  .cs-process__title-block { padding: 24px 0; gap: 12px; }
+  .cs-process__main-title  { font-size: var(--display-lg-size); line-height: var(--display-lg-lh); }
+
+  .cs-stage              { padding-top: 32px; padding-bottom: 60px; gap: 16px; }
+  .cs-stage__title       { font-size: var(--h2-size); line-height: var(--h2-lh); white-space: normal; }
+  .cs-stage__content     { justify-content: flex-start; }
+  .cs-stage__content-inner { width: 100%; padding: 0; gap: 24px; }
+
+  .cs-stage2             { padding: 24px 0; gap: 16px; }
+  .cs-stage2__content    { padding: 16px 0 0; gap: 24px; }
+  .cs-research__cols     { flex-direction: column; gap: 12px; }
+  .cs-research__col      { width: 100%; }
+
+  .cs-quote              { padding: 60px 0; }
+  .cs-quote__text        { font-size: var(--accent-md-size); line-height: var(--accent-md-lh); }
+
+  .cs-stage3             { padding: 24px 0; gap: 16px; }
+  .cs-stage3__content    { justify-content: flex-start; }
+  .cs-stage3__content-inner { width: 100%; padding: 0; gap: 24px; }
+
+  .cs-step-title         { font-size: var(--h3-size); line-height: var(--h3-lh); }
+
+  /* InsightCard: sin padding horizontal extra */
+  .cs-card               { padding: 20px; }
+  .cs-card--centered     { max-width: 100%; margin: 0; }
+  .cs-card__body         { font-size: var(--body-md-size); line-height: var(--body-md-lh); font-weight: 400; }
+
+  /* ---- Images (antes/después) ---- */
+  .cs-images             { padding: 0 24px; }
+  .cs-images__inner      { flex-direction: column; gap: 24px; }
+  .cs-images__photo      { max-width: 100%; order: -1; }
+  .cs-images__text       { padding-top: 0; width: 100%; }
+
+  /* ---- Laptop ---- */
+  .cs-laptop             { padding: 0 24px 40px; }
+  .cs-laptop__inner      { flex-direction: column; gap: 24px; }
+  .cs-laptop__img        { max-width: 100%; order: 1; }
+
+  /* ---- ¿Qué logré? ---- */
+  .cs-logre              { padding: 60px 24px; }
+  .cs-logre__inner       { gap: 32px; }
+  .cs-logre__title       { font-size: var(--display-lg-size); line-height: var(--display-lg-lh); }
+  .cs-logre__cols        { flex-direction: column; gap: 16px; }
+  .cs-logre__col         { padding: 20px; border: 1px solid var(--neutral-white); border-radius: 12px; }
+  .cs-logre__stat        { padding: 10px 0; }
+  .cs-logre__stat-num    { font-size: var(--display-lg-size); line-height: var(--display-lg-lh); }
+
+  /* ---- ¿Qué falló? / ¿Cómo sigue? ---- */
+  .cs-fallo              { padding: 60px 24px; }
+  .cs-fallo__inner       { gap: 16px; }
+  .cs-fallo__title       { font-size: var(--display-lg-size); line-height: var(--display-lg-lh); }
+  .cs-fallo__items-wrap  { justify-content: flex-start; max-width: 100%; }
+  .cs-fallo__items       { width: 100%; padding: 24px 0; gap: 24px; }
+  .cs-fallo__item        { padding: 0; }
+  .cs-fallo__item-title  { font-size: var(--h3-size); line-height: var(--h3-lh); }
+
+  /* ---- Desafíos ---- */
+  .cs-desafios::before   { height: 280px; }
+  .cs-desafios__inner    { padding: 60px 24px; gap: 32px; }
+  .cs-desafios__title    { font-size: var(--display-lg-size); line-height: var(--display-lg-lh); }
+  .cs-desafios__grid     { gap: 16px; }
+  .cs-desafios__row      {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 16px;
+  }
+  .cs-desafios__card     { padding: 20px; }
+  .cs-desafios__card-title { font-size: var(--h3-size); }
+
+  /* ---- Cierre ---- */
+  .cs-cierre             { padding: 60px 0 40px; }
+  .cs-cierre__quote-wrap { padding: 40px 24px; }
+  .cs-cierre__quote      { font-size: var(--accent-md-size); line-height: var(--accent-md-lh); }
+  .cs-cierre__nav        {
+    padding: 20px 24px;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .cs-cierre__nav > :nth-child(2) {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+}
+
+
+/* ============================================================
    NAVBAR — HAMBURGER & MOBILE MENU (base styles)
    ============================================================ */
 

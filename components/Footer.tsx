@@ -49,7 +49,7 @@ export default function Footer() {
         </div>
 
         <div className="footer__menu-col">
-          <span className="label-md">Menú</span>
+          <span className="label-sm">Menú</span>
           <ul className="footer__nav-list">
             {navLinks.map((link) => (
               <li key={link.label}>
@@ -74,9 +74,9 @@ export default function Footer() {
 
       </div>
 
-      <div className="footer__vibe">
-        <span className="label-lg">· Esta web fue diseñada y desarrollada por mí usando Vibe Coding ·</span>
-      </div>
+      <div className="footer__vibe" style={{ textAlign: 'center' }}>
+  <span className="label-lg">· Esta web fue diseñada y desarrollada por mí usando Vibe Coding ·</span>
+</div>
 
       <div className="footer__bottom">
         <div className="footer__bottom-inner">

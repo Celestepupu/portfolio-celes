@@ -208,6 +208,7 @@ export default function Hero() {
           ref={pathFgRef}
           d={PATH_D}
           stroke="#640D5F"
+          strokeOpacity="0.8"
           strokeWidth="4"
           strokeDasharray="8 20"
           strokeLinecap="round"

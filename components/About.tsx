@@ -9,9 +9,8 @@ export default function About() {
             <span className="about__heading-line display-xl">Diseño con</span>
             <br />
             <span className="font-accent about__heading-accent c-fucsia">curiosidad</span>
-            <span className="display-xl"> de</span>
-            <br />
-            <span className="display-xl">viajera.</span>
+            <span className="display-xl"> de viajera</span>
+        
           </div>
         </div>
 

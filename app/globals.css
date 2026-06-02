@@ -83,19 +83,19 @@ ul, ol { list-style: none; }
   /* === TIPOGRAFÍA — LABEL (Lexend SemiBold) === */
 
   --label-xl-size: 18px;
-  --label-xl-lh:   110%;
+  --label-xl-lh:   140%;
   --label-xl-ls:   3.6px;
 
   --label-lg-size: 16px;
-  --label-lg-lh:   110%;
+  --label-lg-lh:   140%;
   --label-lg-ls:   3.6px;
 
   --label-md-size: 14px;
-  --label-md-lh:   110%;
+  --label-md-lh:   140%;
   --label-md-ls:   3.6px;
 
   --label-sm-size: 12px;
-  --label-sm-lh:   110%;
+  --label-sm-lh:   140%;
   --label-sm-ls:   3.5px;
 
 

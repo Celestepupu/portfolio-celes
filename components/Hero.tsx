@@ -11,54 +11,179 @@ const PATH_D = `M 167 12
   C 870  1720, 520 1870, 520 1984
   L 520 2120`
 
-const MOBILE_PATH_D = `M 50 12
-  C 50 200, 330 250, 330 480
-  C 330 700, 20 750, 20 980
-  C 20 1180, 310 1270, 310 1480
-  C 310 1700, 50 1800, 50 1984
-  L 50 2120`
+function buildResponsivePath(heroEl: Element): string | null {
+  const block1 = document.querySelector('.hero__block--1')
+  const block2 = document.querySelector('.hero__block--2')
+  const block3 = document.querySelector('.hero__block--3')
+  const block4 = document.querySelector('.hero__block--4')
+  const vanRow2 = document.querySelector('.hero__van-row--2')
+
+  if (!block1 || !block2 || !block3 || !block4 || !vanRow2) return null
+
+  const heroRect = heroEl.getBoundingClientRect()
+  const W = heroRect.width
+  const H = heroRect.height
+  if (W === 0 || H === 0) return null
+
+  const rel = (rect: DOMRect) => ({
+    top:    rect.top    - heroRect.top,
+    bottom: rect.bottom - heroRect.top,
+    left:   rect.left   - heroRect.left,
+    right:  rect.right  - heroRect.left,
+    midY:   rect.top    - heroRect.top  + rect.height / 2,
+    midX:   rect.left   - heroRect.left + rect.width  / 2,
+  })
+
+  const b1   = rel(block1.getBoundingClientRect())
+  const b2   = rel(block2.getBoundingClientRect())
+  const b3   = rel(block3.getBoundingClientRect())
+  const b4   = rel(block4.getBoundingClientRect())
+  const van2 = rel(vanRow2.getBoundingClientRect())
+
+  // End: center of .hero__van-row--2 itself, relative to .hero
+  const endX = van2.midX
+  const endY = van2.midY
+
+  const subtitleEl = block1.querySelector('.hero__subtitle')
+  const van1ImgEl  = block1.querySelector('.hero__van-img--1')
+
+  // Start X: center of van-1 when visible (tablet/desktop), left edge of block-1 on mobile
+  let startX = b1.left
+  if (van1ImgEl) {
+    const r = van1ImgEl.getBoundingClientRect()
+    if (r.width > 0) startX = r.left - heroRect.left + r.width / 2
+  }
+
+  // Start Y: 8px below the last visible element inside block-1
+  let lastContentBottom = b1.bottom
+  for (const el of [subtitleEl, van1ImgEl]) {
+    if (!el) continue
+    const r = el.getBoundingClientRect()
+    if (r.height > 0) lastContentBottom = r.bottom - heroRect.top
+  }
+  const startY = lastContentBottom + 8
+
+  const MARGIN = 24
+
+  // Path passes RIGHT of block-2
+  const x2 = Math.min(W - MARGIN, b2.right + MARGIN)
+  const y2 = b2.midY
+
+  // Path passes LEFT of block-3
+  const x3 = Math.max(MARGIN, b3.left - MARGIN)
+  const y3 = b3.midY
+
+  // Path passes RIGHT of block-4
+  const x4 = Math.min(W - MARGIN, b4.right + MARGIN)
+  const y4 = b4.midY
+
+  // Cubic bezier segment — control points hug the start/end x so the
+  // horizontal swing happens smoothly in the middle of each section.
+  // `floor` clamps both CP y-values so the curve never rises above that line.
+  const seg = (x1: number, y1: number, x2: number, y2: number, floor = -Infinity) => {
+    const t = Math.abs(y2 - y1) * 0.4
+    return `C ${x1} ${Math.max(floor, y1 + t)}, ${x2} ${Math.max(floor, y2 - t)}, ${x2} ${y2}`
+  }
+
+  return [
+    `M ${startX} ${startY}`,
+    // First curve: both CPs floored at startY so the path only goes down-right
+    seg(startX, startY, x2, y2, startY),
+    seg(x2,     y2,     x3, y3),
+    seg(x3,     y3,     x4, y4),
+    seg(x4,     y4,     endX, endY),
+  ].join('\n')
+}
 
 export default function Hero() {
-  const clipRectRef       = useRef<SVGRectElement>(null)
-  const clipRectMobileRef = useRef<SVGRectElement>(null)
+  const svgRef      = useRef<SVGSVGElement>(null)
+  const clipRectRef = useRef<SVGRectElement>(null)
+  const pathBgRef   = useRef<SVGPathElement>(null)
+  const pathFgRef   = useRef<SVGPathElement>(null)
 
   useEffect(() => {
-    const clip       = clipRectRef.current
-    const clipMobile = clipRectMobileRef.current
-    const heroPath   = document.getElementById('hero-path') as SVGPathElement | null
-    const heroPathMobile = document.getElementById('hero-path-mobile') as SVGPathElement | null
-
     gsap.registerPlugin(ScrollTrigger)
 
-    if (!heroPath) return
+    const svgEl  = svgRef.current
+    const heroEl = document.querySelector('.hero')
+    if (!svgEl || !heroEl) return
 
-    const total       = heroPath.getTotalLength()
-    const totalMobile = heroPathMobile ? heroPathMobile.getTotalLength() : 0
+    let st: ReturnType<typeof ScrollTrigger.create> | null = null
 
-    const st = ScrollTrigger.create({
-      trigger: '.hero',
-      start: 'top top',
-      end: 'bottom bottom',
-      onUpdate(self) {
-        if (clip) {
-          const point = heroPath.getPointAtLength(self.progress * total)
-          clip.setAttribute('height', String(point.y + 20))
+    const setupScrollTrigger = () => {
+      if (st) st.kill()
+      const clip   = clipRectRef.current
+      const pathBg = pathBgRef.current
+      if (!pathBg) return
+
+      const total = pathBg.getTotalLength()
+
+      st = ScrollTrigger.create({
+        trigger: '.hero',
+        start: 'top top',
+        end: 'bottom bottom',
+        onUpdate(self) {
+          if (clip) {
+            const pt = pathBg.getPointAtLength(self.progress * total)
+            clip.setAttribute('height', String(pt.y + 20))
+          }
+        },
+      })
+    }
+
+    const updatePath = () => {
+      if (window.innerWidth === 1440) {
+        // Exactly 1440px: use the pixel-perfect hardcoded path with its original CSS positioning
+        svgEl.removeAttribute('style')
+        svgEl.setAttribute('viewBox', '0 0 1008 2120')
+        pathBgRef.current?.setAttribute('d', PATH_D)
+        pathFgRef.current?.setAttribute('d', PATH_D)
+        clipRectRef.current?.setAttribute('x', '-10')
+        clipRectRef.current?.setAttribute('width', '1028')
+      } else {
+        // Responsive: overlay the full hero and calculate path from real positions
+        const heroRect = heroEl.getBoundingClientRect()
+        const W = heroRect.width
+        const H = heroRect.height
+
+        svgEl.style.cssText = `left:0;top:0;width:${W}px;height:${H}px;`
+        svgEl.setAttribute('viewBox', `0 0 ${W} ${H}`)
+
+        clipRectRef.current?.setAttribute('x', '-10')
+        clipRectRef.current?.setAttribute('width', `${W + 20}`)
+
+        const d = buildResponsivePath(heroEl)
+        if (d) {
+          pathBgRef.current?.setAttribute('d', d)
+          pathFgRef.current?.setAttribute('d', d)
         }
-        if (clipMobile && heroPathMobile) {
-          const point = heroPathMobile.getPointAtLength(self.progress * totalMobile)
-          clipMobile.setAttribute('height', String(point.y + 20))
-        }
-      },
+      }
+
+      setupScrollTrigger()
+    }
+
+    let timer: ReturnType<typeof setTimeout>
+    const ro = new ResizeObserver(() => {
+      clearTimeout(timer)
+      timer = setTimeout(updatePath, 100)
     })
 
-    return () => { st.kill() }
+    ro.observe(heroEl)
+    updatePath()
+
+    return () => {
+      ro.disconnect()
+      clearTimeout(timer)
+      if (st) st.kill()
+    }
   }, [])
 
   return (
     <section className="hero">
 
-      {/* Path decorativo — desktop */}
+      {/* Path decorativo — único SVG para todos los tamaños */}
       <svg
+        ref={svgRef}
         className="hero__vector"
         viewBox="0 0 1008 2120"
         xmlns="http://www.w3.org/2000/svg"
@@ -70,25 +195,24 @@ export default function Hero() {
             <rect ref={clipRectRef} x="-10" y="0" width="1028" height="0" />
           </clipPath>
         </defs>
-        <path id="hero-path" d={PATH_D} stroke="#E6D8E5" strokeWidth="4" strokeDasharray="8 20" strokeLinecap="round" />
-        <path d={PATH_D} stroke="#640D5F" strokeWidth="4" strokeDasharray="8 20" strokeLinecap="round" clipPath="url(#traveled-clip)" />
-      </svg>
-
-      {/* Path decorativo — mobile */}
-      <svg
-        className="hero__vector hero__vector--mobile"
-        viewBox="0 0 360 2120"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true"
-        fill="none"
-      >
-        <defs>
-          <clipPath id="traveled-clip-mobile" clipPathUnits="userSpaceOnUse">
-            <rect ref={clipRectMobileRef} x="-10" y="0" width="380" height="0" />
-          </clipPath>
-        </defs>
-        <path id="hero-path-mobile" d={MOBILE_PATH_D} stroke="#E6D8E5" strokeWidth="4" strokeDasharray="8 20" strokeLinecap="round" />
-        <path d={MOBILE_PATH_D} stroke="#640D5F" strokeWidth="4" strokeDasharray="8 20" strokeLinecap="round" clipPath="url(#traveled-clip-mobile)" />
+        <path
+          ref={pathBgRef}
+          id="hero-path"
+          d={PATH_D}
+          stroke="#E6D8E5"
+          strokeWidth="4"
+          strokeDasharray="8 20"
+          strokeLinecap="round"
+        />
+        <path
+          ref={pathFgRef}
+          d={PATH_D}
+          stroke="#640D5F"
+          strokeWidth="4"
+          strokeDasharray="8 20"
+          strokeLinecap="round"
+          clipPath="url(#traveled-clip)"
+        />
       </svg>
 
       <div className="hero__container">

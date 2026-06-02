@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import DesafiosResizer from '@/components/DesafiosResizer'
 
 export const metadata: Metadata = {
   title: 'Pedilo Store · Caso de estudio · Celes',
@@ -587,6 +588,7 @@ export default function PediloPage() {
 
         {/* ===================== DESAFÍOS ===================== */}
         <section className="cs-desafios">
+          <DesafiosResizer />
           <div className="cs-desafios__inner">
 
             <div className="cs-desafios__header">

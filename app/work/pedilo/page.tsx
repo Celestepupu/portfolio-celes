@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const ICON_STAR  = '/Icons/Icon/location.svg'
 const ICON_CHECK = 'https://www.figma.com/api/mcp/asset/a8649687-f947-4bd8-9ed8-afc7d66586ec'
-const IMG_BURGER      = 'https://www.figma.com/api/mcp/asset/1da68d1f-2163-4f29-bef4-f88b87b45f3c'
+const IMG_BURGER      = '/foodporn-hamburguesa-muy-sabrosa 2.png'
 
 function Eyebrow({ children }: { children: React.ReactNode }) {
   return (
@@ -56,14 +56,13 @@ export default function PediloPage() {
               Le agregué salsa a la hamburguesa
             </p>
           </div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            className="cs-hero__burger"
+            src={IMG_BURGER}
+            alt="Hamburguesa - imagen hero"
+          />
         </section>
-
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          className="cs-hero__burger"
-          src={IMG_BURGER}
-          alt="Hamburguesa - imagen hero"
-        />
 
         {/* ===================== RESULTADOS ===================== */}
         <section className="cs-results">

@@ -264,7 +264,7 @@ export default function PediloPage() {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="cs-stage__result-wrap">
               <InsightCard eyebrow="Resultados">
                 {`Paso `}
                 <span className="c-green">de 2 a 5 registros mensuales</span>

@@ -1949,7 +1949,7 @@ ul, ol { list-style: none; }
   /* Process */
   .cs-process              { padding: 80px 40px; gap: 16px; }
   .cs-stage                { padding-bottom: 80px; }
-  .cs-stage__content-inner { width: 100%; padding-right: 0; }
+  .cs-stage__content-inner { width: 100%; padding: 32px 0; }
   .cs-stage2__content      { padding: 24px 0 0; }
   .cs-research__cols       { gap: 16px; }
   .cs-stage3__content-inner { width: 100%; padding-right: 0; }
@@ -2077,26 +2077,29 @@ ul, ol { list-style: none; }
   .cs-role__subtitle      { font-size: var(--display-md-size); line-height: var(--display-md-lh); }
 
   /* ---- Process ---- */
-  .cs-process             { padding: 60px 24px; gap: 0; }
+  .cs-process             { padding: 80px 24px; gap: 24px; }
   .cs-process__title-block { padding: 24px 0; gap: 12px; }
-  .cs-process__main-title  { font-size: var(--display-lg-size); line-height: var(--display-lg-lh); }
+  .cs-process__main-title  { font-size: var(--h2-size); line-height: var(--h2-lh); font-weight: 700; letter-spacing: 0; }
 
-  .cs-stage              { padding-top: 32px; padding-bottom: 60px; gap: 16px; }
-  .cs-stage__title       { font-size: var(--h2-size); line-height: var(--h2-lh); white-space: normal; }
+  .cs-stage              { padding-top: 40px; padding-bottom: 80px; gap: 24px; }
+  .cs-stage__title       { font-size: var(--h2-size); line-height: var(--h2-lh); font-weight: 700; letter-spacing: 0; white-space: normal; }
   .cs-stage__content     { justify-content: flex-start; }
-  .cs-stage__content-inner { width: 100%; padding: 0; gap: 24px; }
+  .cs-stage__content-inner { width: 100%; padding: 32px 0; gap: 24px; }
+  .cs-stage__step          { padding-top: 0; padding-bottom: 0; }
+  .cs-stage__result-wrap   { padding: 0 16px; }
 
-  .cs-stage2             { padding: 24px 0; gap: 16px; }
-  .cs-stage2__content    { padding: 16px 0 0; gap: 24px; }
-  .cs-research__cols     { flex-direction: column; gap: 12px; }
-  .cs-research__col      { width: 100%; }
+  .cs-stage2             { padding: 40px 0; gap: 24px; }
+  .cs-stage2__content    { padding: 0; gap: 40px; }
+  .cs-research__group    { gap: 40px; padding-top: 32px; }
+  .cs-research__cols     { flex-direction: column; gap: 24px; padding: 0 16px; }
+  .cs-research__col      { width: 100%; padding: 24px 16px; gap: 8px; }
 
-  .cs-quote              { padding: 60px 0; }
+  .cs-quote              { padding: 80px 0; }
   .cs-quote__text        { font-size: var(--accent-md-size); line-height: var(--accent-md-lh); }
 
-  .cs-stage3             { padding: 24px 0; gap: 16px; }
+  .cs-stage3             { padding: 40px 0; gap: 24px; }
   .cs-stage3__content    { justify-content: flex-start; }
-  .cs-stage3__content-inner { width: 100%; padding: 0; gap: 24px; }
+  .cs-stage3__content-inner { width: 100%; padding: 32px 0; gap: 32px; }
 
   .cs-step-title         { font-size: var(--display-md-size); line-height: var(--display-md-lh); }
 
@@ -2108,8 +2111,8 @@ ul, ol { list-style: none; }
   /* ---- Images (antes/después) ---- */
   .cs-images             { padding: 0 24px; }
   .cs-images__inner      { flex-direction: column; gap: 24px; }
-  .cs-images__photo      { max-width: 100%; order: -1; }
-  .cs-images__text       { padding-top: 0; width: 100%; }
+  .cs-images__photo      { max-width: 100%; }
+  .cs-images__text       { padding-top: 0; width: 100%; order: -1; }
 
   /* ---- Laptop ---- */
   .cs-laptop             { padding: 0 24px 40px; }
@@ -2117,16 +2120,18 @@ ul, ol { list-style: none; }
   .cs-laptop__img        { max-width: 100%; order: 1; }
 
   /* ---- ¿Qué logré? ---- */
-  .cs-logre              { padding: 60px 24px; }
+  .cs-logre              { padding: 80px 24px; gap: 40px; }
   .cs-logre__inner       { gap: 32px; }
   .cs-logre__title       { font-size: var(--display-lg-size); line-height: var(--display-lg-lh); }
-  .cs-logre__cols        { flex-direction: column; gap: 16px; }
-  .cs-logre__col         { padding: 20px; border: 1px solid var(--neutral-white); border-radius: 12px; }
-  .cs-logre__stat        { padding: 10px 0; }
-  .cs-logre__stat-num    { font-size: var(--display-lg-size); line-height: var(--display-lg-lh); }
+  .cs-logre__results     { padding: 40px 0; }
+  .cs-logre__cols        { flex-direction: column; gap: 16px; padding: 0 0 32px; }
+  .cs-logre__col         { padding: 24px; gap: 8px; border: 1px solid var(--neutral-white); border-radius: 12px; }
+  .cs-logre__col-title   { font-size: var(--display-md-size); line-height: var(--display-md-lh); }
+  .cs-logre__stat        { padding: 16px 0; gap: 8px; }
+  .cs-logre__stat-num    { font-size: var(--h3-size); line-height: var(--h3-lh); }
 
   /* ---- ¿Qué falló? / ¿Cómo sigue? ---- */
-  .cs-fallo              { padding: 60px 24px; }
+  .cs-fallo              { padding: 80px 24px; gap: 40px; }
   .cs-fallo__inner       { gap: 16px; }
   .cs-fallo__title       { font-size: var(--display-lg-size); line-height: var(--display-lg-lh); }
   .cs-fallo__items-wrap  { justify-content: flex-start; max-width: 100%; }
@@ -2136,7 +2141,7 @@ ul, ol { list-style: none; }
 
   /* ---- Desafíos ---- */
   .cs-desafios::before   { height: var(--before-h, 280px); }
-  .cs-desafios__inner    { padding: 60px 24px; gap: 32px; }
+  .cs-desafios__inner    { padding: 80px 24px; gap: 40px; }
   .cs-desafios__title    { font-size: var(--display-lg-size); line-height: var(--display-lg-lh); }
   .cs-desafios__grid     { gap: 16px; }
   .cs-desafios__row      {

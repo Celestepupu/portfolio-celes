@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 }
 
 const ICON_STAR  = '/Icons/Icon/location.svg'
-const ICON_CHECK = 'https://www.figma.com/api/mcp/asset/a8649687-f947-4bd8-9ed8-afc7d66586ec'
+const ICON_CHECK = '/Icons/SVG-star.svg'
 const IMG_BURGER      = '/foodporn-hamburguesa-muy-sabrosa 2.png'
 
 function Eyebrow({ children }: { children: React.ReactNode }) {
@@ -172,7 +172,7 @@ export default function PediloPage() {
 
             {/* Bloque izquierdo */}
             <div className="cs-problem__left">
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '18.5px', marginBottom: '24px' }}>
+              <div className="cs-problem__heading-wrap">
                 <h2 className="cs-problem__col-heading">La hamburguesa que me pidieron:</h2>
               </div>
               <div style={{ maxWidth: '448px', paddingRight: '24px', paddingTop: '14px' }}>

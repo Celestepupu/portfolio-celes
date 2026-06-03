@@ -37,7 +37,7 @@ const navLinks = [
   { label: 'Home',        href: '/' },
   { label: 'Proyectos',   href: '#proyectos' },
   { label: 'Currículum',  href: '#curriculum' },
-  { label: 'Blog Viajes', href: '#' },
+  // { label: 'Blog Viajes', href: '#' },
   { label: 'Sobre mí',    href: '#sobre-mi' },
 ]
 

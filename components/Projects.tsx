@@ -9,17 +9,17 @@ const projects = [
   },
   {
     id: 2,
-    tags: 'UX/UI · PRODUCT STRATEGY · 2024',
-    title: 'Travel App Redesign',
-    desc: 'Lorem ipsum dolor sit amet consectetur. Eget consequat sed amet.',
+    tags: 'Product Strategy',
+    title: 'Flydevs',
+    desc: 'Investigué y definí la propuesta de valor, para una nueva estrategia comunicacional.',
     img: '',
     href: '#',
   },
   {
     id: 3,
-    tags: 'UX/UI · PRODUCT STRATEGY · 2024',
-    title: 'Travel App Redesign',
-    desc: 'Lorem ipsum dolor sit amet consectetur. Eget consequat sed amet.',
+    tags: 'UX/UI · Product designer',
+    title: 'Journey',
+    desc: 'Diseñé end-to-end y testé plataforma para Guías turísticos.',
     img: '',
     href: '#',
   },
@@ -36,8 +36,8 @@ export default function Projects() {
             <h2 className="projects__title">Proyectos.</h2>
           </div>
           <p className="projects__desc body-md-size">
-            Una selección de viajes de producto: investigación,<br />
-            estrategia y diseño con foco en el impacto al negocio.
+            Una selección de viajes de producto: investigación,
+          estrategia y diseño con foco en el impacto al negocio.
           </p>
         </div>
 
@@ -45,8 +45,14 @@ export default function Projects() {
           {projects.map((project) => (
             <a key={project.id} href={project.href} className="project-card">
               <div className="project-card__img-wrap">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                {project.img && <img src={project.img} alt={project.title} />}
+                {project.img ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={project.img} alt={project.title} />
+                ) : (
+                  <div className="project-card__coming-soon">
+                    <p className="label-lg c-violet">Próximamente.</p>
+                  </div>
+                )}
               </div>
               <div className="project-card__body">
                 <p className="project-card__tags label-sm c-fucsia">{project.tags}</p>

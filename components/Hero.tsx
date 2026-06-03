@@ -44,6 +44,7 @@ function buildResponsivePath(heroEl: Element): string | null {
   const endX = van2.midX
   const endY = van2.midY
 
+  const h1El       = block1.querySelector('.hero__h1')
   const subtitleEl = block1.querySelector('.hero__subtitle')
   const van1ImgEl  = block1.querySelector('.hero__van-img--1')
 
@@ -55,8 +56,10 @@ function buildResponsivePath(heroEl: Element): string | null {
   }
 
   // Start Y: 8px below the last visible element inside block-1
-  let lastContentBottom = b1.bottom
-  for (const el of [subtitleEl, van1ImgEl]) {
+  // h1El is first so that on mobile (where subtitle and van-1 are hidden) the
+  // path starts just below the heading instead of at the bottom of the padding.
+  let lastContentBottom = b1.top
+  for (const el of [h1El, subtitleEl, van1ImgEl]) {
     if (!el) continue
     const r = el.getBoundingClientRect()
     if (r.height > 0) lastContentBottom = r.bottom - heroRect.top
@@ -256,17 +259,12 @@ export default function Hero() {
             <span className="hero__dash hero__dash--green" />
             <span className="label-sm c-green">Otra mirada</span>
           </div>
-          <div className="hero__text-lg">
-            <p>Tengo otra forma de mirar,</p>
-            <p>veo <span className="fw-bold c-violet">más allá</span> de lo que se ve</p>
-            <p>a simple vista y por eso</p>
-            <p>
-              tengo en claro que{' '}
-              <span className="font-accent c-green hero__accent-lg">
-                lo esencial es invisible a los ojos...
-              </span>
-            </p>
-          </div>
+          <p className="hero__text-lg">
+            Tengo otra forma de mirar, veo{' '}
+            <span className="fw-bold c-violet">más allá</span>
+            {' '}de lo que se ve a simple vista y por eso tengo en claro que{' '}
+            <span className="font-accent c-green hero__accent-lg">lo esencial es invisible a los ojos...</span>
+          </p>
         </div>
 
         {/* Bloque 4 — Quién soy */}

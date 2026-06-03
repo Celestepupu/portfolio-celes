@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import DesafiosResizer from '@/components/DesafiosResizer'
+import CsCard from '@/components/CsCard'
 
 export const metadata: Metadata = {
   title: 'Pedilo Store · Caso de estudio · Celes',
@@ -28,10 +29,9 @@ function SectionTitle({ children }: { children: React.ReactNode }) {
 
 function InsightCard({ eyebrow, children }: { eyebrow: string; children: React.ReactNode }) {
   return (
-    <div className="cs-card cs-card--centered">
-      <p className="cs-card__eyebrow">{eyebrow}</p>
+    <CsCard eyebrow={eyebrow} centered>
       <p className="cs-card__body">{children}</p>
-    </div>
+    </CsCard>
   )
 }
 
@@ -117,31 +117,31 @@ export default function PediloPage() {
               <span className="label-lg c-violet">Impacto en estrategia y gestión</span>
             </div>
             <div className="cs-impact-cards">
-              <article className="cs-impact-card">
+              <CsCard as="article" impact>
                 <h3>
                   {`Diseño e implementación de  `}
                   <span className="c-green">estrategia de monetización.</span>
                 </h3>
-              </article>
-              <article className="cs-impact-card">
+              </CsCard>
+              <CsCard as="article" impact>
                 <h3>
                   {`Definición de `}
                   <span className="c-fucsia">objetivos y roadmaps.</span>
                 </h3>
-              </article>
-              <article className="cs-impact-card">
+              </CsCard>
+              <CsCard as="article" impact>
                 <h3>
                   <span className="c-fucsia">{`Alineación estratégica `}</span>
                   de todas las áreas: Marketing, Founders y Desarrollo.
                 </h3>
-              </article>
-              <article className="cs-impact-card">
+              </CsCard>
+              <CsCard as="article" impact>
                 <h3>
                   {`Implementación de cultura `}
                   <span className="c-green">Data-Driven:</span>
                   {` registro de métricas`}
                 </h3>
-              </article>
+              </CsCard>
             </div>
           </div>
 
@@ -264,7 +264,7 @@ export default function PediloPage() {
                 </div>
               </div>
             </div>
-            <div style={{ paddingLeft: '100px', paddingRight: '100px' }}>
+            <div>
               <InsightCard eyebrow="Resultados">
                 {`Paso `}
                 <span className="c-green">de 2 a 5 registros mensuales</span>

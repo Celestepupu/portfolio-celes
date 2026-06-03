@@ -1081,7 +1081,7 @@ ul, ol { list-style: none; }
 /* ---- Problem ---- */
 
 .cs-problem {
-  padding: 124px 200px;
+  padding: 80px 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1090,6 +1090,9 @@ ul, ol { list-style: none; }
 .cs-problem__inner {
   max-width: 1040px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .cs-problem__header {
@@ -1102,8 +1105,6 @@ ul, ol { list-style: none; }
 }
 
 .cs-problem__left {
-  padding-top: 56px;
-  padding-bottom: 16px;
   max-width: 654px;
 }
 
@@ -1120,8 +1121,6 @@ ul, ol { list-style: none; }
 .cs-problem__right {
   display: flex;
   justify-content: flex-end;
-  padding-top: 24px;
-  padding-bottom: 56px;
   padding-right: 24px;
 }
 
@@ -1135,7 +1134,7 @@ ul, ol { list-style: none; }
 .cs-problem__right-inner .body-md + .body-md { margin-top: 0; }
 
 .cs-problem__card-wrap {
-  padding: 0 100px;
+  padding: 0 16px;
 }
 
 /* ---- Shared card ---- */
@@ -1934,8 +1933,8 @@ ul, ol { list-style: none; }
 
   /* Problem */
   .cs-problem        { padding: 80px 40px; }
-  .cs-problem__left  { max-width: 100%; padding-bottom: 0; }
-  .cs-problem__right { padding-top: 0; padding-bottom: 0; padding-right: 0; }
+  .cs-problem__left  { max-width: 100%; }
+  .cs-problem__right { padding-right: 0; }
   .cs-problem__right-inner { width: 100%; }
   .cs-problem__card-wrap   { padding: 0 40px; }
 
@@ -2059,7 +2058,7 @@ ul, ol { list-style: none; }
   .cs-problem       { padding: 60px 24px; }
   .cs-problem__inner { gap: 0; }
   .cs-problem__header { font-size: var(--accent-md-size); line-height: var(--accent-md-lh); margin-bottom: 32px; }
-  .cs-problem__left  { padding-top: 0; padding-bottom: 0; max-width: 100%; }
+  .cs-problem__left  { max-width: 100%; }
   .cs-problem__col-heading { font-size: var(--h2-size); line-height: var(--h2-lh); margin-bottom: 16px; }
   .cs-problem__right       { padding: 40px 0 0; justify-content: flex-start; }
   .cs-problem__right-inner { width: 100%; gap: 16px; }

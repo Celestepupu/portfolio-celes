@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Lexend, Manrope, Caveat } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 const lexend = Lexend({
@@ -33,7 +34,10 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="es" className={`${lexend.variable} ${manrope.variable} ${caveat.variable}`}>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }

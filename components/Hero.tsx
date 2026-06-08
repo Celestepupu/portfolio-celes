@@ -294,7 +294,7 @@ export default function Hero() {
           <span className="hero__tag hero__tag--fucsia">Product Manager</span>
           <span className="hero__tag hero__tag--green">UX/UI Designer</span>
           <span className="hero__tag hero__tag--violet">Product Designer</span>
-          <span className="hero__tag hero__tag--brown">Travel Tech Enthusiastic</span>
+          <span className="hero__tag hero__tag--brown">Travel Tech</span>
         </div>
 
       </div>

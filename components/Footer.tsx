@@ -1,9 +1,9 @@
 
 const navLinks = [
+  { label: 'Inicio',      href: '#hero' },
   { label: 'Proyectos',   href: '#proyectos' },
+  { label: 'Sobre mí',    href: '#sobre-mi' },
   { label: 'Curriculum',  href: '#curriculum' },
-  { label: 'Blog viajes', href: '#' },
-  { label: 'Sobre mí',   href: '#sobre-mi' },
 ]
 
 const IconLinkedin = () => (

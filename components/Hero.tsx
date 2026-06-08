@@ -182,7 +182,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="hero">
+    <section className="hero" id="hero">
 
       {/* Path decorativo — único SVG para todos los tamaños */}
       <svg

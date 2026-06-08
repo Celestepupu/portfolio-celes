@@ -35,10 +35,11 @@ function InsightCard({ eyebrow, children }: { eyebrow: string; children: React.R
   )
 }
 
-export default function PediloPage() {
+export default async function PediloPage({ params }: PageProps<'/[lang]/work/pedilo'>) {
+  const { lang } = await params
   return (
     <>
-      <Navbar />
+      <Navbar lang={lang} />
       <main>
 
         {/* ===================== HERO + RESULTS WRAPPER ===================== */}

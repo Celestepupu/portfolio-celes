@@ -20,7 +20,7 @@ const IconEmail = () => (
   </svg>
 )
 
-export default function Navbar() {
+export default function Navbar({ lang }: { lang: string }) {
   return (
     <nav className="nav">
       <div className="nav__inner">
@@ -28,7 +28,7 @@ export default function Navbar() {
           <div className="nav__logo" />
 
           <div className="nav__links">
-            <NavItem href="/">Inicio</NavItem>
+            <NavItem href={`/${lang}`}>Inicio</NavItem>
             <div className="nav__sep" />
             <NavItem href="#proyectos">Proyectos</NavItem>
             <div className="nav__sep" />
@@ -67,7 +67,7 @@ export default function Navbar() {
           </div>
 
           {/* Client island: solo el botón hamburger necesita estado */}
-          <NavMobileMenu />
+          <NavMobileMenu lang={lang} />
         </div>
       </div>
     </nav>

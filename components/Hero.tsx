@@ -98,7 +98,33 @@ function buildResponsivePath(heroEl: Element): string | null {
   ].join('\n')
 }
 
-export default function Hero() {
+type HeroDict = {
+  subtitle: string
+  h1_intro: string
+  h1_hl1: string
+  h1_bridge: string
+  h1_hl2: string
+  block2_label: string
+  block2_intro: string
+  block2_hl: string
+  block3_label: string
+  block3_intro: string
+  block3_hl1: string
+  block3_bridge: string
+  block3_hl2: string
+  block4_label: string
+  block4_prefix: string
+  block4_job: string
+  block4_conn1: string
+  block4_exp: string
+  block4_conn2: string
+  block4_skill: string
+  block4_conn3: string
+  block4_role: string
+  block4_suffix: string
+}
+
+export default function Hero({ dict }: { dict: HeroDict }) {
   const svgRef      = useRef<SVGSVGElement>(null)
   const clipRectRef = useRef<SVGRectElement>(null)
   const pathBgRef   = useRef<SVGPathElement>(null)
@@ -229,13 +255,13 @@ export default function Hero() {
             <span className="label-lg c-violet">Celeste Palacios · Product Designer &amp; Nomad</span>
           </div>
           <h1 className="hero__h1">
-            Durante 10 años hice{' '}
-            <span className="c-fucsia">el mismo trayecto</span>,{' '}
-            mirando por la{' '}
-            <span className="font-accent c-green">misma ventana...</span>
+            {dict.h1_intro}{' '}
+            <span className="c-fucsia">{dict.h1_hl1}</span>,{' '}
+            {dict.h1_bridge}{' '}
+            <span className="font-accent c-green">{dict.h1_hl2}</span>
           </h1>
           <p className="hero__subtitle label-lg">
-            Bajá despacio. Si te moves el camino aparece. ↓
+            {dict.subtitle}
           </p>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/Van.svg" alt="" aria-hidden="true" className="hero__van-img hero__van-img--1" />
@@ -245,11 +271,11 @@ export default function Hero() {
         <div className="hero__block hero__block--2">
           <div className="hero__inline-label">
             <span className="hero__dash hero__dash--fucsia" />
-            <span className="label-sm c-fucsia">observar, descubrir, crear</span>
+            <span className="label-sm c-fucsia">{dict.block2_label}</span>
           </div>
           <p className="hero__text-lg">
-            y todos los días…{' '}
-            <span className="fw-semibold c-green">descubrí algo nuevo.</span>
+            {dict.block2_intro}{' '}
+            <span className="fw-semibold c-green">{dict.block2_hl}</span>
           </p>
         </div>
 
@@ -257,13 +283,13 @@ export default function Hero() {
         <div className="hero__block hero__block--3">
           <div className="hero__inline-label">
             <span className="hero__dash hero__dash--green" />
-            <span className="label-sm c-green">Otra mirada</span>
+            <span className="label-sm c-green">{dict.block3_label}</span>
           </div>
           <p className="hero__text-lg">
-            Tengo otra forma de mirar, veo{' '}
-            <span className="fw-bold c-violet">más allá</span>
-            {' '}de lo que se ve a simple vista y por eso tengo en claro que{' '}
-            <span className="font-accent c-green hero__accent-lg">lo esencial es invisible a los ojos...</span>
+            {dict.block3_intro}{' '}
+            <span className="fw-bold c-violet">{dict.block3_hl1}</span>
+            {' '}{dict.block3_bridge}{' '}
+            <span className="font-accent c-green hero__accent-lg">{dict.block3_hl2}</span>
           </p>
         </div>
 
@@ -271,15 +297,18 @@ export default function Hero() {
         <div className="hero__block hero__block--4">
           <div className="hero__inline-label">
             <span className="hero__dash hero__dash--violet" />
-            <span className="label-sm c-violet">Quién soy</span>
+            <span className="label-sm c-violet">{dict.block4_label}</span>
           </div>
           <p className="hero__text-lg">
-            Soy <span className="fw-bold c-fucsia">Product Designer</span>,{' '}
-            con <span className="fw-bold">4 años</span> de experiencia en{' '}
-            <span className="fw-bold c-green">UX/UI</span> y 1 año como{' '}
-            <span className="fw-bold c-fucsia">Product Manager</span>.{' '}
-            Encontrando ideas nuevas, detectando oportunidades y diseñando
-            con estrategias alineadas con objetivos del negocio.
+            {dict.block4_prefix}{' '}
+            <span className="fw-bold c-fucsia">{dict.block4_job}</span>
+            {' '}{dict.block4_conn1}{' '}
+            <span className="fw-bold">{dict.block4_exp}</span>{' '}
+            {dict.block4_conn2}{' '}
+            <span className="fw-bold c-green">{dict.block4_skill}</span>{' '}
+            {dict.block4_conn3}{' '}
+            <span className="fw-bold c-fucsia">{dict.block4_role}</span>
+            {dict.block4_suffix}
           </p>
         </div>
 

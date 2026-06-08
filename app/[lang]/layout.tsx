@@ -1,7 +1,9 @@
 import type { Metadata } from 'next'
 import { Lexend, Manrope, Caveat } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
-import './globals.css'
+import { notFound } from 'next/navigation'
+import { hasLocale } from './dictionaries'
+import '../globals.css'
 
 const lexend = Lexend({
   subsets: ['latin'],
@@ -29,11 +31,19 @@ export const metadata: Metadata = {
   description: 'Product Designer & Nomad — UX/UI, Product Strategy.',
 }
 
-export default function RootLayout({
+export async function generateStaticParams() {
+  return [{ lang: 'es' }, { lang: 'en' }]
+}
+
+export default async function RootLayout({
   children,
-}: Readonly<{ children: React.ReactNode }>) {
+  params,
+}: LayoutProps<'/[lang]'>) {
+  const { lang } = await params
+  if (!hasLocale(lang)) notFound()
+
   return (
-    <html lang="es" className={`${lexend.variable} ${manrope.variable} ${caveat.variable}`}>
+    <html lang={lang} className={`${lexend.variable} ${manrope.variable} ${caveat.variable}`}>
       <body>
         {children}
         <Analytics />

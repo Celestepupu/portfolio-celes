@@ -25,7 +25,7 @@ const projects = [
   },
 ]
 
-export default function Projects() {
+export default function Projects({ lang }: { lang: string }) {
   return (
     <section className="projects" id="proyectos">
       <div className="projects__container">
@@ -43,7 +43,7 @@ export default function Projects() {
 
         <div className="projects__grid">
           {projects.map((project) => (
-            <a key={project.id} href={project.href} className="project-card">
+            <a key={project.id} href={project.href === '#' ? '#' : `/${lang}${project.href}`} className="project-card">
               <div className="project-card__img-wrap">
                 {project.img ? (
                   // eslint-disable-next-line @next/next/no-img-element

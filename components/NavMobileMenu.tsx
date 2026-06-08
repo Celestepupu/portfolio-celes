@@ -41,7 +41,7 @@ const navLinks = [
   { label: 'Sobre mí',    href: '#sobre-mi' },
 ]
 
-export default function NavMobileMenu() {
+export default function NavMobileMenu({ lang }: { lang: string }) {
   const [open, setOpen] = useState(false)
 
   return (
@@ -61,7 +61,7 @@ export default function NavMobileMenu() {
             {navLinks.map(link => (
               <li key={link.label}>
                 <a
-                  href={link.href}
+                  href={link.href === '/' ? `/${lang}` : link.href}
                   className="nav__mobile-link"
                   role="menuitem"
                   onClick={() => setOpen(false)}

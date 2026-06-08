@@ -1,6 +1,7 @@
 'use client'
 
-import { useState, useRef } from 'react'
+import { useState } from 'react'
+import { usePathname, useRouter } from 'next/navigation'
 import { ChevronDown } from 'lucide-react'
 
 const langs = [
@@ -10,15 +11,23 @@ const langs = [
 
 export default function LangSwitcher() {
   const [open, setOpen] = useState(false)
-  const [active, setActive] = useState('es')
-  const ref = useRef<HTMLDivElement>(null)
+  const pathname = usePathname()
+  const router = useRouter()
 
-  const currentLabel = active === 'es' ? 'Es' : 'En'
+  // /es → 'es', /en/... → 'en', fallback → 'es'
+  const currentLocale = pathname.split('/')[1] === 'en' ? 'en' : 'es'
+  const currentLabel = currentLocale === 'es' ? 'Es' : 'En'
+
+  const switchTo = (code: string) => {
+    const segments = pathname.split('/')
+    segments[1] = code
+    router.push(segments.join('/') || `/${code}`)
+    setOpen(false)
+  }
 
   return (
     <div
       className="lang-switcher"
-      ref={ref}
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
     >
@@ -40,10 +49,10 @@ export default function LangSwitcher() {
           {langs.map(lang => (
             <li key={lang.code}>
               <button
-                className={`lang-switcher__option ${active === lang.code ? 'lang-switcher__option--active' : ''}`}
+                className={`lang-switcher__option ${currentLocale === lang.code ? 'lang-switcher__option--active' : ''}`}
                 role="option"
-                aria-selected={active === lang.code}
-                onClick={() => { setActive(lang.code); setOpen(false) }}
+                aria-selected={currentLocale === lang.code}
+                onClick={() => switchTo(lang.code)}
               >
                 {lang.label}
               </button>

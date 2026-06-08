@@ -24,7 +24,7 @@ export default function About() {
           <div className="about__extra">
             <p className="label-lg">Si te movés el camino aparece.</p>
             <p className="font-accent about__metodologia c-green">
-              El viaje también es metoología.
+              El viaje también es metología.
             </p>
           </div>
         </div>

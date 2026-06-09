@@ -27,5 +27,26 @@
     "block4_conn3": "and 1 year as",
     "block4_role": "Product Manager",
     "block4_suffix": ". Uncovering new ideas. Identifying opportunities. Designing with business strategy at the core."
+  },
+
+  "nav": {
+    "links": {
+      "home": "Inicio",
+      "projects": "Proyectos",
+      "about": "Sobre mí",
+      "curriculum": "Curriculum"
+    },
+    "cta": "Charlemos"
+  },
+
+  "footer": {
+    "eyebrow": "Lista para el próximo viaje de producto",
+    "heading1": "¿Colaboramos?",
+    "heading2": "Mándame un mensaje.",
+    "menu_label": "Menú",
+    "social_label": "Redes",
+    "vibe": "· Esta web fue diseñada y desarrollada por mí usando Vibe Coding ·",
+    "copyright": "© 2026 · Designed & nomad-coded with ❤︎",
+    "quote": "Lo esencial es invisible a los ojos."
   }
 }

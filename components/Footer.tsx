@@ -1,10 +1,18 @@
+type NavDict = {
+  links: { home: string; projects: string; about: string; curriculum: string }
+  cta: string
+}
 
-const navLinks = [
-  { label: 'Inicio',      href: '#hero' },
-  { label: 'Proyectos',   href: '#proyectos' },
-  { label: 'Sobre mí',    href: '#sobre-mi' },
-  { label: 'Curriculum',  href: '#curriculum' },
-]
+type FooterDict = {
+  eyebrow: string
+  heading1: string
+  heading2: string
+  menu_label: string
+  social_label: string
+  vibe: string
+  copyright: string
+  quote: string
+}
 
 const IconLinkedin = () => (
   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -24,11 +32,18 @@ const IconEmail = () => (
 )
 
 const socialLinks = [
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/celestepalacios/', icon: <IconLinkedin /> },
-  { label: 'Email',    href: 'mailto:celestepupu@gmail.com',                icon: <IconEmail /> },
+  { id: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/in/celestepalacios/', icon: <IconLinkedin /> },
+  { id: 'email',    label: 'Email',    href: 'mailto:celestepupu@gmail.com',                icon: <IconEmail /> },
 ]
 
-export default function Footer() {
+export default function Footer({ navDict, footerDict }: { navDict: NavDict; footerDict: FooterDict }) {
+  const navLinks = [
+    { id: 'home',       label: navDict.links.home,       href: '#hero' },
+    { id: 'projects',   label: navDict.links.projects,   href: '#proyectos' },
+    { id: 'about',      label: navDict.links.about,      href: '#sobre-mi' },
+    { id: 'curriculum', label: navDict.links.curriculum, href: '#curriculum' },
+  ]
+
   return (
     <footer className="footer" id="contacto">
       <div className="footer__main">
@@ -37,22 +52,22 @@ export default function Footer() {
           <div className="footer__eyebrow">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/Icons/Icon/location.svg" alt="" width={20} height={20} />
-            <span className="label-md c-violet">Lista para el próximo viaje de producto</span>
+            <span className="label-md c-violet">{footerDict.eyebrow}</span>
           </div>
           <div className="footer__heading">
-            <p className="footer__heading-1">¿Colaboramos?</p>
-            <p className="footer__heading-2">Mándame un mensaje.</p>
+            <p className="footer__heading-1">{footerDict.heading1}</p>
+            <p className="footer__heading-2">{footerDict.heading2}</p>
           </div>
           <a href="mailto:celestepupu@gmail.com" target="_blank" rel="noopener noreferrer" className="btn btn--md">
-            Charlemos
+            {navDict.cta}
           </a>
         </div>
 
         <div className="footer__menu-col">
-          <span className="label-sm">Menú</span>
+          <span className="label-sm">{footerDict.menu_label}</span>
           <ul className="footer__nav-list">
             {navLinks.map((link) => (
-              <li key={link.label}>
+              <li key={link.id}>
                 <a href={link.href} className="footer__nav-link body-md">
                   {link.label}
                 </a>
@@ -62,10 +77,10 @@ export default function Footer() {
         </div>
 
         <div className="footer__social-col">
-          <span className="label-md">Redes</span>
+          <span className="label-md">{footerDict.social_label}</span>
           <div className="footer__social-icons">
             {socialLinks.map((s) => (
-              <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" className="footer__social-btn" aria-label={s.label}>
+              <a key={s.id} href={s.href} target="_blank" rel="noopener noreferrer" className="footer__social-btn" aria-label={s.label}>
                 {s.icon}
               </a>
             ))}
@@ -75,14 +90,14 @@ export default function Footer() {
       </div>
 
       <div className="footer__vibe" style={{ textAlign: 'center' }}>
-  <span className="label-lg">· Esta web fue diseñada y desarrollada por mí usando Vibe Coding ·</span>
-</div>
+        <span className="label-lg">{footerDict.vibe}</span>
+      </div>
 
       <div className="footer__bottom">
         <div className="footer__bottom-inner">
-          <span className="label-sm">© 2026 · Designed &amp; nomad-coded with ❤︎</span>
+          <span className="label-sm">{footerDict.copyright}</span>
           <span className="font-accent footer__quote c-fucsia">
-            Lo esencial es invisible a los ojos.
+            {footerDict.quote}
           </span>
         </div>
       </div>

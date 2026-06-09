@@ -3,6 +3,11 @@ import LangSwitcher from './LangSwitcher'
 import Button from './Button'
 import NavMobileMenu from './NavMobileMenu'
 
+type NavDict = {
+  links: { home: string; projects: string; about: string; curriculum: string }
+  cta: string
+}
+
 const IconLinkedin = () => (
   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path className="social-icon__circle" d="M20 39C30.4934 39 39 30.4934 39 20C39 9.50659 30.4934 1 20 1C9.50659 1 1 9.50659 1 20C1 30.4934 9.50659 39 20 39Z" stroke="currentColor" strokeWidth="2"/>
@@ -20,7 +25,7 @@ const IconEmail = () => (
   </svg>
 )
 
-export default function Navbar({ lang }: { lang: string }) {
+export default function Navbar({ lang, navDict }: { lang: string; navDict: NavDict }) {
   return (
     <nav className="nav">
       <div className="nav__inner">
@@ -28,13 +33,13 @@ export default function Navbar({ lang }: { lang: string }) {
           <div className="nav__logo" />
 
           <div className="nav__links">
-            <NavItem href={`/${lang}`}>Inicio</NavItem>
+            <NavItem href={`/${lang}`}>{navDict.links.home}</NavItem>
             <div className="nav__sep" />
-            <NavItem href="#proyectos">Proyectos</NavItem>
+            <NavItem href="#proyectos">{navDict.links.projects}</NavItem>
             <div className="nav__sep" />
-            <NavItem href="#sobre-mi">Sobre mí</NavItem>
+            <NavItem href="#sobre-mi">{navDict.links.about}</NavItem>
             <div className="nav__sep" />
-            <NavItem href="#curriculum">Curriculum</NavItem>
+            <NavItem href="#curriculum">{navDict.links.curriculum}</NavItem>
             <div className="nav__sep" />
             <LangSwitcher />
             <div className="nav__sep" />
@@ -63,11 +68,11 @@ export default function Navbar({ lang }: { lang: string }) {
                 <span className="icon-btn__icon"><IconLinkedin /></span>
               </span>
             </a>
-            <Button as="a" href="mailto:celestepupu@gmail.com" target="_blank" rel="noopener noreferrer" size="sm">Charlemos</Button>
+            <Button as="a" href="mailto:celestepupu@gmail.com" target="_blank" rel="noopener noreferrer" size="sm">{navDict.cta}</Button>
           </div>
 
           {/* Client island: solo el botón hamburger necesita estado */}
-          <NavMobileMenu lang={lang} />
+          <NavMobileMenu lang={lang} navDict={navDict} />
         </div>
       </div>
     </nav>

@@ -2,6 +2,11 @@
 
 import { useState } from 'react'
 
+type NavDict = {
+  links: { home: string; projects: string; about: string; curriculum: string }
+  cta: string
+}
+
 const IconHamburger = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <rect x="3" y="5"  width="18" height="2" rx="1" fill="currentColor"/>
@@ -33,16 +38,15 @@ const IconLinkedin = () => (
   </svg>
 )
 
-const navLinks = [
-  { label: 'Home',        href: '/' },
-  { label: 'Proyectos',   href: '#proyectos' },
-  { label: 'Currículum',  href: '#curriculum' },
-  // { label: 'Blog Viajes', href: '#' },
-  { label: 'Sobre mí',    href: '#sobre-mi' },
-]
-
-export default function NavMobileMenu({ lang }: { lang: string }) {
+export default function NavMobileMenu({ lang, navDict }: { lang: string; navDict: NavDict }) {
   const [open, setOpen] = useState(false)
+
+  const navLinks = [
+    { id: 'home',       label: navDict.links.home,       href: '/' },
+    { id: 'projects',   label: navDict.links.projects,   href: '#proyectos' },
+    { id: 'curriculum', label: navDict.links.curriculum, href: '#curriculum' },
+    { id: 'about',      label: navDict.links.about,      href: '#sobre-mi' },
+  ]
 
   return (
     <>
@@ -59,7 +63,7 @@ export default function NavMobileMenu({ lang }: { lang: string }) {
         <div className="nav__mobile-menu" role="menu">
           <ul className="nav__mobile-list">
             {navLinks.map(link => (
-              <li key={link.label}>
+              <li key={link.id}>
                 <a
                   href={link.href === '/' ? `/${lang}` : link.href}
                   className="nav__mobile-link"
@@ -96,7 +100,7 @@ export default function NavMobileMenu({ lang }: { lang: string }) {
               className="nav__mobile-cta"
               onClick={() => setOpen(false)}
             >
-              Charlemos
+              {navDict.cta}
             </a>
           </div>
         </div>

@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import { getDictionary, hasLocale } from '../../dictionaries'
+import { notFound } from 'next/navigation'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import DesafiosResizer from '@/components/DesafiosResizer'
@@ -37,9 +39,11 @@ function InsightCard({ eyebrow, children }: { eyebrow: string; children: React.R
 
 export default async function PediloPage({ params }: PageProps<'/[lang]/work/pedilo'>) {
   const { lang } = await params
+  if (!hasLocale(lang)) notFound()
+  const dict = await getDictionary(lang)
   return (
     <>
-      <Navbar lang={lang} />
+      <Navbar lang={lang} navDict={dict.nav} />
       <main>
 
         {/* ===================== HERO + RESULTS WRAPPER ===================== */}
@@ -672,7 +676,7 @@ export default async function PediloPage({ params }: PageProps<'/[lang]/work/ped
         </section>
 
       </main>
-      <Footer />
+      <Footer navDict={dict.nav} footerDict={dict.footer} />
     </>
   )
 }

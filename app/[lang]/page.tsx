@@ -15,14 +15,14 @@ export default async function Home({ params }: PageProps<'/[lang]'>) {
 
   return (
     <>
-      <Navbar lang={lang} />
+      <Navbar lang={lang} navDict={dict.nav} />
       <main>
         <Hero dict={dict.hero} />
         <Projects lang={lang} />
         <About />
         <Curriculum />
       </main>
-      <Footer />
+      <Footer navDict={dict.nav} footerDict={dict.footer} />
     </>
   )
 }

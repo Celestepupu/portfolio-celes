@@ -38,6 +38,14 @@
         "accent": "Le agregué salsa a la hamburguesa",
         "img_alt": "Hamburguesa - imagen hero"
       },
+      "images": {
+        "before_after_alt": "Landing page antes y después del rediseño",
+        "item1": "Rediseño de landing page orientada nicho, cliente ideal y conversión.",
+        "item2": "Re-branding estratégico.",
+        "laptop_alt": "Pantalla de personalización de productos",
+        "laptop_hl": "Personalización",
+        "laptop_suffix": " de productos con extras, gustos y adicionales."
+      },
       "process": {
         "section_label": "· Proceso ·",
         "main_title": "Cocinando la Estrategia",

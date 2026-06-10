@@ -398,7 +398,7 @@ export default async function PediloPage({ params }: PageProps<'/[lang]/work/ped
             <img
               className="cs-images__photo"
               src="/Image-antesydps.png"
-              alt="Landing page antes y después del rediseño"
+              alt={cs.images.before_after_alt}
             />
 
             {/* Columna derecha: textos */}
@@ -406,12 +406,12 @@ export default async function PediloPage({ params }: PageProps<'/[lang]/work/ped
               <div className="cs-images__item">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={ICON_STAR} alt="" width={20} height={20} className="cs-images__icon" />
-                <p className="body-md">Rediseño de landing page orientada nicho, cliente ideal y conversión.</p>
+                <p className="body-md">{cs.images.item1}</p>
               </div>
               <div className="cs-images__item">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={ICON_STAR} alt="" width={20} height={20} className="cs-images__icon" />
-                <p className="body-md">Re-branding estratégico.</p>
+                <p className="body-md">{cs.images.item2}</p>
               </div>
             </div>
 
@@ -428,7 +428,7 @@ export default async function PediloPage({ params }: PageProps<'/[lang]/work/ped
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={ICON_STAR} alt="" width={20} height={20} className="cs-images__icon" />
                 <p className="body-md">
-                  <strong>Personalización</strong>{` de productos con extras, gustos y adicionales.`}
+                  <strong>{cs.images.laptop_hl}</strong>{cs.images.laptop_suffix}
                 </p>
               </div>
             </div>
@@ -438,7 +438,7 @@ export default async function PediloPage({ params }: PageProps<'/[lang]/work/ped
             <img
               className="cs-laptop__img"
               src="/Laptop-personalizacion.png"
-              alt="Pantalla de personalización de productos"
+              alt={cs.images.laptop_alt}
             />
 
           </div>

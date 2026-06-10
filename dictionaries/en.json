@@ -278,12 +278,12 @@
 
   "nav": {
     "links": {
-      "home": "Inicio",
-      "projects": "Proyectos",
-      "about": "Sobre mí",
-      "curriculum": "Curriculum"
+      "home": "Home",
+      "projects": "Projects",
+      "about": "About me",
+      "curriculum": "Resume"
     },
-    "cta": "Charlemos"
+    "cta": "Let's talk!"
   },
 
   "home": {
@@ -363,13 +363,13 @@
   },
 
   "footer": {
-    "eyebrow": "Lista para el próximo viaje de producto",
-    "heading1": "¿Colaboramos?",
-    "heading2": "Mándame un mensaje.",
-    "menu_label": "Menú",
-    "social_label": "Redes",
-    "vibe": "· Esta web fue diseñada y desarrollada por mí usando Vibe Coding ·",
+    "eyebrow": "Ready for the next product journey",
+    "heading1": "Want to collaborate?",
+    "heading2": "Drop me a line",
+    "menu_label": "Menu",
+    "social_label": "Social media",
+    "vibe": "·Designed and built by me, powered by Vibe Coding·",
     "copyright": "© 2026 · Designed & nomad-coded with ❤︎",
-    "quote": "Lo esencial es invisible a los ojos."
+    "quote": "What is essential is invisible to the eye."
   }
 }

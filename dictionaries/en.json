@@ -29,6 +29,38 @@
     "block4_suffix": ". Uncovering new ideas. Identifying opportunities. Designing with business strategy at the core."
   },
 
+  "caseStudy": {
+    "pedilo": {
+      "hero": {
+        "eyebrow": "Product Manager - Product Designer",
+        "title_hl": "Pedilo Store:",
+        "title_text": " Redefiniendo la estrategia de producto.",
+        "accent": "Le agregué salsa a la hamburguesa",
+        "img_alt": "Hamburguesa - imagen hero"
+      },
+      "results": {
+        "business_title": "Impacto en el negocio",
+        "stat1_num": "+ 127% ",
+        "stat1_desc": " tiendas registradas",
+        "stat2_num": "+ 54% ",
+        "stat2_desc": " tiendas activas mensuales",
+        "stat3_num": "+ 24% ",
+        "stat3_desc": "retención anual de tiendas",
+        "footnote": "*Comparación de datos 2024 / 2025",
+        "strategy_title": "Impacto en estrategia y gestión",
+        "impact1_pre": "Diseño e implementación de  ",
+        "impact1_hl": "estrategia de monetización.",
+        "impact2_pre": "Definición de ",
+        "impact2_hl": "objetivos y roadmaps.",
+        "impact3_hl": "Alineación estratégica ",
+        "impact3_suffix": "de todas las áreas: Marketing, Founders y Desarrollo.",
+        "impact4_pre": "Implementación de cultura ",
+        "impact4_hl": "Data-Driven:",
+        "impact4_suffix": " registro de métricas"
+      }
+    }
+  },
+
   "nav": {
     "links": {
       "home": "Inicio",

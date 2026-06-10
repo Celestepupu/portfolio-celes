@@ -41,6 +41,7 @@ export default async function PediloPage({ params }: PageProps<'/[lang]/work/ped
   const { lang } = await params
   if (!hasLocale(lang)) notFound()
   const dict = await getDictionary(lang)
+  const cs = dict.caseStudy.pedilo
   return (
     <>
       <Navbar lang={lang} navDict={dict.nav} />
@@ -52,20 +53,20 @@ export default async function PediloPage({ params }: PageProps<'/[lang]/work/ped
         {/* ===================== HERO ===================== */}
         <section className="cs-hero">
           <div className="cs-hero__titles">
-            <Eyebrow>Product Manager - Product Designer</Eyebrow>
+            <Eyebrow>{cs.hero.eyebrow}</Eyebrow>
             <h1 className="cs-hero__title">
-              <span className="c-fucsia">Pedilo Store:</span>
-              {` Redefiniendo la estrategia de producto.`}
+              <span className="c-fucsia">{cs.hero.title_hl}</span>
+              {cs.hero.title_text}
             </h1>
             <p className="cs-hero__accent font-accent">
-              Le agregué salsa a la hamburguesa
+              {cs.hero.accent}
             </p>
           </div>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             className="cs-hero__burger"
             src={IMG_BURGER}
-            alt="Hamburguesa - imagen hero"
+            alt={cs.hero.img_alt}
           />
         </section>
 
@@ -77,13 +78,13 @@ export default async function PediloPage({ params }: PageProps<'/[lang]/work/ped
             <div className="cs-section-title">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={ICON_STAR} alt="" width={20} height={20} />
-              <span className="label-lg c-violet">Impacto en el negocio</span>
+              <span className="label-lg c-violet">{cs.results.business_title}</span>
             </div>
             <div className="cs-stat-cards">
               <div className="cs-stat-card cs-stat-card--violet">
                 <div>
-                  <p className="cs-stat-card__number">{`+ 127% `}</p>
-                  <p className="cs-stat-card__desc">{` tiendas registradas`}</p>
+                  <p className="cs-stat-card__number">{cs.results.stat1_num}</p>
+                  <p className="cs-stat-card__desc">{cs.results.stat1_desc}</p>
                 </div>
                 <div className="cs-stat-card__badge">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -92,8 +93,8 @@ export default async function PediloPage({ params }: PageProps<'/[lang]/work/ped
               </div>
               <div className="cs-stat-card cs-stat-card--fucsia">
                 <div>
-                  <p className="cs-stat-card__number">{`+ 54% `}</p>
-                  <p className="cs-stat-card__desc">{` tiendas activas mensuales`}</p>
+                  <p className="cs-stat-card__number">{cs.results.stat2_num}</p>
+                  <p className="cs-stat-card__desc">{cs.results.stat2_desc}</p>
                 </div>
                 <div className="cs-stat-card__badge">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -102,8 +103,8 @@ export default async function PediloPage({ params }: PageProps<'/[lang]/work/ped
               </div>
               <div className="cs-stat-card cs-stat-card--green">
                 <div>
-                  <p className="cs-stat-card__number">{`+ 24% `}</p>
-                  <p className="cs-stat-card__desc">retención anual de tiendas</p>
+                  <p className="cs-stat-card__number">{cs.results.stat3_num}</p>
+                  <p className="cs-stat-card__desc">{cs.results.stat3_desc}</p>
                 </div>
                 <div className="cs-stat-card__badge">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -111,7 +112,7 @@ export default async function PediloPage({ params }: PageProps<'/[lang]/work/ped
                 </div>
               </div>
             </div>
-            <p className="cs-stat-footnote">*Comparación de datos 2024 / 2025</p>
+            <p className="cs-stat-footnote">{cs.results.footnote}</p>
           </div>
 
           {/* Impacto en estrategia */}
@@ -119,32 +120,32 @@ export default async function PediloPage({ params }: PageProps<'/[lang]/work/ped
             <div className="cs-section-title">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={ICON_STAR} alt="" width={20} height={20} />
-              <span className="label-lg c-violet">Impacto en estrategia y gestión</span>
+              <span className="label-lg c-violet">{cs.results.strategy_title}</span>
             </div>
             <div className="cs-impact-cards">
               <CsCard as="article" impact>
                 <h3>
-                  {`Diseño e implementación de  `}
-                  <span className="c-green">estrategia de monetización.</span>
+                  {cs.results.impact1_pre}
+                  <span className="c-green">{cs.results.impact1_hl}</span>
                 </h3>
               </CsCard>
               <CsCard as="article" impact>
                 <h3>
-                  {`Definición de `}
-                  <span className="c-fucsia">objetivos y roadmaps.</span>
+                  {cs.results.impact2_pre}
+                  <span className="c-fucsia">{cs.results.impact2_hl}</span>
                 </h3>
               </CsCard>
               <CsCard as="article" impact>
                 <h3>
-                  <span className="c-fucsia">{`Alineación estratégica `}</span>
-                  de todas las áreas: Marketing, Founders y Desarrollo.
+                  <span className="c-fucsia">{cs.results.impact3_hl}</span>
+                  {cs.results.impact3_suffix}
                 </h3>
               </CsCard>
               <CsCard as="article" impact>
                 <h3>
-                  {`Implementación de cultura `}
-                  <span className="c-green">Data-Driven:</span>
-                  {` registro de métricas`}
+                  {cs.results.impact4_pre}
+                  <span className="c-green">{cs.results.impact4_hl}</span>
+                  {cs.results.impact4_suffix}
                 </h3>
               </CsCard>
             </div>

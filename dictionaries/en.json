@@ -38,6 +38,33 @@
         "accent": "Le agregué salsa a la hamburguesa",
         "img_alt": "Hamburguesa - imagen hero"
       },
+      "context": {
+        "section_label": "· Contexto ·",
+        "title": "Pedilo Store",
+        "body1": "Pedilo Store es una plataforma online para facilitar la gestión de pedidos por WhatsApp a pequeños y medianos comercios, especialmente de la industria gastronómica. ",
+        "body2": "Los consumidores eligen los productos en un catálogo online y el comerciante recibe el pedido ordenado y resumido en su WhatsApp"
+      },
+      "problem": {
+        "header": "Del problema percibido al problema real:",
+        "left_heading": "La hamburguesa que me pidieron:",
+        "left_pre": "Los fundadores de la plataforma plantearon un objetivo concreto: ",
+        "left_hl": "captar más clientes.",
+        "right_heading": "Descubriendo los ingredientes",
+        "right_pre": "Indagando un poco más, detrás del objetivo concreto, estaba la preocupación de que ",
+        "right_hl": "la plataforma no estaba generando los ingresos esperados.",
+        "right_body": "No había problema real de adquisición de clientes. La plataforma contaba con una captación de nuevos usuarios orgánica. Sin embargo, de los nuevos usuarios registrados, un bajo porcentaje comenzaba a utilizar la plataforma activamente y de estos, prácticamente ninguno contribuía al sistema de monetización de la misma.",
+        "insight_eyebrow": "Insight",
+        "insight_pre": "El problema no era de captación de clientes, sino de retención. Y el ",
+        "insight_hl": "objetivo era monetario",
+        "insight_suffix": "."
+      },
+      "role": {
+        "section_label": "· Mi rol ·",
+        "title": "Chef del producto: descubrir qué necesitamos agregarle a la hamburguesa.",
+        "subtitle": "· Product Manager & Product Designer ·",
+        "body_pre": "Me desempeñé como  Product Design y Product Management, alineando a todas las aristas del proyecto,  fundadores, desarrolladores (Full Stack y Backend) y  Marketing/CM, bajo un mismo objetivo. ",
+        "body_hl": "Mi misión fue transformar un flujo de trabajo desordenado en una estrategia con sentido de negocio."
+      },
       "results": {
         "business_title": "Impacto en el negocio",
         "stat1_num": "+ 127% ",

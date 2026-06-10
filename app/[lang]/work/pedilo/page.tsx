@@ -159,13 +159,13 @@ export default async function PediloPage({ params }: PageProps<'/[lang]/work/ped
         <section className="cs-context">
           <div className="cs-context__inner">
             <div>
-              <SectionTitle>· Contexto ·</SectionTitle>
-              <h2 className="cs-context__title">Pedilo Store</h2>
+              <SectionTitle>{cs.context.section_label}</SectionTitle>
+              <h2 className="cs-context__title">{cs.context.title}</h2>
             </div>
             <div className="cs-context__text">
-              <p className="body-md">{`Pedilo Store es una plataforma online para facilitar la gestión de pedidos por WhatsApp a pequeños y medianos comercios, especialmente de la industria gastronómica. `}</p>
+              <p className="body-md">{cs.context.body1}</p>
               <p className="body-md">
-                <span className="body-md">Los consumidores eligen los productos en un catálogo online y el comerciante recibe el pedido ordenado y resumido en su WhatsApp</span>.
+                <span className="body-md">{cs.context.body2}</span>.
               </p>
             </div>
           </div>
@@ -174,17 +174,17 @@ export default async function PediloPage({ params }: PageProps<'/[lang]/work/ped
         {/* ===================== PROBLEMA ===================== */}
         <section className="cs-problem">
           <div className="cs-problem__inner">
-            <p className="cs-problem__header">Del problema percibido al problema real:</p>
+            <p className="cs-problem__header">{cs.problem.header}</p>
 
             {/* Bloque izquierdo */}
             <div className="cs-problem__left">
               <div className="cs-problem__heading-wrap">
-                <h2 className="cs-problem__col-heading">La hamburguesa que me pidieron:</h2>
+                <h2 className="cs-problem__col-heading">{cs.problem.left_heading}</h2>
               </div>
               <div style={{ maxWidth: '448px', paddingRight: '24px', paddingTop: '14px' }}>
                 <p className="body-md">
-                  {`Los fundadores de la plataforma plantearon un objetivo concreto: `}
-                  <strong className="c-green">captar más clientes.</strong>
+                  {cs.problem.left_pre}
+                  <strong className="c-green">{cs.problem.left_hl}</strong>
                 </p>
               </div>
             </div>
@@ -192,23 +192,21 @@ export default async function PediloPage({ params }: PageProps<'/[lang]/work/ped
             {/* Bloque derecho */}
             <div className="cs-problem__right">
               <div className="cs-problem__right-inner">
-                <h2 className="cs-problem__col-heading">Descubriendo los ingredientes</h2>
+                <h2 className="cs-problem__col-heading">{cs.problem.right_heading}</h2>
                 <p className="body-md">
-                  {`Indagando un poco más, detrás del objetivo concreto, estaba la preocupación de que `}
-                  <strong className="c-green">la plataforma no estaba generando los ingresos esperados.</strong>
+                  {cs.problem.right_pre}
+                  <strong className="c-green">{cs.problem.right_hl}</strong>
                 </p>
-                <p className="body-md">
-                  No había problema real de adquisición de clientes. La plataforma contaba con una captación de nuevos usuarios orgánica. Sin embargo, de los nuevos usuarios registrados, un bajo porcentaje comenzaba a utilizar la plataforma activamente y de estos, prácticamente ninguno contribuía al sistema de monetización de la misma.
-                </p>
+                <p className="body-md">{cs.problem.right_body}</p>
               </div>
             </div>
 
             {/* Insight card */}
             <div className="cs-problem__card-wrap">
-              <InsightCard eyebrow="Insight">
-                {`El problema no era de captación de clientes, sino de retención. Y el `}
-                <span className="c-green">objetivo era monetario</span>
-                {`.`}
+              <InsightCard eyebrow={cs.problem.insight_eyebrow}>
+                {cs.problem.insight_pre}
+                <span className="c-green">{cs.problem.insight_hl}</span>
+                {cs.problem.insight_suffix}
               </InsightCard>
             </div>
           </div>
@@ -218,17 +216,15 @@ export default async function PediloPage({ params }: PageProps<'/[lang]/work/ped
         <section className="cs-role">
           <div className="cs-role__inner">
             <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
-              <SectionTitle>· Mi rol ·</SectionTitle>
-              <h2 className="cs-role__title">
-                Chef del producto: descubrir qué necesitamos agregarle a la hamburguesa.
-              </h2>
+              <SectionTitle>{cs.role.section_label}</SectionTitle>
+              <h2 className="cs-role__title">{cs.role.title}</h2>
             </div>
             <div className="cs-role__content">
               <div className="cs-role__content-inner">
-                <p className="cs-role__subtitle">{`· Product Manager & Product Designer ·`}</p>
+                <p className="cs-role__subtitle">{cs.role.subtitle}</p>
                 <p className="body-md">
-                  <span>{`Me desempeñé como  Product Design y Product Management, alineando a todas las aristas del proyecto,  fundadores, desarrolladores (Full Stack y Backend) y  Marketing/CM, bajo un mismo objetivo. `}</span>
-                  <strong className="c-green">Mi misión fue transformar un flujo de trabajo desordenado en una estrategia con sentido de negocio.</strong>
+                  <span>{cs.role.body_pre}</span>
+                  <strong className="c-green">{cs.role.body_hl}</strong>
                 </p>
               </div>
             </div>

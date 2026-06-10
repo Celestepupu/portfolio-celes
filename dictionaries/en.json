@@ -38,6 +38,49 @@
         "accent": "Le agregué salsa a la hamburguesa",
         "img_alt": "Hamburguesa - imagen hero"
       },
+      "desafios": {
+        "section_label": "· Reflexiones personales ·",
+        "title": "Desafíos y aprendizajes: Orden en el desorden",
+        "badge_label": "Área de mejora",
+        "items": {
+          "1": {
+            "title": "Product Manager sin recetas",
+            "body": "Mi primera experiencia formal como Product Manager sin guía concreta. Mi primer roadmap ordenó el proyecto pero no al equipo. El segundo fue claro y el equipo lo implementó con autonomía.",
+            "badge_body": "Profundizar en la implementación de roadmaps según las necesidades de cada equipo."
+          },
+          "2": {
+            "title": "Sincronización de un equipo discontinuo",
+            "body": "Sin dedicación full-time del equipo, el flujo se cortaba. Implementé un tablero Kanban en Trello con columna de prioridades estratégicas para mantener el rumbo.",
+            "badge_body": "Implementar herramientas de gestión ágiles para facilitar el orden y la autonomía de las tareas."
+          },
+          "3": {
+            "title": "Documentación desordenada",
+            "body": "Como fue mi primera experiencia, el proceso de documentación fue desordenado y difícilmente transmisible, quedando en notas personales e informales.",
+            "badge_body": "Refinar mi capacidad de documentar de forma clara y accionable para que cualquier persona pueda recurrir a ello."
+          },
+          "4": {
+            "title": "Data Cleaning en GA4",
+            "body": "Al compartir la URL con los clientes, los datos estaban \"sucios\". Tuve que aprender a filtrar métricas avanzadas para separar el ruido del tráfico real.",
+            "badge_body": "Profundizar en Google Analytics para sistemas complejos y manejar registros más claros de datos."
+          },
+          "5": {
+            "title": "Legitimar la estrategia (El Chef sin título)",
+            "body": "Lograr que la estrategia de producto se plasmara en la comunicación de marketing implicó varias reuniones y aprender a retransmitir ideas de forma simple.",
+            "badge_body": "Perfeccionar la comunicación asertiva para adaptar el mensaje técnico a diferentes perfiles profesionales."
+          },
+          "6": {
+            "title": "Estrategia de Pricing y Business Analytics",
+            "body": "La estrategia de monetización se definió por investigación con usuarios sin un pricing concreto. Realicé los análisis de business analytics a posteriori.",
+            "badge_body": "Integrar investigaciones de business analytics desde la etapa de descubrimiento para definir precios correctamente."
+          }
+        }
+      },
+      "cierre": {
+        "quote": "Gracias por leer...Hasta la próxima receta.",
+        "nav_home": "←Home",
+        "nav_contact": "Contactame",
+        "nav_next": "Próximo caso →"
+      },
       "logre": {
         "section_label": "· Resultados ·",
         "title": "¿Qué logré?",

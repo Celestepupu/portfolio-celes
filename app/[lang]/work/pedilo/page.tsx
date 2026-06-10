@@ -543,69 +543,28 @@ export default async function PediloPage({ params }: PageProps<'/[lang]/work/ped
           <div className="cs-desafios__inner">
 
             <div className="cs-desafios__header">
-              <SectionTitle>· Reflexiones personales ·</SectionTitle>
-              <h2 className="cs-desafios__title">Desafíos y aprendizajes: Orden en el desorden</h2>
+              <SectionTitle>{cs.desafios.section_label}</SectionTitle>
+              <h2 className="cs-desafios__title">{cs.desafios.title}</h2>
             </div>
 
             <div className="cs-desafios__grid">
-
-              <div className="cs-desafios__row">
-                <div className="cs-desafios__card">
-                  <p className="cs-desafios__card-title">Product Manager sin recetas</p>
-                  <p className="body-md">Mi primera experiencia formal como Product Manager sin guía concreta. Mi primer roadmap ordenó el proyecto pero no al equipo. El segundo fue claro y el equipo lo implementó con autonomía.</p>
-                  <div className="cs-desafios__badge">
-                    <p className="cs-desafios__badge-label">Área de mejora</p>
-                    <p className="cs-desafios__badge-body">Profundizar en la implementación de roadmaps según las necesidades de cada equipo.</p>
-                  </div>
+              {[['1', '2'], ['3', '4'], ['5', '6']].map((row, ri) => (
+                <div key={ri} className="cs-desafios__row">
+                  {row.map(id => {
+                    const item = cs.desafios.items[id as keyof typeof cs.desafios.items]
+                    return (
+                      <div key={id} className="cs-desafios__card">
+                        <p className="cs-desafios__card-title">{item.title}</p>
+                        <p className="body-md">{item.body}</p>
+                        <div className="cs-desafios__badge">
+                          <p className="cs-desafios__badge-label">{cs.desafios.badge_label}</p>
+                          <p className="cs-desafios__badge-body">{item.badge_body}</p>
+                        </div>
+                      </div>
+                    )
+                  })}
                 </div>
-                <div className="cs-desafios__card">
-                  <p className="cs-desafios__card-title">Sincronización de un equipo discontinuo</p>
-                  <p className="body-md">Sin dedicación full-time del equipo, el flujo se cortaba. Implementé un tablero Kanban en Trello con columna de prioridades estratégicas para mantener el rumbo.</p>
-                  <div className="cs-desafios__badge">
-                    <p className="cs-desafios__badge-label">Área de mejora</p>
-                    <p className="cs-desafios__badge-body">Implementar herramientas de gestión ágiles para facilitar el orden y la autonomía de las tareas.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="cs-desafios__row">
-                <div className="cs-desafios__card">
-                  <p className="cs-desafios__card-title">Documentación desordenada</p>
-                  <p className="body-md">Como fue mi primera experiencia, el proceso de documentación fue desordenado y difícilmente transmisible, quedando en notas personales e informales.</p>
-                  <div className="cs-desafios__badge">
-                    <p className="cs-desafios__badge-label">Área de mejora</p>
-                    <p className="cs-desafios__badge-body">Refinar mi capacidad de documentar de forma clara y accionable para que cualquier persona pueda recurrir a ello.</p>
-                  </div>
-                </div>
-                <div className="cs-desafios__card">
-                  <p className="cs-desafios__card-title">Data Cleaning en GA4</p>
-                  <p className="body-md">{`Al compartir la URL con los clientes, los datos estaban "sucios". Tuve que aprender a filtrar métricas avanzadas para separar el ruido del tráfico real.`}</p>
-                  <div className="cs-desafios__badge">
-                    <p className="cs-desafios__badge-label">Área de mejora</p>
-                    <p className="cs-desafios__badge-body">Profundizar en Google Analytics para sistemas complejos y manejar registros más claros de datos.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="cs-desafios__row">
-                <div className="cs-desafios__card">
-                  <p className="cs-desafios__card-title">Legitimar la estrategia (El Chef sin título)</p>
-                  <p className="body-md">Lograr que la estrategia de producto se plasmara en la comunicación de marketing implicó varias reuniones y aprender a retransmitir ideas de forma simple.</p>
-                  <div className="cs-desafios__badge">
-                    <p className="cs-desafios__badge-label">Área de mejora</p>
-                    <p className="cs-desafios__badge-body">Perfeccionar la comunicación asertiva para adaptar el mensaje técnico a diferentes perfiles profesionales.</p>
-                  </div>
-                </div>
-                <div className="cs-desafios__card">
-                  <p className="cs-desafios__card-title">Estrategia de Pricing y Business Analytics</p>
-                  <p className="body-md">La estrategia de monetización se definió por investigación con usuarios sin un pricing concreto. Realicé los análisis de business analytics a posteriori.</p>
-                  <div className="cs-desafios__badge">
-                    <p className="cs-desafios__badge-label">Área de mejora</p>
-                    <p className="cs-desafios__badge-body">Integrar investigaciones de business analytics desde la etapa de descubrimiento para definir precios correctamente.</p>
-                  </div>
-                </div>
-              </div>
-
+              ))}
             </div>
           </div>
         </section>
@@ -613,12 +572,12 @@ export default async function PediloPage({ params }: PageProps<'/[lang]/work/ped
         {/* ===================== CIERRE ===================== */}
         <section className="cs-cierre">
           <div className="cs-cierre__quote-wrap">
-            <p className="cs-cierre__quote">Gracias por leer...Hasta la próxima receta.</p>
+            <p className="cs-cierre__quote">{cs.cierre.quote}</p>
           </div>
           <nav className="cs-cierre__nav">
-            <a href="/" className="label-sm">←Home</a>
-            <a href="/contact" className="label-sm">Contactame</a>
-            <span className="label-sm">Próximo caso →</span>
+            <a href={`/${lang}`} className="label-sm">{cs.cierre.nav_home}</a>
+            <a href="/contact" className="label-sm">{cs.cierre.nav_contact}</a>
+            <span className="label-sm">{cs.cierre.nav_next}</span>
           </nav>
         </section>
 

@@ -237,40 +237,40 @@ export default async function PediloPage({ params }: PageProps<'/[lang]/work/ped
           {/* Título */}
           <div className="cs-process__title-block">
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <SectionTitle>· Proceso ·</SectionTitle>
+              <SectionTitle>{cs.process.section_label}</SectionTitle>
             </div>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <h2 className="cs-process__main-title">Cocinando la Estrategia</h2>
+              <h2 className="cs-process__main-title">{cs.process.main_title}</h2>
             </div>
           </div>
 
           {/* — Etapa 1 — */}
           <div className="cs-stage">
-            <h3 className="cs-stage__title">{`Primera Etapa: \nEntrando a la cocina.`}</h3>
+            <h3 className="cs-stage__title">{cs.process.stage1_title}</h3>
             <div className="cs-stage__content">
               <div className="cs-stage__content-inner">
                 <div className="cs-stage__step">
-                  <p className="cs-step-title">1º - Busqué por la cocina:</p>
+                  <p className="cs-step-title">{cs.process.stage1_step1_title}</p>
                   <p className="body-md">
-                    <strong className="c-green">Discovery e investigación.</strong>
-                    {` Hablé en profundidad con los fundadores, investigué  a los clientes, busqué métricas, analicé la landing page,la plataforma, y las redes sociales.`}
+                    <strong className="c-green">{cs.process.stage1_step1_hl}</strong>
+                    {cs.process.stage1_step1_suffix}
                   </p>
                 </div>
                 <div className="cs-stage__step">
-                  <p className="cs-step-title">2º - Saqué unas papitas para picar antes del gran banquete:</p>
+                  <p className="cs-step-title">{cs.process.stage1_step2_title}</p>
                   <p className="body-md">
-                    {`Antes del plato principal, ataqué la demanda urgente: Hice análisis de la landing page y realicé `}
-                    <strong className="c-green">cambios de UX Writing</strong>
-                    {`, para resolver rápido la primera demanda de los fundadores: captar más clientes`}
+                    {cs.process.stage1_step2_pre}
+                    <strong className="c-green">{cs.process.stage1_step2_hl}</strong>
+                    {cs.process.stage1_step2_suffix}
                   </p>
                 </div>
               </div>
             </div>
             <div className="cs-stage__result-wrap">
-              <InsightCard eyebrow="Resultados">
-                {`Paso `}
-                <span className="c-green">de 2 a 5 registros mensuales</span>
-                {` con cambios realizados en 1 día. Calmé el hambre inicial de los founders mientras preparaba la investigación profunda.`}
+              <InsightCard eyebrow={cs.process.stage1_result_eyebrow}>
+                {cs.process.stage1_result_pre}
+                <span className="c-green">{cs.process.stage1_result_hl}</span>
+                {cs.process.stage1_result_suffix}
               </InsightCard>
             </div>
           </div>
@@ -285,35 +285,27 @@ export default async function PediloPage({ params }: PageProps<'/[lang]/work/ped
 
           {/* Quote */}
           <div className="cs-quote">
-            <p className="cs-quote__text">
-              Ahora...con la panza llena, a preparar el plato principal...
-            </p>
+            <p className="cs-quote__text">{cs.process.quote}</p>
           </div>
 
           {/* — Etapa 2 — */}
           <div className="cs-stage2">
-            <h3 className="cs-stage__title">{`Segunda Etapa: \nBuscando los ingredientes secretos: investigación profunda.`}</h3>
+            <h3 className="cs-stage__title">{cs.process.stage2_title}</h3>
             <div className="cs-stage2__content">
               {/* Sobre el producto */}
               <div className="cs-research__group">
-                <p className="cs-step-title">Sobre el producto:</p>
+                <p className="cs-step-title">{cs.process.stage2_product_title}</p>
                 <div className="cs-research__cols">
                   <div className="cs-research__col">
-                    <p className="cs-research__col-title">Investigación</p>
+                    <p className="cs-research__col-title">{cs.process.stage2_research_title}</p>
                     <ul>
-                      <li>{`Análisis de la competencia. (Benchmarking) `}</li>
-                      <li>Entrevistas con usuarios.</li>
-                      <li>Análisis de clientes fieles.</li>
+                      {cs.process.stage2_product_research.map((item, i) => <li key={i}>{item}</li>)}
                     </ul>
                   </div>
                   <div className="cs-research__col">
-                    <p className="cs-research__col-title">Descubrimientos</p>
+                    <p className="cs-research__col-title">{cs.process.stage2_discoveries_title}</p>
                     <ul>
-                      <li>{`La mayoría de los clientes eran del rubro gastronómico, principalmente hamburgueserías. `}</li>
-                      <li>Muchos clientes migraron a la competencia.</li>
-                      <li>Competencia ofrecían de forma gratuita lo que para el producto era la forma de monetización. (Integración con Mercado pago) Ofrecían funcionalidades que Pedilo no tenía.</li>
-                      <li>Hubo una demanda clara en las entrevistas: Necesitaban que los clientes pudieran personalizar las hamburguesas agregando extras. Funcionalidades que se habían planteado, como la posibilidad de enviar promociones por mail, o control de stock, no eran de interés.</li>
-                      <li>Los clientes preferían pagar precio fijo en lugar de comisiones.</li>
+                      {cs.process.stage2_product_discoveries.map((item, i) => <li key={i}>{item}</li>)}
                     </ul>
                   </div>
                 </div>
@@ -321,21 +313,18 @@ export default async function PediloPage({ params }: PageProps<'/[lang]/work/ped
 
               {/* Sobre la forma de trabajo */}
               <div className="cs-research__group">
-                <p className="cs-step-title">Sobre la forma de trabajo:</p>
+                <p className="cs-step-title">{cs.process.stage2_work_title}</p>
                 <div className="cs-research__cols">
                   <div className="cs-research__col">
-                    <p className="cs-research__col-title">Investigación</p>
+                    <p className="cs-research__col-title">{cs.process.stage2_research_title}</p>
                     <ul>
-                      <li>{`Entrevistas con founders y colaboradores. `}</li>
-                      <li>Analizar tablero de trabajo y larga lista de backlog.</li>
-                      <li>Análisis de clientes fieles.</li>
+                      {cs.process.stage2_work_research.map((item, i) => <li key={i}>{item}</li>)}
                     </ul>
                   </div>
                   <div className="cs-research__col">
-                    <p className="cs-research__col-title">Descubrimientos</p>
+                    <p className="cs-research__col-title">{cs.process.stage2_discoveries_title}</p>
                     <ul>
-                      <li>No había estrategia en la priorización de features, bugs etc.</li>
-                      <li>El equipo trabajaba de forma part-time y discontinua, generaba que cada persona que volvía a retomar el producto, tomaba las tareas que les parecía.</li>
+                      {cs.process.stage2_work_discoveries.map((item, i) => <li key={i}>{item}</li>)}
                     </ul>
                   </div>
                 </div>
@@ -343,20 +332,18 @@ export default async function PediloPage({ params }: PageProps<'/[lang]/work/ped
 
               {/* Sobre las redes sociales */}
               <div className="cs-research__group">
-                <p className="cs-step-title">Sobre las redes sociales:</p>
+                <p className="cs-step-title">{cs.process.stage2_social_title}</p>
                 <div className="cs-research__cols">
                   <div className="cs-research__col">
-                    <p className="cs-research__col-title">Investigación</p>
+                    <p className="cs-research__col-title">{cs.process.stage2_research_title}</p>
                     <ul>
-                      <li>Análisis de qué y cómo se esta comunicando en redes sociales.</li>
+                      {cs.process.stage2_social_research.map((item, i) => <li key={i}>{item}</li>)}
                     </ul>
                   </div>
                   <div className="cs-research__col">
-                    <p className="cs-research__col-title">Descubrimientos</p>
+                    <p className="cs-research__col-title">{cs.process.stage2_discoveries_title}</p>
                     <ul>
-                      <li>En redes sociales se comunicaba para el consumidor final y no para el cliente ideal.</li>
-                      <li>El equipo no tenía buen entendimiento del producto. Se confundían las funcionalidades de la plataforma con funcionalidades de aplicaciones de entrega a domicilio.</li>
-                      <li>No se comunicaba desde la solución ni del punto de dolor del cliente ideal.</li>
+                      {cs.process.stage2_social_discoveries.map((item, i) => <li key={i}>{item}</li>)}
                     </ul>
                   </div>
                 </div>
@@ -365,13 +352,13 @@ export default async function PediloPage({ params }: PageProps<'/[lang]/work/ped
 
             {/* Insight clave */}
             <div style={{ padding: '40px 0', display: 'flex', flexDirection: 'column', gap: '24px', alignItems: 'center' }}>
-              <InsightCard eyebrow="Insight clave">
-                <span>{`La competencia ofrecía la opción de `}</span>
-                <span className="c-green">personalizar el URL</span>
-                <span>{`, pero descubrí que la llegada orgánica de clientes se debía a que los comercios veían la marca de Pedilo desde las tiendas de otros comercios. `}</span>
+              <InsightCard eyebrow={cs.process.stage2_insight_eyebrow}>
+                <span>{cs.process.stage2_insight_pre}</span>
+                <span className="c-green">{cs.process.stage2_insight_hl1}</span>
+                <span>{cs.process.stage2_insight_mid}</span>
                 <br />
-                <span>{`Implementar esta funcionalidad, `}</span>
-                <span className="c-green">para alinearse a la competencia, hubiera llevado a perder la captación orgánica de clientes</span>
+                <span>{cs.process.stage2_insight_bridge}</span>
+                <span className="c-green">{cs.process.stage2_insight_hl2}</span>
                 <span>.</span>
               </InsightCard>
             </div>
@@ -380,31 +367,20 @@ export default async function PediloPage({ params }: PageProps<'/[lang]/work/ped
           {/* — Etapa 3 — */}
           <div className="cs-stage3">
             <div style={{ maxWidth: '1040px', width: '100%' }}>
-              <h3 className="cs-stage__title">{`Tercera Etapa: \n¡A cocinar! Roadmap y qué se hizo`}</h3>
+              <h3 className="cs-stage__title">{cs.process.stage3_title}</h3>
             </div>
             <div className="cs-stage3__content">
               <div className="cs-stage3__content-inner">
                 <div className="cs-stage__step">
-                  <p className="cs-step-title">¿Qué hice?</p>
+                  <p className="cs-step-title">{cs.process.stage3_step1_title}</p>
                   <ul className="cs-list">
-                    <li>Construí un roadmap.</li>
-                    <li>Redefiní la estrategia de monetización.</li>
-                    <li>Definí el cliente objetivo.</li>
-                    <li>Definí elevator Pitch.</li>
-                    <li>Uní la estrategia de marketing con la de landing page.</li>
-                    <li>{`Definí tasks y prioridades de diseño y desarrollo. `}</li>
-                    <li>Empecé a registrar métricas relevantes.</li>
-                    <li>Implementé un sistema de correlación de eventos, vinculando los hitos de producto y campañas de marketing con las fluctuaciones en las métricas clave.</li>
+                    {cs.process.stage3_step1_items.map((item, i) => <li key={i}>{item}</li>)}
                   </ul>
                 </div>
                 <div className="cs-stage__step">
-                  <p className="cs-step-title">Esto me llevó a:</p>
+                  <p className="cs-step-title">{cs.process.stage3_step2_title}</p>
                   <ul className="cs-list">
-                    <li>Implementar funcionalidad estrella por la cual los usuarios pagarían: Personalización de pedidos: Si, todos queremos agregarle extra queso a la hamburguesa.</li>
-                    <li>Rediseñar landing page, enfocada 100% al nicho.</li>
-                    <li>Armar estilo de branding, e implementarlo en producto y marketing, para generar identidad visual</li>
-                    <li>Definir estrategia de comunicación en redes sociales.</li>
-                    <li>Lanzar Plan Premium.</li>
+                    {cs.process.stage3_step2_items.map((item, i) => <li key={i}>{item}</li>)}
                   </ul>
                 </div>
               </div>

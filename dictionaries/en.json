@@ -38,6 +38,84 @@
         "accent": "Le agregué salsa a la hamburguesa",
         "img_alt": "Hamburguesa - imagen hero"
       },
+      "process": {
+        "section_label": "· Proceso ·",
+        "main_title": "Cocinando la Estrategia",
+        "stage1_title": "Primera Etapa: \nEntrando a la cocina.",
+        "stage1_step1_title": "1º - Busqué por la cocina:",
+        "stage1_step1_hl": "Discovery e investigación.",
+        "stage1_step1_suffix": " Hablé en profundidad con los fundadores, investigué  a los clientes, busqué métricas, analicé la landing page,la plataforma, y las redes sociales.",
+        "stage1_step2_title": "2º - Saqué unas papitas para picar antes del gran banquete:",
+        "stage1_step2_pre": "Antes del plato principal, ataqué la demanda urgente: Hice análisis de la landing page y realicé ",
+        "stage1_step2_hl": "cambios de UX Writing",
+        "stage1_step2_suffix": ", para resolver rápido la primera demanda de los fundadores: captar más clientes",
+        "stage1_result_eyebrow": "Resultados",
+        "stage1_result_pre": "Paso ",
+        "stage1_result_hl": "de 2 a 5 registros mensuales",
+        "stage1_result_suffix": " con cambios realizados en 1 día. Calmé el hambre inicial de los founders mientras preparaba la investigación profunda.",
+        "quote": "Ahora...con la panza llena, a preparar el plato principal...",
+        "stage2_title": "Segunda Etapa: \nBuscando los ingredientes secretos: investigación profunda.",
+        "stage2_product_title": "Sobre el producto:",
+        "stage2_research_title": "Investigación",
+        "stage2_discoveries_title": "Descubrimientos",
+        "stage2_product_research": [
+          "Análisis de la competencia. (Benchmarking) ",
+          "Entrevistas con usuarios.",
+          "Análisis de clientes fieles."
+        ],
+        "stage2_product_discoveries": [
+          "La mayoría de los clientes eran del rubro gastronómico, principalmente hamburgueserías. ",
+          "Muchos clientes migraron a la competencia.",
+          "Competencia ofrecían de forma gratuita lo que para el producto era la forma de monetización. (Integración con Mercado pago) Ofrecían funcionalidades que Pedilo no tenía.",
+          "Hubo una demanda clara en las entrevistas: Necesitaban que los clientes pudieran personalizar las hamburguesas agregando extras. Funcionalidades que se habían planteado, como la posibilidad de enviar promociones por mail, o control de stock, no eran de interés.",
+          "Los clientes preferían pagar precio fijo en lugar de comisiones."
+        ],
+        "stage2_work_title": "Sobre la forma de trabajo:",
+        "stage2_work_research": [
+          "Entrevistas con founders y colaboradores. ",
+          "Analizar tablero de trabajo y larga lista de backlog.",
+          "Análisis de clientes fieles."
+        ],
+        "stage2_work_discoveries": [
+          "No había estrategia en la priorización de features, bugs etc.",
+          "El equipo trabajaba de forma part-time y discontinua, generaba que cada persona que volvía a retomar el producto, tomaba las tareas que les parecía."
+        ],
+        "stage2_social_title": "Sobre las redes sociales:",
+        "stage2_social_research": [
+          "Análisis de qué y cómo se esta comunicando en redes sociales."
+        ],
+        "stage2_social_discoveries": [
+          "En redes sociales se comunicaba para el consumidor final y no para el cliente ideal.",
+          "El equipo no tenía buen entendimiento del producto. Se confundían las funcionalidades de la plataforma con funcionalidades de aplicaciones de entrega a domicilio.",
+          "No se comunicaba desde la solución ni del punto de dolor del cliente ideal."
+        ],
+        "stage2_insight_eyebrow": "Insight clave",
+        "stage2_insight_pre": "La competencia ofrecía la opción de ",
+        "stage2_insight_hl1": "personalizar el URL",
+        "stage2_insight_mid": ", pero descubrí que la llegada orgánica de clientes se debía a que los comercios veían la marca de Pedilo desde las tiendas de otros comercios. ",
+        "stage2_insight_hl2": "para alinearse a la competencia, hubiera llevado a perder la captación orgánica de clientes",
+        "stage2_insight_bridge": "Implementar esta funcionalidad, ",
+        "stage3_title": "Tercera Etapa: \n¡A cocinar! Roadmap y qué se hizo",
+        "stage3_step1_title": "¿Qué hice?",
+        "stage3_step1_items": [
+          "Construí un roadmap.",
+          "Redefiní la estrategia de monetización.",
+          "Definí el cliente objetivo.",
+          "Definí elevator Pitch.",
+          "Uní la estrategia de marketing con la de landing page.",
+          "Definí tasks y prioridades de diseño y desarrollo. ",
+          "Empecé a registrar métricas relevantes.",
+          "Implementé un sistema de correlación de eventos, vinculando los hitos de producto y campañas de marketing con las fluctuaciones en las métricas clave."
+        ],
+        "stage3_step2_title": "Esto me llevó a:",
+        "stage3_step2_items": [
+          "Implementar funcionalidad estrella por la cual los usuarios pagarían: Personalización de pedidos: Si, todos queremos agregarle extra queso a la hamburguesa.",
+          "Rediseñar landing page, enfocada 100% al nicho.",
+          "Armar estilo de branding, e implementarlo en producto y marketing, para generar identidad visual",
+          "Definir estrategia de comunicación en redes sociales.",
+          "Lanzar Plan Premium."
+        ]
+      },
       "context": {
         "section_label": "· Contexto ·",
         "title": "Pedilo Store",

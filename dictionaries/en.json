@@ -63,6 +63,36 @@
         }
       }
     },
+    "curriculum": {
+      "eyebrow": "Curriculum · Trayectoria",
+      "items": {
+        "1": {
+          "period": "2024 - Al presente",
+          "role": "Product Designer & Product Manager",
+          "company": "Pedilo Store · E-commerce Platforms · B2B Strategy & CRO"
+        },
+        "2": {
+          "period": "2023 - Al presente",
+          "role": "UX/UI & Product Designer",
+          "company": "Flydevs · Software Agency · AI, LegalTech, SaaS de Seguridad..."
+        },
+        "3": {
+          "period": "Jul 2023 - Dic 2023",
+          "role": "UX/UI & Product Designer",
+          "company": "Journey · Travel Tech · B2B · MVP ·"
+        },
+        "4": {
+          "period": "Desde 2022",
+          "role": "Freelance UX/UI & Product Designer",
+          "company": "End-to-End · MVP · FinTech/Betting, Marketplaces, SaaS..."
+        },
+        "5": {
+          "period": "2010 - 2021",
+          "role": "Trayectoria en Industria de Viajes y Turismo",
+          "company": "Gestión comercial y resolución de conflictos · B2B y B2C ·"
+        }
+      }
+    },
     "about": {
       "eyebrow": "· Sobre mí ·",
       "heading1": "Diseño con",

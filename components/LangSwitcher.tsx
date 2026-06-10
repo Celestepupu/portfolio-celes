@@ -21,7 +21,9 @@ export default function LangSwitcher() {
   const switchTo = (code: string) => {
     const segments = pathname.split('/')
     segments[1] = code
-    router.push(segments.join('/') || `/${code}`)
+    const newPath = segments.join('/') || `/${code}`
+    const hash = window.location.hash
+    router.push(newPath + hash)
     setOpen(false)
   }
 

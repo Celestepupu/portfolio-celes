@@ -288,25 +288,25 @@
 
   "home": {
     "projects": {
-      "eyebrow": "· Proyectos seleccionados ·",
-      "title": "Proyectos.",
-      "desc": "Una selección de viajes de producto: investigación, estrategia y diseño con foco en el impacto al negocio.",
-      "coming_soon": "Próximamente.",
+      "eyebrow": "· Selected project ·",
+      "title": "Projects.",
+      "desc": "A selection of product journeys: research, strategy, and design, with a focus on business impact.",
+      "coming_soon": "Coming soon.",
       "items": {
         "1": {
           "title": "Pedilo Store",
           "tags": "Product manager & Product designer",
-          "desc": "Redefiní la estrategia de producto para plataforma B2B."
+          "desc": "I redefined the product strategy for a B2B platform."
         },
         "2": {
           "title": "Flydevs",
           "tags": "Product Strategy",
-          "desc": "Investigué y definí la propuesta de valor para la estrategia de comunicación."
+          "desc": "I researched and defined the value proposition for a communication strategy."
         },
         "3": {
           "title": "Journey",
           "tags": "UX/UI · Product designer",
-          "desc": "Diseñé una plataforma para guías turísticos end-to-end y realicé testeos de usabilidad."
+          "desc": "I designed a platform for tourist guides end-to-end and conducted its usability testing."
         }
       }
     },

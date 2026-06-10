@@ -38,6 +38,65 @@
         "accent": "Le agregué salsa a la hamburguesa",
         "img_alt": "Hamburguesa - imagen hero"
       },
+      "logre": {
+        "section_label": "· Resultados ·",
+        "title": "¿Qué logré?",
+        "comparison_label": "Comparación 2024 → 2025",
+        "business_col_title": "Impacto en el negocio",
+        "stat1_num": "+24%",
+        "stat1_desc": "más de tiendas activas en el año.",
+        "stat2_num": "+54%",
+        "stat2_desc": "más de tiendas activas por mes.",
+        "stat3_num": "+127%",
+        "stat3_desc": "más de tiendas registradas en el año.",
+        "strategy_col_title": "Impacto en estrategia y gestión",
+        "strategy_items": [
+          "Implementación de estrategia de monetización.",
+          "Alineación estratégica de todas las áreas: Marketing, Founder, Desarrollo.",
+          "Registro de datos y métricas",
+          "Definición de objetivos y roadmaps"
+        ]
+      },
+      "aprendizajes": {
+        "section_label": "· Aprendizajes ·",
+        "title": "¿Qué fallo?",
+        "items": {
+          "1": {
+            "title": "Adopción de cuenta Premium",
+            "body": "La conversión al plan pago fue más lenta de lo esperado. Eran necesarias estrategias de activación más efectivas para el upgrade."
+          },
+          "2": {
+            "title": "Fuga de usuarios",
+            "body": "No se logró medir con exactitud el punto exacto de abandono (churn) en el embudo de conversión inicial."
+          },
+          "3": {
+            "title": "Registro de tiendas activas",
+            "body": "No se logro el registro correcto de las tiendas que se mantienen activas, afectando el análisis de retención."
+          }
+        }
+      },
+      "siguientes": {
+        "section_label": "· Próximos pasos ·",
+        "title": "¿Cómo sigue?",
+        "items": {
+          "1": {
+            "title": "Nuevo roadmap",
+            "body": "Creé un nuevo roadmap con el objetivo de convertir a premium los clientes free, priorizando las funciones de mayor valor percibido."
+          },
+          "2": {
+            "title": "Onboarding guiado",
+            "body": "Diseñé un onboarding guiado para que las tiendas terminen de configurarse y activen todo su potencial desde el primer día."
+          },
+          "3": {
+            "title": "Estrategia de captación premium",
+            "body": "Definí una estrategia de captación en redes sociales, comunicación directa y free trial estratégico para convertir usuarios free en premium."
+          },
+          "4": {
+            "title": "Mejoras en el registro de métricas",
+            "body": "Propuse implementar sistemas de medición más precisos para datos de actividad, retención y comportamiento de usuario."
+          }
+        }
+      },
       "images": {
         "before_after_alt": "Landing page antes y después del rediseño",
         "item1": "Rediseño de landing page orientada nicho, cliente ideal y conversión.",

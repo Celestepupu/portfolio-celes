@@ -450,54 +450,44 @@ export default async function PediloPage({ params }: PageProps<'/[lang]/work/ped
 
             {/* Header */}
             <div className="cs-logre__header">
-              <SectionTitle>· Resultados ·</SectionTitle>
-              <h2 className="cs-logre__title">¿Qué logré?</h2>
+              <SectionTitle>{cs.logre.section_label}</SectionTitle>
+              <h2 className="cs-logre__title">{cs.logre.title}</h2>
             </div>
 
             {/* Resultados */}
             <div className="cs-logre__results">
-              <p className="cs-logre__label">Comparación 2024 → 2025</p>
+              <p className="cs-logre__label">{cs.logre.comparison_label}</p>
               <div className="cs-logre__cols">
 
                 {/* Columna izquierda: métricas */}
                 <div className="cs-logre__col">
-                  <p className="cs-logre__col-title">Impacto en el negocio</p>
+                  <p className="cs-logre__col-title">{cs.logre.business_col_title}</p>
                   <div className="cs-logre__metrics">
                     <div className="cs-logre__stat">
-                      <span className="cs-logre__stat-num c-violet">+24%</span>
-                      <p className="body-md">más de tiendas activas en el año.</p>
+                      <span className="cs-logre__stat-num c-violet">{cs.logre.stat1_num}</span>
+                      <p className="body-md">{cs.logre.stat1_desc}</p>
                     </div>
                     <div className="cs-logre__stat">
-                      <span className="cs-logre__stat-num c-fucsia">+54%</span>
-                      <p className="body-md">más de tiendas activas por mes.</p>
+                      <span className="cs-logre__stat-num c-fucsia">{cs.logre.stat2_num}</span>
+                      <p className="body-md">{cs.logre.stat2_desc}</p>
                     </div>
                     <div className="cs-logre__stat">
-                      <span className="cs-logre__stat-num c-green">+127%</span>
-                      <p className="body-md">más de tiendas registradas en el año.</p>
+                      <span className="cs-logre__stat-num c-green">{cs.logre.stat3_num}</span>
+                      <p className="body-md">{cs.logre.stat3_desc}</p>
                     </div>
                   </div>
                 </div>
 
                 {/* Columna derecha: estrategia */}
                 <div className="cs-logre__col">
-                  <p className="cs-logre__col-title">Impacto en estrategia y gestión</p>
+                  <p className="cs-logre__col-title">{cs.logre.strategy_col_title}</p>
                   <div className="cs-logre__strategy">
-                    <div className="cs-logre__strategy-item">
-                      <span className="cs-logre__arrow c-violet">→</span>
-                      <p className="body-md">Implementación de estrategia de monetización.</p>
-                    </div>
-                    <div className="cs-logre__strategy-item">
-                      <span className="cs-logre__arrow c-violet">→</span>
-                      <p className="body-md">Alineación estratégica de todas las áreas: Marketing, Founder, Desarrollo.</p>
-                    </div>
-                    <div className="cs-logre__strategy-item">
-                      <span className="cs-logre__arrow c-violet">→</span>
-                      <p className="body-md">Registro de datos y métricas</p>
-                    </div>
-                    <div className="cs-logre__strategy-item">
-                      <span className="cs-logre__arrow c-violet">→</span>
-                      <p className="body-md">Definición de objetivos y roadmaps</p>
-                    </div>
+                    {cs.logre.strategy_items.map((item, i) => (
+                      <div key={i} className="cs-logre__strategy-item">
+                        <span className="cs-logre__arrow c-violet">→</span>
+                        <p className="body-md">{item}</p>
+                      </div>
+                    ))}
                   </div>
                 </div>
 
@@ -511,24 +501,18 @@ export default async function PediloPage({ params }: PageProps<'/[lang]/work/ped
         <section className="cs-fallo">
           <div className="cs-fallo__inner">
             <div className="cs-fallo__header">
-              <SectionTitle>· Aprendizajes ·</SectionTitle>
-              <h2 className="cs-fallo__title">¿Qué fallo?</h2>
+              <SectionTitle>{cs.aprendizajes.section_label}</SectionTitle>
+              <h2 className="cs-fallo__title">{cs.aprendizajes.title}</h2>
             </div>
           </div>
           <div className="cs-fallo__items-wrap">
             <div className="cs-fallo__items">
-              <div className="cs-fallo__item">
-                <p className="cs-fallo__item-title">Adopción de cuenta Premium</p>
-                <p className="cs-fallo__item-body">La conversión al plan pago fue más lenta de lo esperado. Eran necesarias estrategias de activación más efectivas para el upgrade.</p>
-              </div>
-              <div className="cs-fallo__item">
-                <p className="cs-fallo__item-title">Fuga de usuarios</p>
-                <p className="cs-fallo__item-body">No se logró medir con exactitud el punto exacto de abandono (churn) en el embudo de conversión inicial.</p>
-              </div>
-              <div className="cs-fallo__item">
-                <p className="cs-fallo__item-title">Registro de tiendas activas</p>
-                <p className="cs-fallo__item-body">No se logro el registro correcto de las tiendas que se mantienen activas, afectando el análisis de retención.</p>
-              </div>
+              {(['1', '2', '3'] as const).map(id => (
+                <div key={id} className="cs-fallo__item">
+                  <p className="cs-fallo__item-title">{cs.aprendizajes.items[id].title}</p>
+                  <p className="cs-fallo__item-body">{cs.aprendizajes.items[id].body}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -537,28 +521,18 @@ export default async function PediloPage({ params }: PageProps<'/[lang]/work/ped
         <section className="cs-fallo">
           <div className="cs-fallo__inner">
             <div className="cs-fallo__header">
-              <SectionTitle>· Próximos pasos ·</SectionTitle>
-              <h2 className="cs-fallo__title">¿Cómo sigue?</h2>
+              <SectionTitle>{cs.siguientes.section_label}</SectionTitle>
+              <h2 className="cs-fallo__title">{cs.siguientes.title}</h2>
             </div>
           </div>
           <div className="cs-fallo__items-wrap">
             <div className="cs-fallo__items">
-              <div className="cs-fallo__item">
-                <p className="cs-fallo__item-title">Nuevo roadmap</p>
-                <p className="cs-fallo__item-body">Creé un nuevo roadmap con el objetivo de convertir a premium los clientes free, priorizando las funciones de mayor valor percibido.</p>
-              </div>
-              <div className="cs-fallo__item">
-                <p className="cs-fallo__item-title">Onboarding guiado</p>
-                <p className="cs-fallo__item-body">Diseñé un onboarding guiado para que las tiendas terminen de configurarse y activen todo su potencial desde el primer día.</p>
-              </div>
-              <div className="cs-fallo__item">
-                <p className="cs-fallo__item-title">Estrategia de captación premium</p>
-                <p className="cs-fallo__item-body">Definí una estrategia de captación en redes sociales, comunicación directa y free trial estratégico para convertir usuarios free en premium.</p>
-              </div>
-              <div className="cs-fallo__item">
-                <p className="cs-fallo__item-title">Mejoras en el registro de métricas</p>
-                <p className="cs-fallo__item-body">Propuse implementar sistemas de medición más precisos para datos de actividad, retención y comportamiento de usuario.</p>
-              </div>
+              {(['1', '2', '3', '4'] as const).map(id => (
+                <div key={id} className="cs-fallo__item">
+                  <p className="cs-fallo__item-title">{cs.siguientes.items[id].title}</p>
+                  <p className="cs-fallo__item-body">{cs.siguientes.items[id].body}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>

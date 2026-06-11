@@ -235,25 +235,20 @@ export default async function PediloPage({ params }: PageProps<'/[lang]/work/ped
                 <div className="cs-stage__step">
                   <p className="cs-step-title">{cs.process.stage1_step1_title}</p>
                   <p className="body-md">
-                    <strong className="c-green">{cs.process.stage1_step1_hl}</strong>
-                    {cs.process.stage1_step1_suffix}
+                    {rich(cs.process.stage1_step1_body, { hl: t => <strong className="c-green">{t}</strong> })}
                   </p>
                 </div>
                 <div className="cs-stage__step">
                   <p className="cs-step-title">{cs.process.stage1_step2_title}</p>
                   <p className="body-md">
-                    {cs.process.stage1_step2_pre}
-                    <strong className="c-green">{cs.process.stage1_step2_hl}</strong>
-                    {cs.process.stage1_step2_suffix}
+                    {rich(cs.process.stage1_step2_body, { hl: t => <strong className="c-green">{t}</strong> })}
                   </p>
                 </div>
               </div>
             </div>
             <div className="cs-stage__result-wrap">
               <InsightCard eyebrow={cs.process.stage1_result_eyebrow}>
-                {cs.process.stage1_result_pre}
-                <span className="c-green">{cs.process.stage1_result_hl}</span>
-                {cs.process.stage1_result_suffix}
+                {rich(cs.process.stage1_result_body, { hl: t => <span className="c-green">{t}</span> })}
               </InsightCard>
             </div>
           </div>
@@ -336,13 +331,10 @@ export default async function PediloPage({ params }: PageProps<'/[lang]/work/ped
             {/* Insight clave */}
             <div style={{ padding: '40px 0', display: 'flex', flexDirection: 'column', gap: '24px', alignItems: 'center' }}>
               <InsightCard eyebrow={cs.process.stage2_insight_eyebrow}>
-                <span>{cs.process.stage2_insight_pre}</span>
-                <span className="c-green">{cs.process.stage2_insight_hl1}</span>
-                <span>{cs.process.stage2_insight_mid}</span>
-                <br />
-                <span>{cs.process.stage2_insight_bridge}</span>
-                <span className="c-green">{cs.process.stage2_insight_hl2}</span>
-                <span>.</span>
+                {rich(cs.process.stage2_insight_body, {
+                  hl1: t => <span className="c-green">{t}</span>,
+                  hl2: t => <span className="c-green">{t}</span>,
+                })}
               </InsightCard>
             </div>
           </div>

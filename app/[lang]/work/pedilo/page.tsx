@@ -171,8 +171,7 @@ export default async function PediloPage({ params }: PageProps<'/[lang]/work/ped
               </div>
               <div style={{ maxWidth: '448px', paddingRight: '24px', paddingTop: '14px' }}>
                 <p className="body-md">
-                  {cs.problem.left_pre}
-                  <strong className="c-green">{cs.problem.left_hl}</strong>
+                  {rich(cs.problem.left_body, { hl: t => <strong className="c-green">{t}</strong> })}
                 </p>
               </div>
             </div>
@@ -182,8 +181,7 @@ export default async function PediloPage({ params }: PageProps<'/[lang]/work/ped
               <div className="cs-problem__right-inner">
                 <h2 className="cs-problem__col-heading">{cs.problem.right_heading}</h2>
                 <p className="body-md">
-                  {cs.problem.right_pre}
-                  <strong className="c-green">{cs.problem.right_hl}</strong>
+                  {rich(cs.problem.right_body1, { hl: t => <strong className="c-green">{t}</strong> })}
                 </p>
                 <p className="body-md">{cs.problem.right_body}</p>
               </div>
@@ -192,9 +190,7 @@ export default async function PediloPage({ params }: PageProps<'/[lang]/work/ped
             {/* Insight card */}
             <div className="cs-problem__card-wrap">
               <InsightCard eyebrow={cs.problem.insight_eyebrow}>
-                {cs.problem.insight_pre}
-                <span className="c-green">{cs.problem.insight_hl}</span>
-                {cs.problem.insight_suffix}
+                {rich(cs.problem.insight_body, { hl: t => <span className="c-green">{t}</span> })}
               </InsightCard>
             </div>
           </div>
@@ -211,8 +207,7 @@ export default async function PediloPage({ params }: PageProps<'/[lang]/work/ped
               <div className="cs-role__content-inner">
                 <p className="cs-role__subtitle">{cs.role.subtitle}</p>
                 <p className="body-md">
-                  <span>{cs.role.body_pre}</span>
-                  <strong className="c-green">{cs.role.body_hl}</strong>
+                  {rich(cs.role.body, { hl: t => <strong className="c-green">{t}</strong> })}
                 </p>
               </div>
             </div>

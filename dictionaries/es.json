@@ -220,23 +220,18 @@
       "problem": {
         "header": "Del problema percibido al problema real:",
         "left_heading": "La hamburguesa que me pidieron:",
-        "left_pre": "Los fundadores de la plataforma plantearon un objetivo concreto: ",
-        "left_hl": "captar más clientes.",
+        "left_body": "Los fundadores de la plataforma plantearon un objetivo concreto: <hl>captar más clientes.</hl>",
         "right_heading": "Descubriendo los ingredientes",
-        "right_pre": "Indagando un poco más, detrás del objetivo concreto, estaba la preocupación de que ",
-        "right_hl": "la plataforma no estaba generando los ingresos esperados.",
+        "right_body1": "Indagando un poco más, detrás del objetivo concreto, estaba la preocupación de que <hl>la plataforma no estaba generando los ingresos esperados.</hl>",
         "right_body": "No había problema real de adquisición de clientes. La plataforma contaba con una captación de nuevos usuarios orgánica. Sin embargo, de los nuevos usuarios registrados, un bajo porcentaje comenzaba a utilizar la plataforma activamente y de estos, prácticamente ninguno contribuía al sistema de monetización de la misma.",
         "insight_eyebrow": "Insight",
-        "insight_pre": "El problema no era de captación de clientes, sino de retención. Y el ",
-        "insight_hl": "objetivo era monetario",
-        "insight_suffix": "."
+        "insight_body": "El problema no era de captación de clientes, sino de retención. Y el <hl>objetivo era monetario</hl>."
       },
       "role": {
         "section_label": "· Mi rol ·",
         "title": "Chef del producto: descubrir qué necesitamos agregarle a la hamburguesa.",
         "subtitle": "· Product Manager & Product Designer ·",
-        "body_pre": "Me desempeñé como  Product Design y Product Management, alineando a todas las aristas del proyecto,  fundadores, desarrolladores (Full Stack y Backend) y  Marketing/CM, bajo un mismo objetivo. ",
-        "body_hl": "Mi misión fue transformar un flujo de trabajo desordenado en una estrategia con sentido de negocio."
+        "body": "Me desempeñé como  Product Design y Product Management, alineando a todas las aristas del proyecto,  fundadores, desarrolladores (Full Stack y Backend) y  Marketing/CM, bajo un mismo objetivo. <hl>Mi misión fue transformar un flujo de trabajo desordenado en una estrategia con sentido de negocio.</hl>"
       },
       "results": {
         "business_title": "Impacto en el negocio",

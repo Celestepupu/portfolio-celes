@@ -248,15 +248,10 @@
         "stat3_desc": "retención anual de tiendas",
         "footnote": "*Comparación de datos 2024 / 2025",
         "strategy_title": "Impacto en estrategia y gestión",
-        "impact1_pre": "Diseño e implementación de  ",
-        "impact1_hl": "estrategia de monetización.",
-        "impact2_pre": "Definición de ",
-        "impact2_hl": "objetivos y roadmaps.",
-        "impact3_hl": "Alineación estratégica ",
-        "impact3_suffix": "de todas las áreas: Marketing, Founders y Desarrollo.",
-        "impact4_pre": "Implementación de cultura ",
-        "impact4_hl": "Data-Driven:",
-        "impact4_suffix": " registro de métricas"
+        "impact1": "Diseño e implementación de  <hl>estrategia de monetización.</hl>",
+        "impact2": "Definición de <hl>objetivos y roadmaps.</hl>",
+        "impact3": "<hl>Alineación estratégica </hl>de todas las áreas: Marketing, Founders y Desarrollo.",
+        "impact4": "Implementación de cultura <hl>Data-Driven:</hl> registro de métricas"
       }
     }
   },

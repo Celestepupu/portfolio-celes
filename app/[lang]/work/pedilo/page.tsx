@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { getDictionary, hasLocale } from '../../dictionaries'
 import { notFound } from 'next/navigation'
+import { rich } from '@/lib/rich'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import DesafiosResizer from '@/components/DesafiosResizer'
@@ -124,29 +125,16 @@ export default async function PediloPage({ params }: PageProps<'/[lang]/work/ped
             </div>
             <div className="cs-impact-cards">
               <CsCard as="article" impact>
-                <h3>
-                  {cs.results.impact1_pre}
-                  <span className="c-green">{cs.results.impact1_hl}</span>
-                </h3>
+                <h3>{rich(cs.results.impact1, { hl: t => <span className="c-green">{t}</span> })}</h3>
               </CsCard>
               <CsCard as="article" impact>
-                <h3>
-                  {cs.results.impact2_pre}
-                  <span className="c-fucsia">{cs.results.impact2_hl}</span>
-                </h3>
+                <h3>{rich(cs.results.impact2, { hl: t => <span className="c-fucsia">{t}</span> })}</h3>
               </CsCard>
               <CsCard as="article" impact>
-                <h3>
-                  <span className="c-fucsia">{cs.results.impact3_hl}</span>
-                  {cs.results.impact3_suffix}
-                </h3>
+                <h3>{rich(cs.results.impact3, { hl: t => <span className="c-fucsia">{t}</span> })}</h3>
               </CsCard>
               <CsCard as="article" impact>
-                <h3>
-                  {cs.results.impact4_pre}
-                  <span className="c-green">{cs.results.impact4_hl}</span>
-                  {cs.results.impact4_suffix}
-                </h3>
+                <h3>{rich(cs.results.impact4, { hl: t => <span className="c-green">{t}</span> })}</h3>
               </CsCard>
             </div>
           </div>

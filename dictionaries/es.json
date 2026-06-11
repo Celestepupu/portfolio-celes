@@ -2,31 +2,16 @@
   "hero": {
     "subtitle": "Bajá despacio. Si te moves el camino aparece. ↓",
 
-    "h1_intro": "Durante 10 años hice",
-    "h1_hl1": "el mismo trayecto",
-    "h1_bridge": "mirando por la",
-    "h1_hl2": "misma ventana...",
+    "h1": "Durante 10 años hice <hl1>el mismo trayecto</hl1>, mirando por la <hl2>misma ventana...</hl2>",
 
     "block2_label": "observar, descubrir, crear",
-    "block2_intro": "y todos los días…",
-    "block2_hl": "descubrí algo nuevo.",
+    "block2": "y todos los días… <hl>descubrí algo nuevo.</hl>",
 
     "block3_label": "Otra mirada",
-    "block3_intro": "Tengo otra forma de mirar, veo",
-    "block3_hl1": "más allá",
-    "block3_bridge": "de lo que se ve a simple vista y por eso tengo en claro que",
-    "block3_hl2": "lo esencial es invisible a los ojos...",
+    "block3": "Tengo otra forma de mirar, veo <hl1>más allá</hl1> de lo que se ve a simple vista y por eso tengo en claro que <hl2>lo esencial es invisible a los ojos...</hl2>",
 
     "block4_label": "Quién soy",
-    "block4_prefix": "Soy",
-    "block4_job": "Product Designer",
-    "block4_conn1": ", con",
-    "block4_exp": "4 años",
-    "block4_conn2": "de experiencia en",
-    "block4_skill": "UX/UI",
-    "block4_conn3": "y 1 año como",
-    "block4_role": "Product Manager",
-    "block4_suffix": ". Encontrando ideas nuevas, detectando oportunidades y diseñando con estrategias alineadas con objetivos del negocio."
+    "block4": "Soy <job>Product Designer</job>, con <exp>4 años</exp> de experiencia en <skill>UX/UI</skill> y 1 año como <role>Product Manager</role>. Encontrando ideas nuevas, detectando oportunidades y diseñando con estrategias alineadas con objetivos del negocio."
   },
 
   "caseStudy": {

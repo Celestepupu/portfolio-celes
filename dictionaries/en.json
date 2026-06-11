@@ -2,31 +2,16 @@
   "hero": {
     "subtitle": "Scroll slowly. The path appears as you move. ↓",
 
-    "h1_intro": "For 10 years, I took",
-    "h1_hl1": "the same journey",
-    "h1_bridge": ", looking out the",
-    "h1_hl2": "same window…",
+    "h1": "For 10 years, I took <hl1>the same journey</hl1>, looking out the <hl2>same window…</hl2>",
 
     "block2_label": "Observe, discover, create",
-    "block2_intro": "and every day…",
-    "block2_hl": "I discovered something new.",
+    "block2": "and every day… <hl>I discovered something new.</hl>",
 
     "block3_label": "A different perspective",
-    "block3_intro": "I have a different way of looking at things. I see",
-    "block3_hl1": "past the first glance",
-    "block3_bridge": ", and that is why I know that",
-    "block3_hl2": "what is essential is invisible to the eye...",
+    "block3": "I have a different way of looking at things. I see <hl1>past the first glance</hl1>, and that is why I know that <hl2>what is essential is invisible to the eye...</hl2>",
 
     "block4_label": "Who I am?",
-    "block4_prefix": "I'm a",
-    "block4_job": "Product Designer",
-    "block4_conn1": "with",
-    "block4_exp": "4 years",
-    "block4_conn2": "of experience in",
-    "block4_skill": "UX/UI",
-    "block4_conn3": "and 1 year as",
-    "block4_role": "Product Manager",
-    "block4_suffix": ". Uncovering new ideas. Identifying opportunities. Designing with business strategy at the core."
+    "block4": "I'm a <job>Product Designer</job> with <exp>4 years</exp> of experience in <skill>UX/UI</skill> and 1 year as <role>Product Manager</role>. Uncovering new ideas. Identifying opportunities. Designing with business strategy at the core."
   },
 
   "caseStudy": {

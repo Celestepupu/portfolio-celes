@@ -3,6 +3,7 @@
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { rich } from '@/lib/rich'
 
 const PATH_D = `M 167 12
   C 167 210, 1020 210, 1020 430
@@ -100,28 +101,13 @@ function buildResponsivePath(heroEl: Element): string | null {
 
 type HeroDict = {
   subtitle: string
-  h1_intro: string
-  h1_hl1: string
-  h1_bridge: string
-  h1_hl2: string
+  h1: string
   block2_label: string
-  block2_intro: string
-  block2_hl: string
+  block2: string
   block3_label: string
-  block3_intro: string
-  block3_hl1: string
-  block3_bridge: string
-  block3_hl2: string
+  block3: string
   block4_label: string
-  block4_prefix: string
-  block4_job: string
-  block4_conn1: string
-  block4_exp: string
-  block4_conn2: string
-  block4_skill: string
-  block4_conn3: string
-  block4_role: string
-  block4_suffix: string
+  block4: string
 }
 
 export default function Hero({ dict }: { dict: HeroDict }) {
@@ -255,10 +241,10 @@ export default function Hero({ dict }: { dict: HeroDict }) {
             <span className="label-lg c-violet">Celeste Palacios · Product Designer &amp; Nomad</span>
           </div>
           <h1 className="hero__h1">
-            {dict.h1_intro}{' '}
-            <span className="c-fucsia">{dict.h1_hl1}</span>,{' '}
-            {dict.h1_bridge}{' '}
-            <span className="font-accent c-green">{dict.h1_hl2}</span>
+            {rich(dict.h1, {
+              hl1: t => <span className="c-fucsia">{t}</span>,
+              hl2: t => <span className="font-accent c-green">{t}</span>,
+            })}
           </h1>
           <p className="hero__subtitle label-lg">
             {dict.subtitle}
@@ -274,8 +260,9 @@ export default function Hero({ dict }: { dict: HeroDict }) {
             <span className="label-sm c-fucsia">{dict.block2_label}</span>
           </div>
           <p className="hero__text-lg">
-            {dict.block2_intro}{' '}
-            <span className="fw-semibold c-green">{dict.block2_hl}</span>
+            {rich(dict.block2, {
+              hl: t => <span className="fw-semibold c-green">{t}</span>,
+            })}
           </p>
         </div>
 
@@ -286,10 +273,10 @@ export default function Hero({ dict }: { dict: HeroDict }) {
             <span className="label-sm c-green">{dict.block3_label}</span>
           </div>
           <p className="hero__text-lg">
-            {dict.block3_intro}{' '}
-            <span className="fw-bold c-violet">{dict.block3_hl1}</span>
-            {' '}{dict.block3_bridge}{' '}
-            <span className="font-accent c-green hero__accent-lg">{dict.block3_hl2}</span>
+            {rich(dict.block3, {
+              hl1: t => <span className="fw-bold c-violet">{t}</span>,
+              hl2: t => <span className="font-accent c-green hero__accent-lg">{t}</span>,
+            })}
           </p>
         </div>
 
@@ -300,15 +287,12 @@ export default function Hero({ dict }: { dict: HeroDict }) {
             <span className="label-sm c-violet">{dict.block4_label}</span>
           </div>
           <p className="hero__text-lg">
-            {dict.block4_prefix}{' '}
-            <span className="fw-bold c-fucsia">{dict.block4_job}</span>
-            {' '}{dict.block4_conn1}{' '}
-            <span className="fw-bold">{dict.block4_exp}</span>{' '}
-            {dict.block4_conn2}{' '}
-            <span className="fw-bold c-green">{dict.block4_skill}</span>{' '}
-            {dict.block4_conn3}{' '}
-            <span className="fw-bold c-fucsia">{dict.block4_role}</span>
-            {dict.block4_suffix}
+            {rich(dict.block4, {
+              job:  t => <span className="fw-bold c-fucsia">{t}</span>,
+              exp:  t => <span className="fw-bold">{t}</span>,
+              skill: t => <span className="fw-bold c-green">{t}</span>,
+              role: t => <span className="fw-bold c-fucsia">{t}</span>,
+            })}
           </p>
         </div>
 

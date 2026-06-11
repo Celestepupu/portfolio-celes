@@ -1,20 +1,12 @@
+import { rich } from '@/lib/rich'
+
 type AboutDict = {
   eyebrow: string
-  heading1: string
-  heading_accent: string
-  heading2: string
+  heading: string
   body1: string
   body2: string
-  body3_pre: string
-  body3_hl1: string
-  body3_mid: string
-  body3_hl2: string
-  body3_suffix: string
-  body4_pre: string
-  body4_hl1: string
-  body4_mid: string
-  body4_hl2: string
-  body4_suffix: string
+  body3: string
+  body4: string
   extra_quote: string
   metodologia: string
 }
@@ -27,10 +19,11 @@ export default function About({ dict }: { dict: AboutDict }) {
         <div className="about__left">
           <p className="label-xl c-green">{dict.eyebrow}</p>
           <div className="about__heading">
-            <span className="about__heading-line display-xl">{dict.heading1}</span>
-            <br />
-            <span className="font-accent about__heading-accent c-fucsia">{dict.heading_accent}</span>
-            <span className="display-xl"> {dict.heading2}</span>
+            <span className="about__heading-line display-xl">
+              {rich(dict.heading, {
+                accent: t => <span className="font-accent about__heading-accent c-fucsia">{t}</span>,
+              })}
+            </span>
           </div>
         </div>
 
@@ -39,18 +32,14 @@ export default function About({ dict }: { dict: AboutDict }) {
             <p>{dict.body1}</p>
             <p>{dict.body2}</p>
             <p>
-              {dict.body3_pre}{' '}
-              <strong className="c-violet">{dict.body3_hl1}</strong>{' '}
-              {dict.body3_mid}{' '}
-              <strong className="c-violet">{dict.body3_hl2}</strong>{' '}
-              {dict.body3_suffix}
+              {rich(dict.body3, {
+                hl: t => <strong className="c-violet">{t}</strong>,
+              })}
             </p>
             <p>
-              {dict.body4_pre}{' '}
-              <strong className="c-violet">{dict.body4_hl1}</strong>{' '}
-              {dict.body4_mid}{' '}
-              <strong className="c-violet">{dict.body4_hl2}</strong>
-              {dict.body4_suffix}
+              {rich(dict.body4, {
+                hl: t => <strong className="c-violet">{t}</strong>,
+              })}
             </p>
           </div>
           <div className="about__extra">

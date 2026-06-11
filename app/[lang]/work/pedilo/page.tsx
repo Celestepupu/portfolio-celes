@@ -402,9 +402,7 @@ export default async function PediloPage({ params }: PageProps<'/[lang]/work/ped
               <div className="cs-images__item">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={ICON_STAR} alt="" width={20} height={20} className="cs-images__icon" />
-                <p className="body-md">
-                  <strong>{cs.images.laptop_hl}</strong>{cs.images.laptop_suffix}
-                </p>
+                <p className="body-md">{cs.images.laptop_text}</p>
               </div>
             </div>
 

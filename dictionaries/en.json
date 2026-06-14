@@ -306,14 +306,14 @@
       }
     },
     "about": {
-      "eyebrow": "· Sobre mí ·",
-      "heading": "Diseño con<br/><accent>curiosidad</accent> de viajera",
-      "body1": "Product Designer, con 4 años de experiencia en UX/UI y un enfoque de Product Management para la definición de roadmaps y prioridades.",
-      "body2": "Con 10 años en la industria de viajes y turismo, integro ese recorrido para diseñar productos digitales alineados al negocio y centrados en el usuario.",
-      "body3": "Cómo viajera cambia mi entorno, pero no mi rutina: sé mantener <hl>compromiso</hl> y <hl>responsabilidad</hl> ante el cambio constante. En movimiento, pero siempre sin dejar de observar, desarrollando constantemente la habilidad de ver lo que pasa desapercibido a simple vista.",
-      "body4": "Soy <hl>creativa</hl> y <hl>creadora</hl>, aportando una visión global, curiosa y en constante evolución.",
-      "extra_quote": "Si te movés el camino aparece.",
-      "metodologia": "El viaje también es metología."
+      "eyebrow": "· About me ·",
+      "heading": "Designing with a <br/><accent>traveler's curiosity.</accent>",
+      "body1": "I'm a Product Designer with 4 years of experience in UX/UI and a Product Management focus on defining roadmaps and prioritizing features.",
+      "body2": "With 10 years in the travel & tourism industry, I integrate that journey to design digital products that are aligned with business goals and deeply centered on the user.",
+      "body3": "As a traveler, my environment changes, but not my routine: I know how to maintain <hl>commitment</hl> and <hl>responsibility</hl> through constant change. I am always in motion, but never stop observing—continually developing the skill to see what goes unnoticed at first glance.",
+      "body4": "I'm a <hl>creative</hl> and a <hl>builder</hl>, bringing a global vision, curiosity, and a drive for constant evolution.",
+      "extra_quote": "Paths are made by walking.",
+      "metodologia": "The journey is also a methodology."
     }
   },
 

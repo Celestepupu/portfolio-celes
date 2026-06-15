@@ -202,20 +202,20 @@
         ]
       },
       "context": {
-        "section_label": "· Contexto ·",
+        "section_label": "· Context ·",
         "title": "Pedilo Store",
-        "body1": "Pedilo Store es una plataforma online para facilitar la gestión de pedidos por WhatsApp a pequeños y medianos comercios, especialmente de la industria gastronómica. ",
-        "body2": "Los consumidores eligen los productos en un catálogo online y el comerciante recibe el pedido ordenado y resumido en su WhatsApp"
+        "body1": "Pedilo Store is an online platform designed to simplify WhatsApp order management for small and medium-sized businesses, especially within the restaurant industry.",
+        "body2": "Customers select products from an online catalog, and the merchant receives the organized, summarized order directly on WhatsApp"
       },
       "problem": {
-        "header": "Del problema percibido al problema real:",
-        "left_heading": "La hamburguesa que me pidieron:",
-        "left_body": "Los fundadores de la plataforma plantearon un objetivo concreto: <hl>captar más clientes.</hl>",
-        "right_heading": "Descubriendo los ingredientes",
-        "right_body1": "Indagando un poco más, detrás del objetivo concreto, estaba la preocupación de que <hl>la plataforma no estaba generando los ingresos esperados.</hl>",
-        "right_body": "No había problema real de adquisición de clientes. La plataforma contaba con una captación de nuevos usuarios orgánica. Sin embargo, de los nuevos usuarios registrados, un bajo porcentaje comenzaba a utilizar la plataforma activamente y de estos, prácticamente ninguno contribuía al sistema de monetización de la misma.",
+        "header": "From the perceived problem to the real problem:",
+        "left_heading": "The burger they ordered:",
+        "left_body": "The platform founders set a specific goal: <hl>to acquire more clients.</hl>",
+        "right_heading": "Discovering the ingredients",
+        "right_body1": "Digging a little deeper, behind that concrete goal was the concern that <hl>the platform wasn't generating the expected revenue.</hl>",
+        "right_body": "There was no real clients acquisition problem. The platform already enjoyed organic acquisition of new users. However, of the new registered clients, only a small percentage actively used the platform, and virtually none contributed to its monetization system.",
         "insight_eyebrow": "Insight",
-        "insight_body": "El problema no era de captación de clientes, sino de retención. Y el <hl>objetivo era monetario</hl>."
+        "insight_body": "The problem wasn't client acquisition; it was a retention problem. And the <hl>objective was financial</hl>."
       },
       "role": {
         "section_label": "· Mi rol ·",

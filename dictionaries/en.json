@@ -19,9 +19,9 @@
       "hero": {
         "eyebrow": "Product Manager - Product Designer",
         "title_hl": "Pedilo Store:",
-        "title_text": " Redefiniendo la estrategia de producto.",
-        "accent": "Le agregué salsa a la hamburguesa",
-        "img_alt": "Hamburguesa - imagen hero"
+        "title_text": " Redefining product strategy.",
+        "accent": "Adding the secret sauce to the burger.",
+        "img_alt": "Hamburger - hero image"
       },
       "desafios": {
         "section_label": "· Reflexiones personales ·",
@@ -224,19 +224,19 @@
         "body": "Me desempeñé como  Product Design y Product Management, alineando a todas las aristas del proyecto,  fundadores, desarrolladores (Full Stack y Backend) y  Marketing/CM, bajo un mismo objetivo. <hl>Mi misión fue transformar un flujo de trabajo desordenado en una estrategia con sentido de negocio.</hl>"
       },
       "results": {
-        "business_title": "Impacto en el negocio",
+        "business_title": "Business Impact",
         "stat1_num": "+ 127% ",
-        "stat1_desc": " tiendas registradas",
+        "stat1_desc": "stores onboarded",
         "stat2_num": "+ 54% ",
-        "stat2_desc": " tiendas activas mensuales",
+        "stat2_desc": "monthly active stores",
         "stat3_num": "+ 24% ",
-        "stat3_desc": "retención anual de tiendas",
-        "footnote": "*Comparación de datos 2024 / 2025",
-        "strategy_title": "Impacto en estrategia y gestión",
-        "impact1": "Diseño e implementación de  <hl>estrategia de monetización.</hl>",
-        "impact2": "Definición de <hl>objetivos y roadmaps.</hl>",
-        "impact3": "<hl>Alineación estratégica </hl>de todas las áreas: Marketing, Founders y Desarrollo.",
-        "impact4": "Implementación de cultura <hl>Data-Driven:</hl> registro de métricas"
+        "stat3_desc": "annual store retention",
+        "footnote": "*2024 / 2025 data comparison",
+        "strategy_title": "Strategic and management impact",
+        "impact1": "Design and implementation of the <hl>monetization strategy.</hl>",
+        "impact2": "Definition of <hl>objectives and product roadmaps.</hl>",
+        "impact3": "<hl>Strategic alignment</hl> across all areas: Marketing, Founders, and Development.",
+        "impact4": "Implementation of a <hl>data-driven</hl> culture: tracking metrics."
       }
     }
   },

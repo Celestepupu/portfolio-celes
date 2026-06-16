@@ -143,43 +143,43 @@
         "stage1_result_eyebrow": "Results",
         "stage1_result_body": "Sign-ups <hl>jumped from 2 to 5 monthly registrations</hl> with changes implemented in just one day. This satisfied the founders' immediate appetite while I prepared the in-depth research.",
         "quote": "Now, with full bellies and happy hearts, it's time to prep the main course...",
-        "stage2_title": "Segunda Etapa: \nBuscando los ingredientes secretos: investigación profunda.",
-        "stage2_product_title": "Sobre el producto:",
-        "stage2_research_title": "Investigación",
-        "stage2_discoveries_title": "Descubrimientos",
+        "stage2_title": "Second Stage: \nSearching for the secret ingredients: deep-dive research.",
+        "stage2_product_title": "About the product:",
+        "stage2_research_title": "Research",
+        "stage2_discoveries_title": "Discoveries",
         "stage2_product_research": [
-          "Análisis de la competencia. (Benchmarking) ",
-          "Entrevistas con usuarios.",
-          "Análisis de clientes fieles."
+          "Competitive analysis (Benchmarking)",
+          "User interviews",
+          "Loyal client analysis"
         ],
         "stage2_product_discoveries": [
-          "La mayoría de los clientes eran del rubro gastronómico, principalmente hamburgueserías. ",
-          "Muchos clientes migraron a la competencia.",
-          "Competencia ofrecían de forma gratuita lo que para el producto era la forma de monetización. (Integración con Mercado pago) Ofrecían funcionalidades que Pedilo no tenía.",
-          "Hubo una demanda clara en las entrevistas: Necesitaban que los clientes pudieran personalizar las hamburguesas agregando extras. Funcionalidades que se habían planteado, como la posibilidad de enviar promociones por mail, o control de stock, no eran de interés.",
-          "Los clientes preferían pagar precio fijo en lugar de comisiones."
+          "The majority of the clients belonged to the food industry, primarily burger joints.",
+          "Many clients migrated to competitors.",
+          "Competitors offered for free what was originally this platform's monetization model (Mercado Pago integration). They also provided features that Pedilo lacked.",
+          "There was a clear demand during interviews: they needed consumers to be able to customize their burgers by adding extras. Features that had been previously planned, such as email marketing promotions or inventory management, were of no interest.",
+          "Clients preferred paying a flat fee instead of commissions."
         ],
-        "stage2_work_title": "Sobre la forma de trabajo:",
+        "stage2_work_title": "About the workflow:",
         "stage2_work_research": [
-          "Entrevistas con founders y colaboradores. ",
-          "Analizar tablero de trabajo y larga lista de backlog.",
-          "Análisis de clientes fieles."
+          "Interviews with founders and collaborators.",
+          "Analyzing the workspace board and the extensive backlog.",
+          "Loyal client analysis."
         ],
         "stage2_work_discoveries": [
-          "No había estrategia en la priorización de features, bugs etc.",
-          "El equipo trabajaba de forma part-time y discontinua, generaba que cada persona que volvía a retomar el producto, tomaba las tareas que les parecía."
+          "There was no strategy in place for prioritizing features, bugs, etc.",
+          "The team worked on a part-time, discontinuous basis; as a result, whenever someone picked the product back up, they simply worked on whatever tasks they saw fit."
         ],
-        "stage2_social_title": "Sobre las redes sociales:",
+        "stage2_social_title": "About social media:",
         "stage2_social_research": [
-          "Análisis de qué y cómo se esta comunicando en redes sociales."
+          "Analysis of what and how things were being communicated on social media."
         ],
         "stage2_social_discoveries": [
-          "En redes sociales se comunicaba para el consumidor final y no para el cliente ideal.",
-          "El equipo no tenía buen entendimiento del producto. Se confundían las funcionalidades de la plataforma con funcionalidades de aplicaciones de entrega a domicilio.",
-          "No se comunicaba desde la solución ni del punto de dolor del cliente ideal."
+          "Social media communication was tailored to the end consumer instead of the ideal client.",
+          "The team did not have a clear understanding of the product; they confused the platform's features with those of food delivery apps.",
+          "Communication failed to address both the solution and the ideal client's pain points."
         ],
-        "stage2_insight_eyebrow": "Insight clave",
-        "stage2_insight_body": "La competencia ofrecía la opción de <hl1>personalizar el URL</hl1>, pero descubrí que la llegada orgánica de clientes se debía a que los comercios veían la marca de Pedilo desde las tiendas de otros comercios. <br/>Implementar esta funcionalidad, <hl2>para alinearse a la competencia, hubiera llevado a perder la captación orgánica de clientes</hl2>.",
+        "stage2_insight_eyebrow": "Key insight",
+        "stage2_insight_body": "Competitors offered the option to <hl1>customize the URL</hl1>, but I discovered that our organic client acquisition happened because businesses saw the Pedilo branding on other clients' stores. <br/><hl2>Implementing this feature just to align with the competition would have resulted in losing our primary organic client acquisition channel.</hl2>",
         "stage3_title": "Tercera Etapa: \n¡A cocinar! Roadmap y qué se hizo",
         "stage3_step1_title": "¿Qué hice?",
         "stage3_step1_items": [

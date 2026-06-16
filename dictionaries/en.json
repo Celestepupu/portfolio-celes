@@ -133,16 +133,16 @@
         "laptop_text": "Personalización de productos con extras, gustos y adicionales."
       },
       "process": {
-        "section_label": "· Proceso ·",
-        "main_title": "Cocinando la Estrategia",
-        "stage1_title": "Primera Etapa: \nEntrando a la cocina.",
-        "stage1_step1_title": "1º - Busqué por la cocina:",
-        "stage1_step1_body": "<hl>Discovery e investigación.</hl> Hablé en profundidad con los fundadores, investigué  a los clientes, busqué métricas, analicé la landing page,la plataforma, y las redes sociales.",
-        "stage1_step2_title": "2º - Saqué unas papitas para picar antes del gran banquete:",
-        "stage1_step2_body": "Antes del plato principal, ataqué la demanda urgente: Hice análisis de la landing page y realicé <hl>cambios de UX Writing</hl>, para resolver rápido la primera demanda de los fundadores: captar más clientes",
-        "stage1_result_eyebrow": "Resultados",
-        "stage1_result_body": "Paso <hl>de 2 a 5 registros mensuales</hl> con cambios realizados en 1 día. Calmé el hambre inicial de los founders mientras preparaba la investigación profunda.",
-        "quote": "Ahora...con la panza llena, a preparar el plato principal...",
+        "section_label": "· Process ·",
+        "main_title": "Cooking the strategy",
+        "stage1_title": "First Stage: \nEntering the kitchen.",
+        "stage1_step1_title": "1º - Searched the kitchen:",
+        "stage1_step1_body": "<hl>Discovery and research.</hl> I had in-depth conversations with the founders, researched our clients, looked for metrics, and analyzed the landing page, the platform, and social media.",
+        "stage1_step2_title": "2º - Whipped up some quick snacks before the big feast:",
+        "stage1_step2_body": "Before the main course, I tackled the urgent request: I analyzed the landing page and made <hl>UX writing updates</hl> to quickly address the founders' immediate goal of acquiring more clients.",
+        "stage1_result_eyebrow": "Results",
+        "stage1_result_body": "Sign-ups <hl>jumped from 2 to 5 monthly registrations</hl> with changes implemented in just one day. This satisfied the founders' immediate appetite while I prepared the in-depth research.",
+        "quote": "Now, with full bellies and happy hearts, it's time to prep the main course...",
         "stage2_title": "Segunda Etapa: \nBuscando los ingredientes secretos: investigación profunda.",
         "stage2_product_title": "Sobre el producto:",
         "stage2_research_title": "Investigación",
@@ -218,10 +218,10 @@
         "insight_body": "The problem wasn't client acquisition; it was a retention problem. And the <hl>objective was financial</hl>."
       },
       "role": {
-        "section_label": "· Mi rol ·",
-        "title": "Chef del producto: descubrir qué necesitamos agregarle a la hamburguesa.",
+        "section_label": "· My role ·",
+        "title": "Product Chef: discovering what we need to add to the burger.",
         "subtitle": "· Product Manager & Product Designer ·",
-        "body": "Me desempeñé como  Product Design y Product Management, alineando a todas las aristas del proyecto,  fundadores, desarrolladores (Full Stack y Backend) y  Marketing/CM, bajo un mismo objetivo. <hl>Mi misión fue transformar un flujo de trabajo desordenado en una estrategia con sentido de negocio.</hl>"
+        "body": "I worked as both the Product Designer and Product Manager, aligning all moving parts of the project—founders, developers (Full Stack and Backend), and Marketing/Social Media—under a single goal. <hl>My mission was to transform a chaotic workflow into a business-driven strategy.</hl>"
       },
       "results": {
         "business_title": "Business Impact",

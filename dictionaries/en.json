@@ -67,22 +67,22 @@
         "nav_next": "Próximo caso →"
       },
       "logre": {
-        "section_label": "· Resultados ·",
-        "title": "¿Qué logré?",
-        "comparison_label": "Comparación 2024 → 2025",
-        "business_col_title": "Impacto en el negocio",
+        "section_label": "· Results ·",
+        "title": "What I achieved?",
+        "comparison_label": "*2024 / 2025 data comparison",
+        "business_col_title": "Business Impact",
         "stat1_num": "+24%",
-        "stat1_desc": "más de tiendas activas en el año.",
+        "stat1_desc": "annual store retention",
         "stat2_num": "+54%",
-        "stat2_desc": "más de tiendas activas por mes.",
+        "stat2_desc": "monthly active stores",
         "stat3_num": "+127%",
-        "stat3_desc": "más de tiendas registradas en el año.",
-        "strategy_col_title": "Impacto en estrategia y gestión",
+        "stat3_desc": "stores onboarded",
+        "strategy_col_title": "Strategic and management impact",
         "strategy_items": [
-          "Implementación de estrategia de monetización.",
-          "Alineación estratégica de todas las áreas: Marketing, Founder, Desarrollo.",
-          "Registro de datos y métricas",
-          "Definición de objetivos y roadmaps"
+          "Implementation of the monetization strategy.",
+          "Strategic alignment across all areas: Marketing, Founders, and Development.",
+          "Data and metrics tracking",
+          "Defining goals and roadmaps"
         ]
       },
       "aprendizajes": {
@@ -126,11 +126,11 @@
         }
       },
       "images": {
-        "before_after_alt": "Landing page antes y después del rediseño",
-        "item1": "Rediseño de landing page orientada nicho, cliente ideal y conversión.",
-        "item2": "Re-branding estratégico.",
-        "laptop_alt": "Pantalla de personalización de productos",
-        "laptop_text": "Personalización de productos con extras, gustos y adicionales."
+        "before_after_alt": "Landing page before and after the redesign",
+        "item1": "Landing page redesign focused on the niche, ideal client, and conversion.",
+        "item2": "Strategic rebranding.",
+        "laptop_alt": "Product customization screen",
+        "laptop_text": "Product customization with extras, preferences, and add-ons."
       },
       "process": {
         "section_label": "· Process ·",
@@ -180,25 +180,25 @@
         ],
         "stage2_insight_eyebrow": "Key insight",
         "stage2_insight_body": "Competitors offered the option to <hl1>customize the URL</hl1>, but I discovered that our organic client acquisition happened because businesses saw the Pedilo branding on other clients' stores. <br/><hl2>Implementing this feature just to align with the competition would have resulted in losing our primary organic client acquisition channel.</hl2>",
-        "stage3_title": "Tercera Etapa: \n¡A cocinar! Roadmap y qué se hizo",
-        "stage3_step1_title": "¿Qué hice?",
+        "stage3_title": "Third Stage: \nLet's cook! Roadmap and execution",
+        "stage3_step1_title": "What did I do?",
         "stage3_step1_items": [
-          "Construí un roadmap.",
-          "Redefiní la estrategia de monetización.",
-          "Definí el cliente objetivo.",
-          "Definí elevator Pitch.",
-          "Uní la estrategia de marketing con la de landing page.",
-          "Definí tasks y prioridades de diseño y desarrollo. ",
-          "Empecé a registrar métricas relevantes.",
-          "Implementé un sistema de correlación de eventos, vinculando los hitos de producto y campañas de marketing con las fluctuaciones en las métricas clave."
+          "Built a roadmap.",
+          "Redefined the monetization strategy.",
+          "Defined the target client.",
+          "Defined the elevator pitch.",
+          "Aligned the marketing strategy with the landing page strategy.",
+          "Defined design and development tasks and priorities.",
+          "Started tracking relevant metrics.",
+          "Implemented an event correlation system, linking product milestones and marketing campaigns to fluctuations in key metrics."
         ],
-        "stage3_step2_title": "Esto me llevó a:",
+        "stage3_step2_title": "This led me to:",
         "stage3_step2_items": [
-          "Implementar funcionalidad estrella por la cual los usuarios pagarían: Personalización de pedidos: Si, todos queremos agregarle extra queso a la hamburguesa.",
-          "Rediseñar landing page, enfocada 100% al nicho.",
-          "Armar estilo de branding, e implementarlo en producto y marketing, para generar identidad visual",
-          "Definir estrategia de comunicación en redes sociales.",
-          "Lanzar Plan Premium."
+          "Implement the star feature that users would pay for—Order Customization: Yes, we all want to add extra cheese to our burger.",
+          "Redesign the landing page, making it 100% niche-focused.",
+          "Develop a branding style and implement it across the product and marketing to create a cohesive visual identity.",
+          "Define the social media communication strategy.",
+          "Launch the Premium Plan."
         ]
       },
       "context": {

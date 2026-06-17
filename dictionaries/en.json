@@ -24,47 +24,47 @@
         "img_alt": "Hamburger - hero image"
       },
       "desafios": {
-        "section_label": "· Reflexiones personales ·",
-        "title": "Desafíos y aprendizajes: Orden en el desorden",
-        "badge_label": "Área de mejora",
+        "section_label": "· Personal Reflections ·",
+        "title": "Challenges and Lessons Learned: Finding Order in the Chaos",
+        "badge_label": "Area for growth",
         "items": {
           "1": {
-            "title": "Product Manager sin recetas",
-            "body": "Mi primera experiencia formal como Product Manager sin guía concreta. Mi primer roadmap ordenó el proyecto pero no al equipo. El segundo fue claro y el equipo lo implementó con autonomía.",
-            "badge_body": "Profundizar en la implementación de roadmaps según las necesidades de cada equipo."
+            "title": "Product Manager without a recipe",
+            "body": "My first formal experience as a Product Manager without a set playbook. My first roadmap brought structure to the project but not to the team. The second one was clear, and the team implemented it with full autonomy.",
+            "badge_body": "Deepen the implementation of roadmaps tailored to the unique needs of each team."
           },
           "2": {
-            "title": "Sincronización de un equipo discontinuo",
-            "body": "Sin dedicación full-time del equipo, el flujo se cortaba. Implementé un tablero Kanban en Trello con columna de prioridades estratégicas para mantener el rumbo.",
-            "badge_body": "Implementar herramientas de gestión ágiles para facilitar el orden y la autonomía de las tareas."
+            "title": "Synchronizing a fragmented team",
+            "body": "Without a full-time commitment from the team, the workflow kept fracturing. I implemented a Kanban board in Trello with a strategic priorities column to keep everyone on track.",
+            "badge_body": "Implement agile management tools to streamline organization and foster task autonomy."
           },
           "3": {
-            "title": "Documentación desordenada",
-            "body": "Como fue mi primera experiencia, el proceso de documentación fue desordenado y difícilmente transmisible, quedando en notas personales e informales.",
-            "badge_body": "Refinar mi capacidad de documentar de forma clara y accionable para que cualquier persona pueda recurrir a ello."
+            "title": "Unstructured documentation",
+            "body": "Being my first experience, the documentation process was disorganized and difficult to share, often scattered across personal and informal notes.",
+            "badge_body": "Refine my ability to document clearly and actionably, ensuring it serves as a reliable resource for anyone on the team."
           },
           "4": {
-            "title": "Data Cleaning en GA4",
-            "body": "Al compartir la URL con los clientes, los datos estaban \"sucios\". Tuve que aprender a filtrar métricas avanzadas para separar el ruido del tráfico real.",
-            "badge_body": "Profundizar en Google Analytics para sistemas complejos y manejar registros más claros de datos."
+            "title": "Data cleaning in GA4",
+            "body": "When sharing the URL with clients, the analytics data became \"dirty.\" I had to learn how to apply advanced filters to separate background noise from actual user traffic.",
+            "badge_body": "Deepen my expertise in Google Analytics for complex systems to ensure cleaner data tracking."
           },
           "5": {
-            "title": "Legitimar la estrategia (El Chef sin título)",
-            "body": "Lograr que la estrategia de producto se plasmara en la comunicación de marketing implicó varias reuniones y aprender a retransmitir ideas de forma simple.",
-            "badge_body": "Perfeccionar la comunicación asertiva para adaptar el mensaje técnico a diferentes perfiles profesionales."
+            "title": "Legitimizing the strategy (The Chef without a title)",
+            "body": "Aligning the product strategy with marketing communications required multiple cross-functional meetings and learning to convey complex ideas simply.",
+            "badge_body": "Refine assertive communication to effectively tailor technical insights for diverse professional profiles."
           },
           "6": {
-            "title": "Estrategia de Pricing y Business Analytics",
-            "body": "La estrategia de monetización se definió por investigación con usuarios sin un pricing concreto. Realicé los análisis de business analytics a posteriori.",
-            "badge_body": "Integrar investigaciones de business analytics desde la etapa de descubrimiento para definir precios correctamente."
+            "title": "Pricing strategy and business analytics",
+            "body": "The monetization strategy was defined through user research without concrete pricing models in place. I conducted the business analytics evaluation retrospectively.",
+            "badge_body": "Integrate business analytics research right from the discovery stage to optimize price definition."
           }
         }
       },
       "cierre": {
-        "quote": "Gracias por leer...Hasta la próxima receta.",
-        "nav_home": "←Home",
-        "nav_contact": "Contactame",
-        "nav_next": "Próximo caso →"
+        "quote": "Thanks for reading... Until the next recipe.",
+        "nav_home": "← Home",
+        "nav_contact": "Contact me",
+        "nav_next": "Next case study →"
       },
       "logre": {
         "section_label": "· Results ·",
@@ -104,24 +104,24 @@
         }
       },
       "siguientes": {
-        "section_label": "· Próximos pasos ·",
-        "title": "¿Cómo sigue?",
+        "section_label": "· Next Steps ·",
+        "title": "What's next?",
         "items": {
           "1": {
-            "title": "Nuevo roadmap",
-            "body": "Creé un nuevo roadmap con el objetivo de convertir a premium los clientes free, priorizando las funciones de mayor valor percibido."
+            "title": "New roadmap",
+            "body": "I created a new roadmap focused on converting free clients to premium by prioritizing high-perceived-value features."
           },
           "2": {
-            "title": "Onboarding guiado",
-            "body": "Diseñé un onboarding guiado para que las tiendas terminen de configurarse y activen todo su potencial desde el primer día."
+            "title": "Guided onboarding",
+            "body": "I designed a guided onboarding experience to help stores complete their setup and unlock their full potential from day one."
           },
           "3": {
-            "title": "Estrategia de captación premium",
-            "body": "Definí una estrategia de captación en redes sociales, comunicación directa y free trial estratégico para convertir usuarios free en premium."
+            "title": "Premium acquisition strategy",
+            "body": "I defined an acquisition strategy utilizing social media, direct communication, and a strategic free trial to convert free users to premium."
           },
           "4": {
-            "title": "Mejoras en el registro de métricas",
-            "body": "Propuse implementar sistemas de medición más precisos para datos de actividad, retención y comportamiento de usuario."
+            "title": "Metrics tracking improvements",
+            "body": "I proposed implementing more precise tracking systems for activity, retention, and user behavior data."
           }
         }
       },

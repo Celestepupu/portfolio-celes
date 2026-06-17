@@ -86,20 +86,20 @@
         ]
       },
       "aprendizajes": {
-        "section_label": "· Aprendizajes ·",
-        "title": "¿Qué fallo?",
+        "section_label": "· Learnings ·",
+        "title": "What didn't go as planned?",
         "items": {
           "1": {
-            "title": "Adopción de cuenta Premium",
-            "body": "La conversión al plan pago fue más lenta de lo esperado. Eran necesarias estrategias de activación más efectivas para el upgrade."
+            "title": "Premium plan adoption",
+            "body": "Conversion to the paid plan was slower than expected. More effective activation strategies were needed to drive the upgrade."
           },
           "2": {
-            "title": "Fuga de usuarios",
-            "body": "No se logró medir con exactitud el punto exacto de abandono (churn) en el embudo de conversión inicial."
+            "title": "User churn",
+            "body": "The exact drop-off location within the initial conversion funnel could not be accurately measured."
           },
           "3": {
-            "title": "Registro de tiendas activas",
-            "body": "No se logro el registro correcto de las tiendas que se mantienen activas, afectando el análisis de retención."
+            "title": "Tracking active stores",
+            "body": "Incomplete data tracking for active stores limited the accuracy of the retention analysis."
           }
         }
       },

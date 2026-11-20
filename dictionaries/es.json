@@ -238,6 +238,98 @@
         "impact3": "<hl>Alineación estratégica </hl>de todas las áreas: Marketing, Founders y Desarrollo.",
         "impact4": "Implementación de cultura <hl>Data-Driven:</hl> registro de métricas"
       }
+    },
+
+    "doku": {
+      "meta_title": "Doku · Caso de estudio · Celes",
+      "meta_description": "Caso de estudio: Doku — Todo tu viaje, en un solo lugar.",
+      "hero": {
+        "eyebrow": "Product Designer",
+        "title_hl": "Todo tu viaje",
+        "title_text": "en un solo lugar",
+        "accent": "Un viaje desde un problema real hasta una solución.",
+        "body": "Doku es una app móvil para organizar reservas y documentos de viaje. Somos viajeros, y por eso la creamos desde cero, en equipo con un desarrollador.",
+        "img_alt": "Pantalla principal de la app Doku",
+        "summary": "Doku es una <f>app móvil</f> para organizar reservas y documentos de viaje.<br/>Creada por un equipo de dos <g>viajeros, para viajeros.</g>"
+      },
+      "facts": {
+        "role_label": "Mi rol",
+        "role": "Product & Strategy Designer",
+        "team_label": "Equipo de dos",
+        "team": "1 diseñadora + 1 desarrollador",
+        "year_label": "Año - Creada en 3 meses",
+        "year": "2026",
+        "status_label": "Estado",
+        "status": "Beta cerrada, lanzamiento en tiendas en diciembre 2026"
+      },
+      "problem": {
+        "section_label": "· El problema ·",
+        "heading": "Justo cuando más lo necesitás, no lo encontrás",
+        "body": "Viajando, y viendo viajar a otros, nos encontramos mil veces con lo mismo: reservas en capturas de pantalla en WhatsApp, el vuelo en un mail, el hotel en otro, el seguro en un PDF. Justo cuando más lo necesitás, no lo encontrás."
+      },
+      "brand": {
+        "section_label": "· Diseño de marca ·",
+        "title": "Estrategia visual",
+        "accent": "Doku no vende ilusión, vende tranquilidad y control.",
+        "body": "<b>No vendemos la ilusión de viajar: es una app para quienes ya viajan.</b><br/><br/>Esa decisión guió todo. Elegimos un tono directo y funcional, nos alejamos de los azules típicos de las apps de viaje y diseñamos una interfaz que no compite con el viaje, sino que lo ordena.",
+        "ui_alt": "Componentes de interfaz y tipografía de Doku",
+        "palette_alt": "Paleta de colores de Doku"
+      },
+      "process": {
+        "section_label": "· Proceso ·",
+        "title": "Diseño y construcción",
+        "body1": "En Figma definí la <b>estrategia</b>, la <b>arquitectura de información</b>, los <b>user flows</b> y el <b>modelo de monetización</b>. Ahí también armé el estilo visual y el UI Kit.",
+        "body2": "Después llevé ese <b>UI Kit</b> al código con Claude Code, junto con una primera <b>documentación</b> básica de design system. A partir de ahí trabajamos así:",
+        "steps": {
+          "1": {
+            "num": "01",
+            "title": "En Figma",
+            "body": "Los ajustes de UX que requerían decisiones de diseño más profundas."
+          },
+          "2": {
+            "num": "02",
+            "title": "En código<br/>(yo, con Claude Code)",
+            "body": "Todos los cambios visuales sin riesgo técnico, iterando directamente sobre código."
+          },
+          "3": {
+            "num": "03",
+            "title": "En código<br/>(Desarrollador)",
+            "body": "Las partes que requerían más atención técnica."
+          }
+        },
+        "ai_card": "<f>Trabajar con IA</f> me permitió probar e iterar más rápido, pasando cada cambio por mi <g>criterio y decisiones de producto.</g>",
+        "mockup1_alt": "Pantalla de inicio de Doku",
+        "mockup2_alt": "Pantalla de un viaje en Doku",
+        "mockup3_alt": "Pantalla de asistencia en Doku"
+      },
+      "validation": {
+        "section_label": "· Validación ·",
+        "title": "Testeos con usuarios",
+        "body": "Hicimos 5 tests de usabilidad en vivo y abrimos una beta cerrada con 50 testers.",
+        "stat1_num": "5",
+        "stat1_desc": "tests de usabilidad",
+        "stat2_num": "50",
+        "stat2_desc": "testers en beta cerrada",
+        "insight_eyebrow": "Insight principal",
+        "insight_body": "<g>Basta de IA:</g> los usuarios rechazaban leer que algo iba a “analizarse con IA”. Sacamos de la interfaz toda referencia a la IA y dejamos que la app simplemente funcione, sin explicar cómo lo hace. Eso generó simpleza y confianza."
+      },
+      "desafios": {
+        "section_label": "· Reflexiones personales ·",
+        "title": "Desafíos y aprendizajes",
+        "items": {
+          "1": {
+            "title": "Velocidad con pocos recursos",
+            "body": "Construir e iterar rápido con un equipo chico, poco tiempo y bajo presupuesto."
+          },
+          "2": {
+            "title": "Visión de producto completa",
+            "body": "Recorrer el proceso completo de un producto digital, desde el problema y la estrategia hasta la beta en manos de usuarios reales."
+          }
+        }
+      },
+      "cierre": {
+        "quote": "Viajando desde la estrategia hasta la beta en manos de usuarios reales."
+      }
     }
   },
 

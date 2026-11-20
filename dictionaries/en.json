@@ -238,6 +238,98 @@
         "impact3": "<hl>Strategic alignment</hl> across all areas: Marketing, Founders, and Development.",
         "impact4": "Implementation of a <hl>data-driven</hl> culture: tracking metrics."
       }
+    },
+
+    "doku": {
+      "meta_title": "Doku · Case study · Celes",
+      "meta_description": "Case study: Doku — Your whole trip, in one place.",
+      "hero": {
+        "eyebrow": "Product Designer",
+        "title_hl": "Your whole trip",
+        "title_text": "in one place",
+        "accent": "A journey from a real problem to a solution.",
+        "body": "Doku is a mobile app to organize travel bookings and documents. We're travelers ourselves, so we built it from scratch, as a team with a developer.",
+        "img_alt": "Doku app home screen",
+        "summary": "Doku is a <f>mobile app</f> to organize travel bookings and documents.<br/>Built by a team of two <g>travelers, for travelers.</g>"
+      },
+      "facts": {
+        "role_label": "My role",
+        "role": "Product & Strategy Designer",
+        "team_label": "Team of two",
+        "team": "1 designer + 1 developer",
+        "year_label": "Year - Built in 3 months",
+        "year": "2026",
+        "status_label": "Status",
+        "status": "Closed beta, app store launch in December 2026"
+      },
+      "problem": {
+        "section_label": "· The problem ·",
+        "heading": "Right when you need it most, you can't find it",
+        "body": "Traveling, and watching others travel, we kept running into the same thing: bookings as screenshots in WhatsApp, the flight in one email, the hotel in another, the insurance in a PDF. Right when you need it most, you can't find it."
+      },
+      "brand": {
+        "section_label": "· Brand design ·",
+        "title": "Visual strategy",
+        "accent": "Doku doesn't sell dreams, it sells peace of mind and control.",
+        "body": "<b>We don't sell the dream of traveling: it's an app for people who already travel.</b><br/><br/>That decision guided everything. We chose a direct, functional tone, stepped away from the typical blues of travel apps, and designed an interface that doesn't compete with the trip but organizes it.",
+        "ui_alt": "Doku interface components and typography",
+        "palette_alt": "Doku color palette"
+      },
+      "process": {
+        "section_label": "· Process ·",
+        "title": "Design and build",
+        "body1": "In Figma I defined the <b>strategy</b>, the <b>information architecture</b>, the <b>user flows</b> and the <b>monetization model</b>. That's also where I built the visual style and the UI Kit.",
+        "body2": "Then I took that <b>UI Kit</b> into code with Claude Code, along with a first, basic design system <b>documentation</b>. From there, we worked like this:",
+        "steps": {
+          "1": {
+            "num": "01",
+            "title": "In Figma",
+            "body": "UX adjustments that needed deeper design decisions."
+          },
+          "2": {
+            "num": "02",
+            "title": "In code<br/>(me, with Claude Code)",
+            "body": "All visual changes with no technical risk, iterating directly on the code."
+          },
+          "3": {
+            "num": "03",
+            "title": "In code<br/>(Developer)",
+            "body": "The parts that needed more technical attention."
+          }
+        },
+        "ai_card": "<f>Working with AI</f> let me test and iterate faster, running every change through my <g>judgment and product decisions.</g>",
+        "mockup1_alt": "Doku home screen",
+        "mockup2_alt": "A trip screen in Doku",
+        "mockup3_alt": "Assistance screen in Doku"
+      },
+      "validation": {
+        "section_label": "· Validation ·",
+        "title": "User testing",
+        "body": "We ran 5 live usability tests and opened a closed beta with 50 testers.",
+        "stat1_num": "5",
+        "stat1_desc": "usability tests",
+        "stat2_num": "50",
+        "stat2_desc": "closed beta testers",
+        "insight_eyebrow": "Key insight",
+        "insight_body": "<g>Enough with AI:</g> users pushed back on reading that something would be “analyzed with AI”. We removed every reference to AI from the interface and let the app simply work, without explaining how. That brought simplicity and trust."
+      },
+      "desafios": {
+        "section_label": "· Personal reflections ·",
+        "title": "Challenges and learnings",
+        "items": {
+          "1": {
+            "title": "Speed with few resources",
+            "body": "Building and iterating fast with a small team, little time and a low budget."
+          },
+          "2": {
+            "title": "A full product vision",
+            "body": "Going through the full process of a digital product, from the problem and the strategy to the beta in the hands of real users."
+          }
+        }
+      },
+      "cierre": {
+        "quote": "Traveling from strategy to a beta in the hands of real users."
+      }
     }
   },
 

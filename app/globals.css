@@ -2517,3 +2517,446 @@ ul, ol { list-style: none; }
 
   .hero__tags { padding: 8px 0; gap: 12px; }
 }
+
+
+/* ============================================================
+   CASE STUDY — DOKU  (página no listada: /[lang]/work/doku)
+   Reutiliza cs-card, cs-stat-card, cs-desafios y cs-cierre.
+   ============================================================ */
+
+.dk-hero,
+.dk-facts,
+.dk-problem,
+.dk-brand,
+.dk-process,
+.dk-validation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.dk-inner {
+  max-width: 1040px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.dk-header {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.dk-title {
+  font-family: var(--font-display);
+  font-size: var(--display-lg-size);
+  line-height: var(--display-lg-lh);
+  letter-spacing: var(--display-lg-ls);
+  font-weight: 800;
+  color: var(--neutral-5);
+  margin: 0;
+}
+
+/* Bloque de texto alineado a la derecha (576px) */
+.dk-text {
+  display: flex;
+  justify-content: flex-end;
+  padding: 24px 24px 56px 0;
+}
+
+.dk-text__inner {
+  width: 576px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Card con borde violeta, angostada como en el diseño */
+.dk-card-wrap {
+  padding: 0 100px;
+  width: 100%;
+}
+
+/* ---- Hero ---- */
+
+.dk-hero {
+  padding-top: 124px;
+  padding-bottom: 80px;
+  gap: 56px;
+}
+
+.dk-hero__intro {
+  max-width: 1040px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.dk-hero__text {
+  flex: 0 1 560px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.dk-hero__mockup {
+  flex: 0 0 440px;
+  height: 531px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dk-hero__mockup img {
+  width: 222px;
+  height: auto;
+  display: block;
+}
+
+.dk-hero .dk-card-wrap { max-width: 1040px; }
+
+/* ---- Ficha ---- */
+
+.dk-facts {
+  padding-top: 24px;
+  padding-bottom: 80px;
+}
+
+.dk-facts__grid {
+  max-width: 1040px;
+  width: 100%;
+  margin: 0;
+  padding: 0 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.dk-facts__col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.dk-facts__item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dk-facts__item dt { text-transform: uppercase; }
+.dk-facts__item dd { margin: 0; color: var(--neutral-5); }
+
+/* ---- Problema ---- */
+
+.dk-problem {
+  background: var(--section-gray);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.dk-problem__row {
+  display: flex;
+  align-items: flex-start;
+  gap: 56px;
+}
+
+.dk-problem__heading {
+  flex: 0 0 416px;
+  font-family: var(--font-accent);
+  font-size: var(--accent-md-size);
+  line-height: var(--accent-md-lh);
+  font-weight: 700;
+  color: var(--green);
+  margin: 0;
+}
+
+.dk-problem__body { flex: 0 1 568px; }
+
+/* ---- Diseño de marca ---- */
+
+.dk-brand {
+  padding-top: 124px;
+  padding-bottom: 124px;
+}
+
+.dk-brand__accent {
+  font-family: var(--font-accent);
+  font-size: var(--accent-lg-size);
+  line-height: var(--accent-lg-lh);
+  font-weight: 700;
+  color: var(--fucsia);
+  margin: 0;
+}
+
+.dk-gallery {
+  background: var(--violet-50);
+  border: 1px solid var(--gray-disabled-bg);
+  border-radius: 16px;
+  padding: 32px;
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  overflow: hidden;
+}
+
+.dk-gallery__ui {
+  flex: 485 1 0;
+  aspect-ratio: 485 / 510;
+  position: relative;
+  overflow: hidden;
+}
+
+.dk-gallery__ui img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dk-gallery__ui::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(243, 236, 242, 0) 74.7%,
+    rgba(243, 236, 242, 0.25) 88.9%,
+    var(--violet-50) 99.1%
+  );
+  pointer-events: none;
+}
+
+.dk-gallery__palette {
+  flex: 423 1 0;
+  aspect-ratio: 423 / 525;
+  position: relative;
+  overflow: hidden;
+  background: var(--violet-50);
+}
+
+/* Recorte de la paleta: 357×1472 dentro de una caja de 423×525 */
+.dk-gallery__palette-img {
+  position: absolute;
+  left: 6.856%;
+  width: 84.397%;
+  top: -63.43%;
+}
+
+.dk-gallery__palette-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.dk-gallery__palette-img::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    var(--violet-50) 22.2%,
+    rgba(243, 236, 242, 0.25) 24.2%,
+    rgba(243, 236, 242, 0) 39.6%,
+    rgba(243, 236, 242, 0.25) 55.9%,
+    var(--violet-50) 57.8%
+  );
+  pointer-events: none;
+}
+
+/* ---- Diseño y construcción ---- */
+
+.dk-process {
+  background: var(--section-gray);
+  padding-top: 124px;
+  padding-bottom: 124px;
+}
+
+.dk-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.dk-step {
+  background: var(--background);
+  border: 1px solid var(--fucsia);
+  border-radius: 16px;
+  padding: 24px;
+  min-height: 330px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.dk-step__num {
+  font-family: var(--font-accent);
+  font-size: var(--accent-lg-size);
+  line-height: var(--accent-lg-lh);
+  font-weight: 700;
+  color: var(--fucsia);
+}
+
+.dk-step__title {
+  font-family: var(--font-heading);
+  font-size: var(--h3-size);
+  line-height: var(--h3-lh);
+  font-weight: 700;
+  color: var(--neutral-5);
+}
+
+.dk-mockups {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 56px 40px;
+}
+
+.dk-mockups img {
+  flex: 1 1 0;
+  min-width: 0;
+  height: auto;
+  display: block;
+}
+
+/* ---- Validación ---- */
+
+.dk-validation {
+  padding-top: 124px;
+  padding-bottom: 124px;
+}
+
+.dk-validation__results {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.dk-stat-cards {
+  gap: 40px;
+  margin-bottom: 0;
+}
+
+/* ---- Desafíos / Cierre ---- */
+
+.dk-desafios .cs-section-label { color: var(--violet); }
+
+.dk-desafios .cs-desafios__card {
+  padding: 32px 24px;
+  min-height: 264px;
+}
+
+.dk-desafios .cs-desafios__card .body-md { padding-bottom: 0; }
+
+.dk-cierre { padding: 24px 0 80px; }
+
+
+/* ---- Doku responsive ---- */
+
+@media (min-width: 1441px) {
+  .dk-hero,
+  .dk-facts,
+  .dk-problem,
+  .dk-brand,
+  .dk-process,
+  .dk-validation {
+    padding-left:  max(200px, calc((100% - 1040px) / 2));
+    padding-right: max(200px, calc((100% - 1040px) / 2));
+  }
+}
+
+@media (max-width: 1439px) {
+  .dk-hero,
+  .dk-facts,
+  .dk-problem,
+  .dk-brand,
+  .dk-process,
+  .dk-validation {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .dk-hero,
+  .dk-facts,
+  .dk-problem,
+  .dk-brand,
+  .dk-process,
+  .dk-validation {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .dk-hero         { padding-top: 80px; }
+  .dk-brand,
+  .dk-process,
+  .dk-validation   { padding-top: 80px; padding-bottom: 80px; }
+
+  .dk-hero__mockup { flex-basis: 300px; height: auto; }
+  .dk-card-wrap    { padding: 0; }
+  .dk-facts__grid  { padding: 0; }
+
+  .dk-problem__row      { gap: 32px; }
+  .dk-problem__heading  { flex-basis: 300px; }
+
+  .dk-text         { padding: 16px 0 32px; }
+  .dk-text__inner  { width: 100%; }
+
+  .dk-steps        { gap: 16px; }
+  .dk-step         { min-height: 0; }
+  .dk-mockups      { padding: 40px 0; gap: 16px; }
+  .dk-stat-cards   { gap: 16px; }
+}
+
+@media (max-width: 767px) {
+  .dk-hero,
+  .dk-facts,
+  .dk-problem,
+  .dk-brand,
+  .dk-process,
+  .dk-validation {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .dk-hero              { padding-top: 60px; padding-bottom: 56px; gap: 40px; }
+  .dk-hero__intro       { flex-direction: column; align-items: stretch; gap: 24px; }
+  .dk-hero__text        { flex: none; }
+  .dk-hero__mockup      { flex: none; padding: 0; }
+  .dk-hero__mockup img  { width: 200px; }
+
+  .dk-card-wrap .cs-card__body { font-size: var(--display-md-size); line-height: var(--display-md-lh); }
+
+  .dk-facts             { padding-top: 0; padding-bottom: 56px; }
+  .dk-facts__grid       { grid-template-columns: 1fr; gap: 24px; }
+
+  .dk-problem           { padding-top: 60px; padding-bottom: 60px; }
+  .dk-problem__row      { flex-direction: column; gap: 16px; }
+  .dk-problem__heading  { flex: none; }
+  .dk-problem__body     { flex: none; }
+
+  .dk-brand,
+  .dk-process,
+  .dk-validation        { padding-top: 60px; padding-bottom: 60px; }
+  .dk-brand__accent     { font-size: var(--accent-md-size); line-height: var(--accent-md-lh); }
+  .dk-text              { padding: 0 0 16px; }
+
+  .dk-gallery           { flex-direction: column; padding: 16px; gap: 16px; }
+  .dk-gallery__ui,
+  .dk-gallery__palette  { flex: none; width: 100%; }
+
+  .dk-steps             { grid-template-columns: 1fr; }
+  .dk-mockups           { padding: 24px 0; gap: 12px; }
+
+  .dk-validation__results { gap: 40px; }
+  .dk-desafios .cs-desafios__card { min-height: 0; padding: 20px; }
+  .dk-cierre            { padding: 0 0 40px; }
+}

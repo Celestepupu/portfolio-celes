@@ -692,9 +692,30 @@ ul, ol { list-style: none; }
   transform: scale(1.05);
 }
 
+/* Card ancha: ocupa toda la fila del grid (Doku) */
+.project-card--wide { grid-column: 1 / -1; }
+.project-card--wide:hover { box-shadow: 12px 12px 0 0 var(--fucsia); }
+.project-card--wide .project-card__img-wrap { aspect-ratio: 1036 / 320; }
+
 .project-card__body { padding: 24px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
 
 .project-card__tags { margin: 0; text-transform: none; letter-spacing: 3.3px; }
+
+/* Tags a la izquierda y etiqueta extra (ej. "Proyecto personal") a la derecha */
+.project-card__tags-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 4px 24px;
+}
+
+/* Caveat tiene un ojo medio chico: a 18px se ve del tamaño de las tags (Lexend 12px) */
+.project-card__badge {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1;
+}
 
 .project-card__title {
   font-family: var(--font-heading);
@@ -2430,6 +2451,7 @@ ul, ol { list-style: none; }
 
   /* Imagen de card más baja en mobile */
   .project-card__img-wrap { aspect-ratio: 308 / 200; }
+  .project-card--wide .project-card__img-wrap { aspect-ratio: 308 / 200; }
 
   /* ---- About ---- */
   .about              { padding: 80px 24px; }

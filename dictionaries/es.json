@@ -364,6 +364,12 @@
           "title": "Journey",
           "tags": "UX/UI · Product designer",
           "desc": "Diseñé una plataforma para guías turísticos end-to-end y realicé testeos de usabilidad."
+        },
+        "4": {
+          "title": "Doku",
+          "tags": "Product Designer · Product Management",
+          "badge": "Proyecto personal",
+          "desc": "Creé, diseñé y validé con usuarios una app móvil para organizar reservas y documentos de viaje."
         }
       }
     },

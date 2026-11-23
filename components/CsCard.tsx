@@ -6,6 +6,7 @@ interface CsCardProps {
   centered?: boolean
   impact?: boolean
   as?: React.ElementType
+  className?: string
 }
 
 export default function CsCard({
@@ -14,11 +15,13 @@ export default function CsCard({
   centered,
   impact,
   as: Tag = 'div',
+  className,
 }: CsCardProps) {
   const cls = [
     'cs-card',
     centered && 'cs-card--centered',
     impact && 'cs-card--impact',
+    className,
   ]
     .filter(Boolean)
     .join(' ')

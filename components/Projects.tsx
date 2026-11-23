@@ -13,7 +13,7 @@ type ProjectData = { id: string; img: string; href: string; wide?: boolean }
 const projectData: ProjectData[] = [
   { id: '1', img: '/Image-Cardhome-Pedilo.png', href: '/work/pedilo' },
   { id: '2', img: '',                            href: '#' },
-  { id: '3', img: '',                            href: '#' },
+  { id: '3', img: '/journey/card-home.jpg',      href: '/work/journey' },
   // Card ancha: ocupa toda la fila del grid
   { id: '4', img: '/doku/card-home.jpg',         href: '/work/doku', wide: true },
 ]

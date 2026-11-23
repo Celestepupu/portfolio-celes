@@ -330,6 +330,93 @@
       "cierre": {
         "quote": "Traveling from strategy to a beta in the hands of real users."
       }
+    },
+    "journey": {
+      "meta_title": "Journey · Case study · Celes",
+      "meta_description": "Case study: Journey — Simplifying processes for tourism services.",
+      "hero": {
+        "eyebrow": "Product Designer - UX/UI Designer",
+        "title_hl": "Journey:",
+        "title_text": " Simplifying processes for tourism services.",
+        "accent": "Guiding tour guides",
+        "card_alt": "A tour card in Journey: Panoramic route through Buenos Aires",
+        "card": {
+          "title": "Panoramic route through Buenos Aires.",
+          "author_prefix": "Route created by ",
+          "author": "Matias Moyano",
+          "summary": "On this panoramic route we'll explore all of Buenos Aires, enjoying its main neighborhoods, avenues...",
+          "duration": "5 hours",
+          "visits": "120,283 views",
+          "rating": "4.9"
+        }
+      },
+      "results": {
+        "title": "Impact on the project",
+        "impact1": "<f>Design and implementation</f> of an <g>effective, validated</g> user flow for creating <f>tour circuits.</f>",
+        "impact2": "<f>End-to-end design</f> of a complete tourism platform.",
+        "impact3": "<f>Creation of a basic Design System</f> used across the whole platform."
+      },
+      "context": {
+        "section_label": "· Context ·",
+        "title": "Journey",
+        "body": "An online platform where tour guides can upload the tours and routes they create, to offer them to tourists online.",
+        "objective_label": "Goal:",
+        "objective": "Build a tool that lets guides quickly create tour circuits to offer."
+      },
+      "problem": {
+        "section_label": "· Problem ·",
+        "question": "How do you guide a guide?",
+        "heading": "Tour guides in the City of Buenos Aires had no online space to offer their tours.",
+        "body": "The challenge was to give them a platform where they could upload their tours quickly and intuitively, and turn them into an attractive offer for tourists and travelers.",
+        "challenge_eyebrow": "The challenge",
+        "challenge": "Turn expert knowledge into a clear, visible offer that's easy to book."
+      },
+      "role": {
+        "section_label": "· My role ·",
+        "title": "Designing the journey for those who create journeys.",
+        "block1_title": "· Product Designer & UX/UI Designer ·",
+        "block1_body": "I led the user experience and interface design end-to-end, working closely with the founder and the developer. I took an active part in <g>product definitions</g>, ran the <g>competitive research</g>, structured the <g>interaction flows</g>, created the UI Kit, and coordinated the evaluation and <g>prioritization</g> of changes after usability testing to take the product to its MVP.",
+        "block2_title": "· Business alignment and team coordination ·",
+        "block2_body": "I worked closely with the founders and the development team to keep the experience aligned with the <g>business strategy</g> and the product's progress. I joined frequent meetings, bringing a holistic view on how to present the value proposition to users and clients, and making sure design priorities answered to business goals. I was also in charge of the design area's <g>internal organization</g>, structuring tasks and splitting the work with the other designer on the team."
+      },
+      "process": {
+        "section_label": "· Process ·",
+        "title": "From the first flow to the final design",
+        "steps": {
+          "1": "Architecture and User Flows",
+          "2": "UX/UI Design",
+          "3": "Usability testing with a results matrix.",
+          "4": "Prioritizing MVP changes together with the tech team.",
+          "5": "Launch and final design"
+        },
+        "insight_eyebrow": "Key insight",
+        "insight": "Tour guides don't use desktop or mobile, they use tablets.<br/><g>The design had to be optimized for tablet.</g>"
+      },
+      "outcome": {
+        "section_label": "Results",
+        "title": "What did we achieve?",
+        "body": "An effective, optimized and validated flow for creating tour circuits."
+      },
+      "desafios": {
+        "section_label": "Personal reflection",
+        "title": "Challenges and learnings:",
+        "badge_label": "Area for improvement",
+        "items": {
+          "1": {
+            "title": "Early validation of context and devices",
+            "body": "Based on an initial team assumption, I prioritized the desktop design. During testing, I found that guides mostly worked from <b>tablets</b>, which forced me to <b>restructure components and interactions</b> around that format.",
+            "badge_body": "<b>Validate the physical context and the real devices in use</b> with end users from the first research phase, reducing late iterations in the layout."
+          },
+          "2": {
+            "title": "Alignment and communication in design teams",
+            "body": "Working alongside another designer whose deliveries were running late, I took the initiative to set up <b>two weekly live sync meetings</b> to review progress and unblock issues, aiming to <b>keep the project's pace</b>.",
+            "badge_body": "Set up <b>communication channels</b> from the start of a project, with constant visibility of the design backlog and <b>incremental delivery milestones</b> to catch misalignments in time."
+          }
+        }
+      },
+      "cierre": {
+        "quote": "Thanks for coming along on the journey."
+      }
     }
   },
 

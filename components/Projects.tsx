@@ -1,4 +1,4 @@
-type ProjectItem = { title: string; tags: string; desc: string }
+type ProjectItem = { title: string; tags: string; desc: string; badge?: string }
 
 type ProjectsDict = {
   eyebrow: string
@@ -8,10 +8,14 @@ type ProjectsDict = {
   items: Record<string, ProjectItem>
 }
 
-const projectData = [
+type ProjectData = { id: string; img: string; href: string; wide?: boolean }
+
+const projectData: ProjectData[] = [
   { id: '1', img: '/Image-Cardhome-Pedilo.png', href: '/work/pedilo' },
   { id: '2', img: '',                            href: '#' },
   { id: '3', img: '',                            href: '#' },
+  // Card ancha: ocupa toda la fila del grid
+  { id: '4', img: '/doku/card-home.jpg',         href: '/work/doku', wide: true },
 ]
 
 export default function Projects({ lang, dict }: { lang: string; dict: ProjectsDict }) {
@@ -31,7 +35,11 @@ export default function Projects({ lang, dict }: { lang: string; dict: ProjectsD
           {projectData.map((project) => {
             const item = dict.items[project.id]
             return (
-              <a key={project.id} href={project.href === '#' ? '#' : `/${lang}${project.href}`} className="project-card">
+              <a
+                key={project.id}
+                href={project.href === '#' ? '#' : `/${lang}${project.href}`}
+                className={project.wide ? 'project-card project-card--wide' : 'project-card'}
+              >
                 <div className="project-card__img-wrap">
                   {project.img ? (
                     // eslint-disable-next-line @next/next/no-img-element
@@ -43,7 +51,14 @@ export default function Projects({ lang, dict }: { lang: string; dict: ProjectsD
                   )}
                 </div>
                 <div className="project-card__body">
-                  <p className="project-card__tags label-sm c-fucsia">{item.tags}</p>
+                  {item.badge ? (
+                    <div className="project-card__tags-row">
+                      <p className="project-card__tags label-sm c-fucsia">{item.tags}</p>
+                      <p className="project-card__badge font-accent c-green">{item.badge}</p>
+                    </div>
+                  ) : (
+                    <p className="project-card__tags label-sm c-fucsia">{item.tags}</p>
+                  )}
                   <h3 className="project-card__title">{item.title}</h3>
                   <p className="project-card__desc">{item.desc}</p>
                 </div>

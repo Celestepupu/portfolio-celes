@@ -2982,3 +2982,499 @@ ul, ol { list-style: none; }
   .dk-desafios .cs-desafios__card { min-height: 0; padding: 20px; }
   .dk-cierre            { padding: 0 0 40px; }
 }
+
+
+/* ============================================================
+   CASE STUDY — JOURNEY  (/[lang]/work/journey)
+   Reutiliza cs-results, cs-context, cs-role, cs-process, cs-card,
+   cs-desafios y cs-cierre (Pedilo) + dk-card-wrap / dk-title (Doku).
+   ============================================================ */
+
+.jr-hero,
+.jr-problem,
+.jr-outcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.jr-inner {
+  max-width: 1040px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.jr-header {
+  display: flex;
+  flex-direction: column;
+  gap: 18.5px;
+}
+
+.jr-header > * { margin: 0; }
+
+/* ---- Hero ---- */
+
+.jr-hero {
+  padding-top: 102px;
+  padding-bottom: 58px;
+}
+
+.jr-hero__inner {
+  max-width: 1040px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 38px;
+}
+
+.jr-hero__text {
+  flex: 0 1 600px;
+  padding-top: 98px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.jr-hero__title {
+  font-family: var(--font-display);
+  font-size: var(--display-lg-size);
+  line-height: 1;
+  letter-spacing: -1.8px;
+  font-weight: 800;
+  color: var(--neutral-5);
+  margin: 0;
+}
+
+.jr-hero__visual {
+  flex: none;
+  width: 341px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Tarjeta de recorrido (mockup del producto) */
+
+.jr-tour__backdrop {
+  width: 316px;
+  height: 484px;
+  padding: 28px;
+  background: var(--violet-50);
+  border-radius: 48px;
+  transform: rotate(-3deg);
+  filter: drop-shadow(16px 18px 0 rgba(100, 13, 95, 0.2));
+}
+
+.jr-tour {
+  position: relative;
+  width: 316px;
+  background: #FFFBFE;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 2px 6px 2px rgba(0, 0, 0, 0.15);
+  color: #1D1D1F;
+}
+
+.jr-tour__img {
+  position: relative;
+  height: 178px;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+}
+
+.jr-tour__img img {
+  position: absolute;
+  left: -2.23%;
+  top: -14.3%;
+  width: 104.75%;
+  height: 133.41%;
+  max-width: none;
+}
+
+.jr-tour__body {
+  padding: 20px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.jr-tour__head {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 18.28px;
+}
+
+.jr-tour__title {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.jr-tour__author {
+  font-size: 12px;
+  line-height: 1.1;
+  font-weight: 500;
+}
+
+.jr-tour__author strong { font-weight: 700; }
+
+.jr-tour__summary {
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.28px;
+  color: #333333;
+  opacity: 0.7;
+}
+
+.jr-tour__info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 1.1;
+  color: #555555;
+}
+
+.jr-tour__info img { flex: none; display: block; }
+
+.jr-tour__rating {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6.3px;
+  padding: 5px 10px 5px 11.3px;
+  background: var(--white);
+  border-radius: 6.855px;
+  filter: drop-shadow(0 4px 2px rgba(0, 0, 0, 0.25));
+  font-size: 13.711px;
+  line-height: 13.711px;
+  font-weight: 600;
+}
+
+.jr-tour__rating img { display: block; }
+
+/* ---- Impacto en el proyecto ---- */
+
+.jr-impact {
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ---- Contexto ---- */
+
+.jr-context {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 32px;
+}
+
+.jr-context .cs-context__inner {
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.jr-objective-wrap { padding: 0 100px; }
+
+.jr-objective {
+  position: relative;
+  background: var(--background);
+  border: 2px solid var(--violet);
+  border-radius: 9999px;
+  box-shadow: 6px 6px 0 var(--violet);
+  padding: 26px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--green);
+}
+
+.jr-objective__label {
+  font-family: var(--font-label);
+  font-size: var(--label-xl-size);
+  line-height: var(--label-xl-lh);
+  letter-spacing: var(--label-xl-ls);
+  font-weight: 600;
+}
+
+.jr-objective__body {
+  font-family: var(--font-display);
+  font-size: var(--display-md-size);
+  line-height: 1.24;
+  font-weight: 700;
+  color: var(--neutral-5);
+}
+
+/* ---- Problema ---- */
+
+.jr-problem {
+  padding-top: 124px;
+  padding-bottom: 124px;
+}
+
+.jr-problem .jr-inner { gap: 52px; }
+
+.jr-problem__question {
+  max-width: 720px;
+  font-family: var(--font-accent);
+  font-size: var(--accent-lg-size);
+  line-height: var(--accent-lg-lh);
+  font-weight: 700;
+  color: var(--fucsia);
+  margin: 0;
+}
+
+.jr-problem__row {
+  display: flex;
+  align-items: flex-start;
+  gap: 80px;
+}
+
+.jr-problem__heading {
+  flex: 0 0 430px;
+  font-family: var(--font-heading);
+  font-size: var(--h3-size);
+  line-height: var(--h3-lh);
+  font-weight: 700;
+  color: var(--neutral-5);
+}
+
+.jr-problem__row .body-md { flex: 1 1 0; min-width: 0; }
+
+.jr-challenge {
+  max-width: 840px;
+  padding: 28px;
+  gap: 12px;
+}
+
+.jr-challenge .cs-card__eyebrow {
+  font-size: var(--label-md-size);
+  line-height: 16px;
+  letter-spacing: var(--label-md-ls);
+  text-transform: uppercase;
+}
+
+/* ---- Mi rol ---- */
+
+.jr-role .cs-role__title {
+  font-family: var(--font-display);
+  font-size: var(--display-lg-size);
+  line-height: var(--display-lg-lh);
+  letter-spacing: var(--display-lg-ls);
+  font-weight: 800;
+}
+
+.jr-role .cs-role__content-inner {
+  width: 627px;
+  padding: 48px 24px 0 0;
+}
+
+/* ---- Proceso ---- */
+
+.jr-process .cs-process__title-block { gap: 18.5px; }
+
+.jr-steps {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.jr-step {
+  height: 190px;
+  padding: 18px; /* 20px en Figma, menos los 2px del borde */
+  background: var(--background);
+  border: 2px solid var(--violet);
+  border-radius: 16px;
+  box-shadow: 5px 5px 0 var(--violet);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.jr-step:last-child { background: var(--violet-50); }
+
+.jr-step__num {
+  font-family: var(--font-display);
+  font-size: 28px;
+  line-height: normal;
+  font-weight: 800;
+  color: var(--fucsia);
+}
+
+.jr-insight {
+  width: 100%;
+  padding: 40px 0;
+}
+
+/* En el diseño la card mide 877px y arranca a 100px del borde */
+.jr-insight .dk-card-wrap { padding: 0 63px 0 100px; }
+
+.jr-insight__card .cs-card__eyebrow {
+  font-size: 11px;
+  line-height: 16.5px;
+  letter-spacing: 3.3px;
+  text-transform: uppercase;
+}
+
+/* ---- Resultados ---- */
+
+.jr-outcome {
+  background: var(--section-gray);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.jr-outcome .jr-inner { gap: 36px; }
+
+.cs-section-label.jr-label-violet { color: var(--violet); }
+
+.jr-outcome .dk-title { max-width: 780px; }
+
+.jr-outcome__card {
+  background: var(--background);
+  padding: 36px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.jr-outcome__check {
+  flex: none;
+  font-family: var(--font-display);
+  font-size: 72px;
+  line-height: normal;
+  font-weight: 800;
+  color: var(--fucsia);
+}
+
+.jr-outcome__body {
+  flex: 1 1 0;
+  font-family: var(--font-heading);
+  font-size: var(--h3-size);
+  line-height: var(--h3-lh);
+  font-weight: 700;
+  color: var(--neutral-5);
+}
+
+/* ---- Desafíos / Cierre ---- */
+
+.jr-desafios .cs-section-label { color: var(--violet); }
+.jr-desafios .cs-desafios__header { gap: 48px; }
+
+.jr-desafios .cs-desafios__card-title {
+  font-family: var(--font-label);
+  font-size: var(--label-xl-size);
+  line-height: var(--label-xl-lh);
+  letter-spacing: var(--label-xl-ls);
+  font-weight: 600;
+}
+
+.jr-cierre { padding: 80px 0; }
+.jr-cierre .cs-cierre__quote-wrap { padding: 0; }
+
+
+/* ---- Journey responsive ---- */
+
+@media (min-width: 1441px) {
+  .jr-hero,
+  .jr-problem,
+  .jr-outcome {
+    padding-left:  max(200px, calc((100% - 1040px) / 2));
+    padding-right: max(200px, calc((100% - 1040px) / 2));
+  }
+}
+
+@media (max-width: 1439px) {
+  .jr-hero,
+  .jr-problem,
+  .jr-outcome {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .jr-hero,
+  .jr-problem,
+  .jr-outcome {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .jr-hero           { padding-top: 80px; padding-bottom: 56px; }
+  .jr-hero__inner    { flex-direction: column; align-items: center; gap: 24px; }
+  .jr-hero__text     { flex: none; width: 100%; padding-top: 0; }
+
+  .jr-impact         { padding: 0; }
+  .jr-objective-wrap { padding: 0; }
+
+  .jr-problem        { padding-top: 80px; padding-bottom: 80px; }
+  .jr-problem__row   { gap: 40px; }
+  .jr-problem__heading { flex-basis: 300px; }
+
+  .jr-role .cs-role__content-inner { width: 100%; padding: 32px 0 0; }
+
+  .jr-steps          { grid-template-columns: repeat(3, 1fr); }
+  .jr-step           { height: auto; min-height: 160px; gap: 24px; }
+  .jr-insight .dk-card-wrap { padding: 0; }
+}
+
+@media (max-width: 767px) {
+  .jr-hero,
+  .jr-problem,
+  .jr-outcome {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  /* Hero */
+  .jr-hero           { padding-top: 60px; padding-bottom: 40px; }
+  .jr-hero__title    { font-size: var(--h1-size); line-height: var(--h1-lh); letter-spacing: -0.9px; }
+  .jr-hero .cs-hero__accent { font-size: var(--accent-md-size); line-height: var(--accent-md-lh); }
+  .jr-hero__visual   { zoom: 0.88; }
+
+  /* Impacto */
+  .jr-impact         { gap: 16px; }
+
+  /* Contexto */
+  .jr-context        { gap: 32px; }
+  .jr-objective      { border-radius: 32px; padding: 24px; box-shadow: 5px 5px 0 var(--violet); }
+  .jr-objective__label { font-size: var(--label-lg-size); }
+
+  /* Problema */
+  .jr-problem        { padding-top: 60px; padding-bottom: 60px; }
+  .jr-problem .jr-inner { gap: 32px; }
+  .jr-problem__question { font-size: var(--accent-md-size); line-height: var(--accent-md-lh); }
+  .jr-problem__row   { flex-direction: column; gap: 16px; }
+  .jr-problem__heading { flex: none; font-size: var(--display-md-size); line-height: var(--display-md-lh); }
+  .jr-challenge      { padding: 20px; }
+
+  /* Rol */
+  .jr-role .cs-role__title { font-size: var(--h2-size); line-height: var(--h2-lh); letter-spacing: 0; }
+  .jr-role .cs-role__content-inner { padding: 16px 0 0; }
+
+  /* Proceso */
+  .jr-steps          { grid-template-columns: 1fr; gap: 12px; }
+  .jr-step           { min-height: 0; flex-direction: row; align-items: center; justify-content: flex-start; gap: 16px; padding: 16px 20px; }
+  .jr-step__num      { flex: none; width: 44px; }
+  .jr-insight        { padding: 24px 0 0; }
+
+  /* Resultados */
+  .jr-outcome        { padding-top: 60px; padding-bottom: 60px; }
+  .jr-outcome .jr-inner { gap: 24px; }
+  .jr-outcome__card  { padding: 24px; gap: 16px; }
+  .jr-outcome__check { font-size: 48px; }
+  .jr-outcome__body  { font-size: var(--display-md-size); line-height: var(--display-md-lh); }
+
+  /* Cierre */
+  .jr-cierre         { padding: 56px 0; }
+  .jr-cierre .cs-cierre__quote-wrap { padding: 0 24px; }
+}

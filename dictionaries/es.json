@@ -330,6 +330,93 @@
       "cierre": {
         "quote": "Viajando desde la estrategia hasta la beta en manos de usuarios reales."
       }
+    },
+    "journey": {
+      "meta_title": "Journey · Caso de estudio · Celes",
+      "meta_description": "Caso de estudio: Journey — Simplificando procesos para servicios turísticos.",
+      "hero": {
+        "eyebrow": "Product Designer - UX/UI Designer",
+        "title_hl": "Journey:",
+        "title_text": " Simplificando procesos para servicios turísticos.",
+        "accent": "Guiando a guías de turismo",
+        "card_alt": "Tarjeta de un recorrido en Journey: Ruta panorámica por Buenos Aires",
+        "card": {
+          "title": "Ruta panorámica por Buenos Aires.",
+          "author_prefix": "Ruta creada por ",
+          "author": "Matias Moyano",
+          "summary": "En esta ruta panorámica recorreremos Buenos Aires al completo disfrutando de los principales barrios, avenidas...",
+          "duration": "5 horas",
+          "visits": "120,283 visitas",
+          "rating": "4.9"
+        }
+      },
+      "results": {
+        "title": "Impacto en el proyecto",
+        "impact1": "<f>Diseño e implementación</f> de un flujo de usuario, <g>eficaz y validado</g> para la creación de <f>circuitos turísticos.</f>",
+        "impact2": "<f>Diseño end-to-end</f> de plataforma turística completa.",
+        "impact3": "<f>Creación de Sistema de Diseño</f> básico para el uso de toda la plataforma."
+      },
+      "context": {
+        "section_label": "· Contexto ·",
+        "title": "Journey",
+        "body": "Una plataforma online donde guías de turismo pueden subir los tours y recorridos creados por ellos, para ofrecerlos a turistas de forma online.",
+        "objective_label": "Objetivo:",
+        "objective": "Crear una herramienta para que guías puedan crear rápidamente circuitos para ofrecer."
+      },
+      "problem": {
+        "section_label": "· Problema ·",
+        "question": "¿Cómo se hace para guiar a un guía?",
+        "heading": "Los guías de la Ciudad de Buenos Aires no tienen espacios virtuales en donde ofrecer sus recorridos.",
+        "body": "El desafío consiste en ofrecerles una plataforma en donde puedan cargar de manera rápida e intuitiva sus recorridos y que estos se transformen en una propuesta atractiva para Turistas y pasajeros.",
+        "challenge_eyebrow": "El desafío",
+        "challenge": "Transformar conocimiento experto en una propuesta clara, visible y fácil de reservar."
+      },
+      "role": {
+        "section_label": "· Mi rol ·",
+        "title": "Diseñando el recorrido para quienes crean recorridos.",
+        "block1_title": "· Product Designer & UX/UI Designer ·",
+        "block1_body": "Lideré el diseño de experiencia e interfaz de usuario de principio a fin (end-to-end), trabajando en colaboración directa con el founder y el desarrollador. Participé activamente en las <g>definiciones de producto</g>, ejecuté la <g>investigación competitiva</g>, estructuré los <g>flujos de interacción</g>, creé el UI Kit y coordiné la evaluación y <g>priorización</g> de cambios tras las pruebas de usabilidad para llevar el producto hasta su versión MVP.",
+        "block2_title": "· Alineación con el negocio y coordinación de equipo ·",
+        "block2_body": "Trabajé en estrecha relación con los founders y el equipo de desarrollo para mantener la experiencia alineada con la <g>estrategia del negocio</g> y los avances del producto. Participé en reuniones frecuentes aportando una visión integral sobre cómo presentar la propuesta de valor a usuarios y clientes, asegurándome de que las prioridades de diseño respondieran a los objetivos comerciales. Asimismo, estuve a cargo de la <g>organización interna</g> del área de diseño, estructurando las tareas y dividiendo el trabajo con el otro diseñador del equipo."
+      },
+      "process": {
+        "section_label": "· Proceso ·",
+        "title": "Del Flujo inicial al diseño final",
+        "steps": {
+          "1": "Arquitectura y User Flows",
+          "2": "Diseño UX/UI",
+          "3": "Testeos de Usabilidad con Matriz de resultados.",
+          "4": "Coordinación de prioridad de cambios para MVP, junto al equipo técnico.",
+          "5": "Lanzamiento y Diseño final"
+        },
+        "insight_eyebrow": "Insight clave",
+        "insight": "Los guías turísticos no usan web ni mobile, usan tablet.<br/><g>Había que optimizar el diseño para tablet.</g>"
+      },
+      "outcome": {
+        "section_label": "Resultados",
+        "title": "¿Qué logramos?",
+        "body": "Flujo eficaz, optimizado y validado de creación de circuitos turísticos."
+      },
+      "desafios": {
+        "section_label": "Reflexión personal",
+        "title": "Desafíos y aprendizajes:",
+        "badge_label": "Área de mejora",
+        "items": {
+          "1": {
+            "title": "Validación temprana de contexto y dispositivos",
+            "body": "Basándome en una suposición inicial del equipo, prioricé el diseño para escritorio. Al realizar los testeos, descubrí que los guías operaban mayoritariamente desde <b>tablets</b>, lo que me obligó a <b>reestructurar componentes e interacciones</b> con foco en este formato.",
+            "badge_body": "<b>Validar el contexto físico y los dispositivos reales de uso</b> con los usuarios finales desde la fase inicial de investigación, reduciendo iteraciones tardías en el maquetado."
+          },
+          "2": {
+            "title": "Alineación y comunicación en equipos de diseño",
+            "body": "Al trabajar en conjunto con otro diseñador que presentaba demoras en sus entregas, asumí la iniciativa de organizar <b>dos reuniones semanales de sincronización sincrónica</b> para revisar avances y destrabar bloqueos, buscando <b>mantener el ritmo de trabajo</b> del proyecto.",
+            "badge_body": "Establecer desde el inicio de un proyecto <b>canales de comunicación</b>, visibilidad constante del backlog de diseño e <b>hitos de entrega incrementales</b> para detectar desalineaciones a tiempo."
+          }
+        }
+      },
+      "cierre": {
+        "quote": "Gracias por acompañar el recorrido."
+      }
     }
   },
 
